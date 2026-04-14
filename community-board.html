@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Community Board (Alt+B) — all in-game features accessible from the Community Board panel.">
+  <title>Kairos Wiki — Community Board</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Nunito:wght@400;600;700&family=Fira+Code:wght@400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="scripts.js"></script>
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header class="site-header">
+    <a href="index.html" class="header-logo">
+      <div class="logo-sigil">
+        <div class="sigil-glow"></div>
+        <svg viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg">
+          <polygon class="sigil-outer" points="17,1 32,9 32,25 17,33 2,25 2,9"/>
+          <polygon class="sigil-inner" points="17,6 27,11 27,23 17,28 7,23 7,11"/>
+          <circle class="sigil-core" cx="17" cy="17" r="2.5"/>
+        </svg>
+      </div>
+      <span class="logo-title">Kairos</span>
+      <div class="logo-divider"></div>
+      <span class="logo-wiki">Wiki</span>
+    </a>
+    <button class="menu-toggle" aria-label="Toggle navigation" onclick="toggleSidebar(this)">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <div class="site-wrapper">
+
+    <!-- ===== SIDEBAR ===== -->
+    <nav class="sidebar" id="sidebar">
+      <div class="sidebar-section">
+        <div class="sidebar-label">General</div>
+        <ul class="sidebar-nav">
+          <li><a href="index.html"><span class="nav-icon">🏠</span> Home</a></li>
+          <li><a href="getting-started.html"><span class="nav-icon">📖</span> Getting Started</a></li>
+          <li><a href="server-info.html"><span class="nav-icon">🖥️</span> Server Info</a></li>
+        </ul>
+      </div>
+      <div class="sidebar-section">
+        <div class="sidebar-label">Gameplay</div>
+        <ul class="sidebar-nav">
+          <li><a href="classes.html"><span class="nav-icon">⚔️</span> Classes</a></li>
+          <li><a href="zones.html"><span class="nav-icon">🗺️</span> Zones</a></li>
+          <li><a href="bosses.html"><span class="nav-icon">👹</span> Bosses</a></li>
+          <li><a href="events.html"><span class="nav-icon">🎉</span> Events</a></li>
+        </ul>
+      </div>
+      <div class="sidebar-section">
+        <div class="sidebar-label">Community Board</div>
+        <ul class="sidebar-nav">
+          <li><a href="community-board.html" class="active"><span class="nav-icon">📋</span> Overview</a></li>
+          <li><a href="community-board.html#buffer"><span class="nav-icon">✨</span> Buffer</a></li>
+          <li><a href="community-board.html#rebirth"><span class="nav-icon">🔄</span> Rebirth</a></li>
+          <li><a href="community-board.html#faction-war"><span class="nav-icon">⚔️</span> Faction War</a></li>
+          <li><a href="community-board.html#raid-teleport"><span class="nav-icon">🌀</span> Raid Teleport</a></li>
+          <li><a href="community-board.html#collection"><span class="nav-icon">📦</span> Collection</a></li>
+          <li><a href="community-board.html#alchemy"><span class="nav-icon">⚗️</span> Alchemy</a></li>
+          <li><a href="community-board.html#server-tools"><span class="nav-icon">🔧</span> Server Tools</a></li>
+        </ul>
+      </div>
+      <div class="sidebar-section">
+        <div class="sidebar-label">Reference</div>
+        <ul class="sidebar-nav">
+          <li><a href="commands.html"><span class="nav-icon">💬</span> Commands</a></li>
+          <li><a href="donations.html"><span class="nav-icon">💎</span> Donations</a></li>
+          <li><a href="faq.html"><span class="nav-icon">❓</span> FAQ</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- ===== MAIN CONTENT ===== -->
+    <main class="main-content">
+      <div class="content-wrapper">
+
+        <!-- Hero -->
+        <div class="hero">
+          <div class="hero-ornament">✦ ✦ ✦</div>
+          <h1 class="hero-title">Community Board</h1>
+          <p class="hero-tagline">Your central hub for server features — press <code>Alt+B</code> in-game to open it.</p>
+        </div>
+
+        <p>
+          The Community Board is a custom in-game panel that gives access to all of Kairos's
+          extended features from one place. Open it at any time by pressing <code>Alt+B</code>.
+          The left-hand menu lists every available section — click any entry to navigate to it.
+        </p>
+
+        <!-- Section index -->
+        <h2>Sections</h2>
+        <div class="card-grid">
+          <a href="#buffer" class="card">
+            <div class="card-icon">✨</div>
+            <div class="card-title">Buffer</div>
+            <div class="card-desc">Save and apply personal buff schemes. Level up with L-Coin.</div>
+          </a>
+          <a href="#rebirth" class="card">
+            <div class="card-icon">🔄</div>
+            <div class="card-title">Rebirth</div>
+            <div class="card-desc">Reset your character for permanent stat bonuses.</div>
+          </a>
+          <a href="#faction-war" class="card">
+            <div class="card-icon">⚔️</div>
+            <div class="card-title">Faction War</div>
+            <div class="card-desc">Join a faction and compete in ongoing PvP conflicts.</div>
+          </a>
+          <a href="#raid-teleport" class="card">
+            <div class="card-icon">🌀</div>
+            <div class="card-title">Raid Teleport</div>
+            <div class="card-desc">Instantly teleport to raid boss locations.</div>
+          </a>
+          <a href="#collection" class="card">
+            <div class="card-icon">📦</div>
+            <div class="card-title">Collection</div>
+            <div class="card-desc">Trade item sets for permanent stat bonuses.</div>
+          </a>
+          <a href="#alchemy" class="card">
+            <div class="card-icon">⚗️</div>
+            <div class="card-title">Alchemy</div>
+            <div class="card-desc">Combine materials into powerful consumables.</div>
+          </a>
+          <a href="#server-tools" class="card">
+            <div class="card-icon">🔧</div>
+            <div class="card-title">Server Tools</div>
+            <div class="card-desc">Utility tools — premium status, offline trade, and more.</div>
+          </a>
+        </div>
+
+        <!-- ==================== BUFFER ==================== -->
+        <h2 id="buffer">Buffer</h2>
+        <p>
+          The Buffer lets you build a personal buff scheme — a saved list of buffs that can be
+          applied to your character with a single click. No NPC hunting required once your scheme
+          is set up.
+        </p>
+
+        <div class="info-box tip">
+          <div class="box-label">Access</div>
+          <p>Open the Community Board with <code>Alt+B</code>, then select <strong>Buffer</strong> from the left menu.</p>
+        </div>
+
+        <h3>Building Your Scheme</h3>
+        <p>
+          The Buffer panel shows groups of buff icons arranged in columns. Each group represents
+          a category of buffs (combat, support, etc.). To add a buff to your scheme:
+        </p>
+        <ol>
+          <li>Find the buff icon you want inside one of the columns.</li>
+          <li>Click the <strong>+</strong> button next to it.</li>
+          <li>The buff is now part of your saved scheme.</li>
+        </ol>
+        <p>
+          Your scheme is saved per character profile and persists between sessions — you only need
+          to set it up once.
+        </p>
+
+        <h3>Applying and Clearing</h3>
+        <table class="wiki-table">
+          <thead>
+            <tr>
+              <th>Button</th>
+              <th>What it does</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Apply Scheme</strong></td>
+              <td>Applies all buffs currently saved in your scheme to your character.</td>
+            </tr>
+            <tr>
+              <td><strong>Clean Scheme</strong></td>
+              <td>Removes all buffs from your saved scheme. Does not remove active buffs on your character.</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h3>Buffer Level &amp; Progression</h3>
+        <p>
+          The Buffer has its own experience bar. A higher Buffer Level unlocks additional buff
+          slots in your scheme, giving you access to more buffs at once.
+        </p>
+
+        <table class="wiki-table">
+          <thead>
+            <tr>
+              <th>EXP Gain</th>
+              <th>L-Coin Cost</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>+1,000 EXP</td>
+              <td>1,000 L-Coin</td>
+            </tr>
+            <tr>
+              <td>+5,000 EXP</td>
+              <td>5,000 L-Coin</td>
+            </tr>
+            <tr>
+              <td>+10,000 EXP</td>
+              <td>10,000 L-Coin</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="info-box warning">
+          <div class="box-label">Requirement</div>
+          <p>
+            Buffer leveling is locked until you have completed approximately <strong>150 Rebirths</strong>.
+            The L-Coin purchase buttons will not be available before that threshold is reached.
+          </p>
+        </div>
+
+        <h3>L-Coin</h3>
+        <p>
+          L-Coin is the currency used to purchase Buffer EXP. It drops from:
+        </p>
+        <ul>
+          <li>Regular mobs throughout the world</li>
+          <li>Raid and world bosses</li>
+          <li>Seasonal and special in-game events</li>
+        </ul>
+
+        <div class="info-box">
+          <div class="box-label">Tip</div>
+          <p>
+            Focus on grinding zones where L-Coin drop rates are highest. Boss kills tend to give
+            larger L-Coin drops than regular mobs.
+          </p>
+        </div>
+
+        <!-- ==================== REBIRTH ==================== -->
+        <h2 id="rebirth">Rebirth</h2>
+        <div class="info-box">
+          <div class="box-label">Coming Soon</div>
+          <p>Detailed documentation for the Rebirth system will be added here.</p>
+        </div>
+
+        <!-- ==================== FACTION WAR ==================== -->
+        <h2 id="faction-war">Faction War</h2>
+        <div class="info-box">
+          <div class="box-label">Coming Soon</div>
+          <p>Detailed documentation for the Faction War system will be added here.</p>
+        </div>
+
+        <!-- ==================== RAID TELEPORT ==================== -->
+        <h2 id="raid-teleport">Raid Teleport</h2>
+        <div class="info-box">
+          <div class="box-label">Coming Soon</div>
+          <p>Detailed documentation for Raid Teleport will be added here.</p>
+        </div>
+
+        <!-- ==================== COLLECTION ==================== -->
+        <h2 id="collection">Collection</h2>
+        <div class="info-box">
+          <div class="box-label">Coming Soon</div>
+          <p>Detailed documentation for the Collection system will be added here.</p>
+        </div>
+
+        <!-- ==================== ALCHEMY ==================== -->
+        <h2 id="alchemy">Alchemy</h2>
+        <div class="info-box">
+          <div class="box-label">Coming Soon</div>
+          <p>Detailed documentation for the Alchemy system will be added here.</p>
+        </div>
+
+        <!-- ==================== SERVER TOOLS ==================== -->
+        <h2 id="server-tools">Server Tools</h2>
+        <div class="info-box">
+          <div class="box-label">Coming Soon</div>
+          <p>Detailed documentation for Server Tools will be added here.</p>
+        </div>
+
+      </div>
+    </main>
+  </div>
+
+  <footer class="site-footer">
+    <p>Kairos Wiki &copy; 2026 &mdash; Community-maintained. Not affiliated with NCSoft.</p>
+  </footer>
+
+</body>
+</html>

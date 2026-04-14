@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Kairos Wiki home page for GitHub Pages.">
+  <title>Kairos Wiki — Home</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Nunito:wght@400;600;700&family=Fira+Code:wght@400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="scripts.js"></script>
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header class="site-header">
+    <a href="index.html" class="header-logo">
+      <div class="logo-sigil">
+        <div class="sigil-glow"></div>
+        <svg viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg">
+          <polygon class="sigil-outer" points="17,1 32,9 32,25 17,33 2,25 2,9"/>
+          <polygon class="sigil-inner" points="17,6 27,11 27,23 17,28 7,23 7,11"/>
+          <circle class="sigil-core" cx="17" cy="17" r="2.5"/>
+        </svg>
+      </div>
+      <span class="logo-title">Kairos</span>
+      <div class="logo-divider"></div>
+      <span class="logo-wiki">Wiki</span>
+    </a>
+    <button class="menu-toggle" aria-label="Toggle navigation" onclick="toggleSidebar(this)">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <div class="site-wrapper">
+
+    <!-- ===== SIDEBAR ===== -->
+    <nav class="sidebar" id="sidebar">
+      <div class="sidebar-section">
+        <div class="sidebar-label">General</div>
+        <ul class="sidebar-nav">
+          <li><a href="index.html" class="active"><span class="nav-icon">🏠</span> Home</a></li>
+          <li><a href="getting-started.html"><span class="nav-icon">📖</span> Getting Started</a></li>
+          <li><a href="server-info.html"><span class="nav-icon">🖥️</span> Server Info</a></li>
+        </ul>
+      </div>
+      <div class="sidebar-section">
+        <div class="sidebar-label">Gameplay</div>
+        <ul class="sidebar-nav">
+          <li><a href="classes.html"><span class="nav-icon">⚔️</span> Classes</a></li>
+          <li><a href="zones.html"><span class="nav-icon">🗺️</span> Zones</a></li>
+          <li><a href="bosses.html"><span class="nav-icon">👹</span> Bosses</a></li>
+          <li><a href="events.html"><span class="nav-icon">🎉</span> Events</a></li>
+        </ul>
+      </div>
+      <div class="sidebar-section">
+        <div class="sidebar-label">Community Board</div>
+        <ul class="sidebar-nav">
+          <li><a href="community-board.html"><span class="nav-icon">📋</span> Overview</a></li>
+          <li><a href="community-board.html#buffer"><span class="nav-icon">✨</span> Buffer</a></li>
+          <li><a href="community-board.html#rebirth"><span class="nav-icon">🔄</span> Rebirth</a></li>
+          <li><a href="community-board.html#faction-war"><span class="nav-icon">⚔️</span> Faction War</a></li>
+        </ul>
+      </div>
+      <div class="sidebar-section">
+        <div class="sidebar-label">Reference</div>
+        <ul class="sidebar-nav">
+          <li><a href="commands.html"><span class="nav-icon">💬</span> Commands</a></li>
+          <li><a href="donations.html"><span class="nav-icon">💎</span> Donations</a></li>
+          <li><a href="faq.html"><span class="nav-icon">❓</span> FAQ</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- ===== MAIN CONTENT ===== -->
+    <main class="main-content">
+      <div class="content-wrapper">
+
+        <!-- Hero -->
+        <div class="hero">
+          <div class="hero-ornament">✦ ✦ ✦</div>
+          <h1 class="hero-title">Kairos</h1>
+          <p class="hero-tagline">Lineage 2 Custom Server — Community Wiki</p>
+          <div class="hero-stats">
+            <div class="stat-item">
+              <div class="stat-value">—</div>
+              <div class="stat-label">Chronicle</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-value">—</div>
+              <div class="stat-label">Rates</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-value">—</div>
+              <div class="stat-label">Online</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Welcome -->
+        <h2>Welcome</h2>
+        <p>
+          Welcome to the official Kairos community wiki. This is your complete resource for
+          everything about the server — from setup guides and class breakdowns to boss strategies
+          and event schedules.
+        </p>
+
+        <div class="info-box tip">
+          <div class="box-label">New Player?</div>
+          <p>Head over to the <a href="getting-started.html">Getting Started</a> page for client download, account creation, and your first steps in the world of Kairos.</p>
+        </div>
+
+        <!-- Navigation Cards -->
+        <h2>Explore</h2>
+        <div class="card-grid">
+          <a href="getting-started.html" class="card">
+            <div class="card-icon">📖</div>
+            <div class="card-title">Getting Started</div>
+            <div class="card-desc">Download the client, create your account, and connect.</div>
+          </a>
+          <a href="server-info.html" class="card">
+            <div class="card-icon">🖥️</div>
+            <div class="card-title">Server Info</div>
+            <div class="card-desc">Rates, features, rules, and what makes Kairos unique.</div>
+          </a>
+          <a href="classes.html" class="card">
+            <div class="card-icon">⚔️</div>
+            <div class="card-title">Classes</div>
+            <div class="card-desc">Class guides, builds, and progression paths.</div>
+          </a>
+          <a href="zones.html" class="card">
+            <div class="card-icon">🗺️</div>
+            <div class="card-title">Zones</div>
+            <div class="card-desc">Hunting grounds, level ranges, and drop tables.</div>
+          </a>
+          <a href="bosses.html" class="card">
+            <div class="card-icon">👹</div>
+            <div class="card-title">Bosses</div>
+            <div class="card-desc">Raid bosses, world bosses, and epic loot.</div>
+          </a>
+          <a href="events.html" class="card">
+            <div class="card-icon">🎉</div>
+            <div class="card-title">Events</div>
+            <div class="card-desc">Scheduled events, PvP tournaments, and seasonal content.</div>
+          </a>
+          <a href="community-board.html" class="card">
+            <div class="card-icon">📋</div>
+            <div class="card-title">Community Board</div>
+            <div class="card-desc">Buffer, Rebirth, Faction War, Alchemy, and more — all Alt+B features.</div>
+          </a>
+          <a href="commands.html" class="card">
+            <div class="card-icon">💬</div>
+            <div class="card-title">Commands</div>
+            <div class="card-desc">In-game chat and voice command reference.</div>
+          </a>
+          <a href="faq.html" class="card">
+            <div class="card-icon">❓</div>
+            <div class="card-title">FAQ</div>
+            <div class="card-desc">Common questions answered.</div>
+          </a>
+        </div>
+
+        <!-- Sample components showcase -->
+        <h2>Component Preview</h2>
+        <p>Below is a preview of the design components available across all wiki pages — tables, badges, info boxes, and code blocks.</p>
+
+        <h3>Sample Table</h3>
+        <table class="wiki-table">
+          <thead>
+            <tr>
+              <th>Feature</th>
+              <th>Value</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>XP Rate</td>
+              <td>—</td>
+              <td><span class="badge badge-gold">Custom</span></td>
+            </tr>
+            <tr>
+              <td>Drop Rate</td>
+              <td>—</td>
+              <td><span class="badge badge-gold">Custom</span></td>
+            </tr>
+            <tr>
+              <td>PvP System</td>
+              <td>—</td>
+              <td><span class="badge badge-red">Active</span></td>
+            </tr>
+            <tr>
+              <td>Olympiad</td>
+              <td>—</td>
+              <td><span class="badge badge-blue">Scheduled</span></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h3>Info Boxes</h3>
+        <div class="info-box">
+          <div class="box-label">Note</div>
+          <p>Default info box — for general notes and information.</p>
+        </div>
+        <div class="info-box tip">
+          <div class="box-label">Tip</div>
+          <p>Tip box — helpful advice and suggestions for players.</p>
+        </div>
+        <div class="info-box warning">
+          <div class="box-label">Warning</div>
+          <p>Warning box — important cautions and restrictions.</p>
+        </div>
+        <div class="info-box success">
+          <div class="box-label">Success</div>
+          <p>Success box — confirmed information and good news.</p>
+        </div>
+
+        <h3>Code Example</h3>
+        <p>In-game commands will use inline code styling like <code>.register</code> or <code>.changepassword</code>.</p>
+
+        <h3>Badges</h3>
+        <p>
+          <span class="badge badge-gold">Custom</span>
+          <span class="badge badge-red">Epic</span>
+          <span class="badge badge-blue">Arcane</span>
+        </p>
+
+      </div>
+    </main>
+  </div>
+
+  <footer class="site-footer">
+    <p>Kairos Wiki &copy; 2026 &mdash; Community-maintained. Not affiliated with NCSoft.</p>
+  </footer>
+
+</body>
+</html>
