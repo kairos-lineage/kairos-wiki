@@ -28,7 +28,8 @@
     <main class="main-content">
       <div class="content-wrapper">
         <div class="hero"><div class="hero-ornament">✦ ✦ ✦</div><h1 class="hero-title">Commands</h1><p class="hero-tagline">Reference the most important chat commands used on Kairos.</p></div>
-        <h2>Essential Commands</h2>
+
+        <h2 id="essential-commands">Essential Commands</h2>
         <p>Use the following commands to manage your account, party, and gameplay experience.</p>
         <table class="wiki-table">
           <thead><tr><th>Command</th><th>Action</th></tr></thead>
@@ -38,8 +39,90 @@
             <tr><td><code>.party</code></td><td>Manage party invitations and members.</td></tr>
           </tbody>
         </table>
-        <h2>Help</h2>
-        <p>For additional commands, type <code>.help</code> in chat or check the server message boards.</p>
+
+        <h2 id="play">Auto Play — <code>.play</code></h2>
+        <p>
+          Opens the <strong>Auto Play</strong> modal, which lets you configure your character's automated
+          hunting behaviour. Useful for grinding mobs hands-free.
+        </p>
+
+        <figure class="wiki-figure wiki-figure--sm">
+          <img src="images/auto-play-info.png" alt="Auto Play modal window">
+          <figcaption>The Auto Play modal — Settings, Target Mode, and action buttons.</figcaption>
+        </figure>
+
+        <h3 id="auto-play-settings">Settings</h3>
+        <table class="wiki-table">
+          <thead><tr><th>Setting</th><th>Description</th></tr></thead>
+          <tbody>
+            <tr>
+              <td><strong>Auto Attack</strong></td>
+              <td>Enables basic weapon attacks (swords, bows, daggers). No skills — pure auto-hit. Best for warriors and physical classes.</td>
+            </tr>
+            <tr>
+              <td><strong>Auto Loot</strong></td>
+              <td>Automatically picks up dropped items while Auto Play is running. Has no effect when Auto Play is stopped.</td>
+            </tr>
+            <tr>
+              <td><strong>Respectful Hunting</strong></td>
+              <td>Skips mobs that are already engaged by another player. Prevents accidental interference and reduces conflict in shared zones.</td>
+            </tr>
+            <tr>
+              <td><strong>Long Range Targeting</strong></td>
+              <td>Extends target acquisition range — ideal for archers, mages, and skill-based ranged classes. <span class="badge badge-orange">Not recommended for daggers</span></td>
+            </tr>
+            <tr>
+              <td><strong>Auto Rebirth</strong></td>
+              <td>Automatically triggers the Rebirth process when conditions are met. See <a href="community-board.html#rebirth">Rebirth</a> for details.</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h3 id="auto-play-target-mode">Target Mode</h3>
+        <table class="wiki-table">
+          <thead><tr><th>Mode</th><th>What it targets</th></tr></thead>
+          <tbody>
+            <tr><td><strong>Any Target</strong></td><td>Everything — monsters, players, and NPCs.</td></tr>
+            <tr><td><strong>Monster</strong></td><td>Monsters only. The safest choice for PvE grinding.</td></tr>
+            <tr><td><strong>Characters</strong></td><td>Players only. Use in PvP zones.</td></tr>
+            <tr><td><strong>NPC</strong></td><td>NPCs only.</td></tr>
+          </tbody>
+        </table>
+
+        <h3 id="auto-play-buttons">Buttons</h3>
+        <table class="wiki-table">
+          <thead><tr><th>Button</th><th>Description</th></tr></thead>
+          <tbody>
+            <tr>
+              <td><strong>Start / Stop</strong></td>
+              <td>Toggles Auto Play on and off. All settings above are applied at the moment you press Start.</td>
+            </tr>
+            <tr>
+              <td><strong>Buffs</strong></td>
+              <td>Select any learned skill to cast automatically when its buff duration expires. No slot limit — any available buff skill can be included.</td>
+            </tr>
+            <tr>
+              <td><strong>Offensive / Debuff</strong></td>
+              <td>Choose one or more attack skills used during Auto Play rotation. Supports multiple skills — pick your farming rotation here.</td>
+            </tr>
+            <tr>
+              <td><strong>Select Debuffs</strong></td>
+              <td>Up to <strong>5 debuff skills</strong> applied automatically to targets while Auto Play is active.</td>
+            </tr>
+            <tr>
+              <td><strong>Select Supply Items</strong></td>
+              <td>Add consumables (HP/MP potions, Cocktails, etc.) that are used automatically during combat when thresholds are reached.</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="info-box tip">
+          <div class="box-label">First time?</div>
+          <p>See <a href="getting-started.html#auto-play">Getting Started — Auto Play</a> for a step-by-step walkthrough on setting it up for the first time.</p>
+        </div>
+
+        <h2 id="help-command">Help</h2>
+        <p>For a full list of available commands type <code>.help</code> in chat or check the server message boards.</p>
       </div>
     </main>
   </div>

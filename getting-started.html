@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Getting started with Kairos Wiki.">
+  <meta name="description" content="Getting started with Kairos — your first steps in the world of Kairos L2.">
   <title>Kairos Wiki — Getting Started</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Nunito:wght@400;600;700&family=Fira+Code:wght@400&display=swap" rel="stylesheet">
@@ -18,6 +18,7 @@
     </a>
     <button class="menu-toggle" aria-label="Toggle navigation" onclick="toggleSidebar(this)"><span></span><span></span><span></span></button>
   </header>
+
   <div class="site-wrapper">
     <nav class="sidebar" id="sidebar">
       <div class="sidebar-section"><div class="sidebar-label">General</div><ul class="sidebar-nav"><li><a href="index.html"><span class="nav-icon">🏠</span> Home</a></li><li><a href="getting-started.html" class="active"><span class="nav-icon">📖</span> Getting Started</a></li><li><a href="server-info.html"><span class="nav-icon">🖥️</span> Server Info</a></li></ul></div>
@@ -25,21 +26,127 @@
       <div class="sidebar-section"><div class="sidebar-label">Community Board</div><ul class="sidebar-nav"><li><a href="community-board.html"><span class="nav-icon">📋</span> Overview</a></li><li><a href="community-board.html#buffer"><span class="nav-icon">✨</span> Buffer</a></li><li><a href="community-board.html#rebirth"><span class="nav-icon">🔄</span> Rebirth</a></li><li><a href="community-board.html#faction-war"><span class="nav-icon">⚔️</span> Faction War</a></li></ul></div>
       <div class="sidebar-section"><div class="sidebar-label">Reference</div><ul class="sidebar-nav"><li><a href="commands.html"><span class="nav-icon">💬</span> Commands</a></li><li><a href="donations.html"><span class="nav-icon">💎</span> Donations</a></li><li><a href="faq.html"><span class="nav-icon">❓</span> FAQ</a></li></ul></div>
     </nav>
+
     <main class="main-content">
       <div class="content-wrapper">
-        <div class="hero"><div class="hero-ornament">✦ ✦ ✦</div><h1 class="hero-title">Getting Started</h1><p class="hero-tagline">Connect to Kairos with ease and begin your first adventure.</p></div>
-        <h2>Download the Client</h2>
+
+        <div class="hero">
+          <div class="hero-ornament">✦ ✦ ✦</div>
+          <h1 class="hero-title">Getting Started</h1>
+          <p class="hero-tagline">Connect, create your character, and take your first steps in Kairos.</p>
+        </div>
+
+        <!-- ===== DOWNLOAD & CONNECT ===== -->
+        <h2 id="download">Download the Client</h2>
         <p>Get the latest Kairos client from the official download page and verify the files before running the launcher.</p>
         <div class="info-box tip"><div class="box-label">Pro Tip</div><p>Use the recommended client version to avoid compatibility issues with custom server scripts.</p></div>
-        <h2>Create Your Account</h2>
-        <p>Register a new account using the server's account creation system, then secure it with a strong password.</p>
-        <h2>Connecting to the Server</h2>
-        <p>Update your client settings with the Kairos server address and enter the game to begin your journey.</p>
-        <h3>Need help?</h3>
-        <p>Visit the <a href="faq.html">FAQ</a> or <a href="commands.html">Commands</a> page for quick troubleshooting commands.</p>
+
+        <h2 id="create-account">Create Your Account</h2>
+        <p>No registration required — your account is created automatically the first time you log in. Simply enter a username and password in the launcher and your account is ready.</p>
+
+        <h2 id="connect">Connecting to the Server</h2>
+        <p>Download and apply the full client patch before launching. The latest patch is always available in the dedicated Discord channel:</p>
+        <div class="info-box tip">
+          <div class="box-label">Full Patch</div>
+          <p>Get the latest patch from the <a href="https://discord.com/channels/1248039237207461978/1461064891233210554" target="_blank" rel="noopener">Kairos Discord — #patch-download</a> channel and apply it to your client folder before connecting.</p>
+        </div>
+
+        <!-- ===== FIRST STEPS ===== -->
+        <h2 id="first-steps">First Steps In-Game</h2>
+        <p>
+          Once your character is created you will spawn in the <strong>No-Grade Zone</strong> — the starting area
+          designed for new players. Follow the steps below to gear up and get into action fast.
+        </p>
+
+        <h3 id="free-buffer">Step 1 — Use the Free Buffer</h3>
+        <p>
+          Before doing anything else, open the
+          <a href="community-board.html#buffer">Community Board Buffer</a>
+          (<code>Alt+B</code> &rarr; <strong>Buffer</strong>) and apply your buff scheme.
+          The Buffer is free — no NPC hunting required. It gives you a full set of combat and support buffs
+          that make a significant difference even at starter level.
+        </p>
+        <div class="info-box tip">
+          <div class="box-label">New to the Buffer?</div>
+          <p>See the <a href="community-board.html#buffer">Buffer guide</a> to learn how to build and save your own scheme.</p>
+        </div>
+
+        <h3 id="beginner-pack">Step 2 — Claim Your Beginner Pack</h3>
+        <p>
+          Every new character receives a <strong>Beginner Pack</strong> in their inventory.
+          Open it to receive your starting equipment and consumables.
+        </p>
+
+        <figure class="wiki-figure wiki-figure--md">
+          <img src="images/begginer.png" alt="Beginner Pack item in inventory">
+          <figcaption>The Beginner Pack as it appears in your inventory — right-click to unpack.</figcaption>
+        </figure>
+
+        <h3 id="beginner-items">Step 3 — Your Starting Items</h3>
+        <p>
+          Unpacking the Beginner Pack fills your inventory with everything you need to start fighting:
+        </p>
+        <ul>
+          <li>Starter gear appropriate for your class</li>
+          <li><strong>Blue Cocktail</strong> — grants a set of support buffs</li>
+          <li><strong>Red Cocktail</strong> — grants a set of combat buffs</li>
+          <li>Miscellaneous consumables to sustain early grinding</li>
+        </ul>
+
+        <figure class="wiki-figure wiki-figure--md">
+          <img src="images/begginer-items.png" alt="Inventory after unpacking the Beginner Pack">
+          <figcaption>Your inventory after unpacking — cocktails, gear, and supplies ready to use.</figcaption>
+        </figure>
+
+        <div class="info-box">
+          <div class="box-label">Cocktails</div>
+          <p>
+            Use the <strong>Blue</strong> and <strong>Red Cocktails</strong> before heading into combat —
+            they act as extra buff layers on top of your Buffer scheme and wear off over time.
+          </p>
+        </div>
+
+        <h3 id="equip-gear">Step 4 — Equip Your Gear</h3>
+        <p>
+          Open your inventory (<code>Alt+B</code> or <code>I</code>), right-click each gear piece to equip it.
+          Make sure your weapon and armor are on before engaging any enemies.
+        </p>
+
+        <h3 id="auto-play">Step 5 — Start Hunting with Auto Play</h3>
+        <p>
+          Kairos includes a built-in <strong>Auto Play</strong> system. Type <code>.play</code> in chat to open
+          the Auto Play modal and configure your hunting behaviour — target selection, skill rotation, and looting.
+        </p>
+
+        <figure class="wiki-figure wiki-figure--md">
+          <img src="images/auto-play-info.png" alt="Auto Play modal window">
+          <figcaption>The Auto Play modal — configure target type, attack range, and looting before starting.</figcaption>
+        </figure>
+
+        <div class="info-box tip">
+          <div class="box-label">Quick Reference</div>
+          <p>See <a href="commands.html#play">Commands — .play</a> for the full list of Auto Play options and toggles.</p>
+        </div>
+
+        <!-- ===== CHECKLIST ===== -->
+        <h2 id="checklist">Quick Checklist</h2>
+        <ol class="step-list">
+          <li>Open <code>Alt+B</code> &rarr; Buffer and apply your buff scheme.</li>
+          <li>Claim and unpack the Beginner Pack from your inventory.</li>
+          <li>Use both Cocktails (Blue &amp; Red) for extra buffs.</li>
+          <li>Equip all gear pieces from the pack.</li>
+          <li>Type <code>.play</code> and configure Auto Play to start grinding.</li>
+        </ol>
+
+        <div class="info-box success">
+          <div class="box-label">You're Ready</div>
+          <p>With buffs active, gear equipped, and Auto Play running you're set to progress through the No-Grade Zone and beyond.</p>
+        </div>
+
       </div>
     </main>
   </div>
+
   <footer class="site-footer"><p>Kairos Wiki &copy; 2026 &mdash; Community-maintained. Not affiliated with NCSoft.</p></footer>
 </body>
 </html>
