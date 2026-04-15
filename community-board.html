@@ -65,6 +65,7 @@
           <li><a href="community-board.html#raid-teleport"><span class="nav-icon">🌀</span> Raid Teleport</a></li>
           <li><a href="community-board.html#collection"><span class="nav-icon">📦</span> Collection</a></li>
           <li><a href="community-board.html#alchemy"><span class="nav-icon">⚗️</span> Alchemy</a></li>
+          <li><a href="community-board.html#champion"><span class="nav-icon">💀</span> Champion</a></li>
           <li><a href="community-board.html#multiskill"><span class="nav-icon">📚</span> MultiSkill</a></li>
           <li><a href="community-board.html#server-tools"><span class="nav-icon">🔧</span> Server Tools</a></li>
         </ul>
@@ -133,6 +134,11 @@
             <div class="card-icon">⚗️</div>
             <div class="card-title">Alchemy</div>
             <div class="card-desc">Combine materials into powerful consumables.</div>
+          </a>
+          <a href="#champion" class="card">
+            <div class="card-icon">💀</div>
+            <div class="card-title">Champion System</div>
+            <div class="card-desc">Set your own difficulty — higher champion tier means harder mobs and better rewards.</div>
           </a>
           <a href="#server-tools" class="card">
             <div class="card-icon">🔧</div>
@@ -651,6 +657,64 @@
         <div class="info-box">
           <div class="box-label">Coming Soon</div>
           <p>Detailed documentation for the Alchemy system will be added here.</p>
+        </div>
+
+        <!-- ==================== CHAMPION ==================== -->
+        <h2 id="champion">Champion System</h2>
+        <p>
+          The Champion System is a unique Kairos feature that lets you control how difficult
+          champion-tier mobs are — and how rewarding they become. You choose the champion level;
+          the server applies it to champions throughout every zone you hunt in.
+        </p>
+
+        <figure class="wiki-figure wiki-figure--lg">
+          <img src="images/champion-system.png" alt="Champion System panel showing six champion types">
+          <figcaption>The Champion System panel — six difficulty tiers, each with a Select and Info button.</figcaption>
+        </figure>
+
+        <h3 id="champion-tiers">Champion Tiers</h3>
+        <p>
+          There are six tiers to choose from. Each step up increases champion stats and rewards:
+        </p>
+        <table class="wiki-table">
+          <thead>
+            <tr><th>Tier</th><th>Difficulty Increase</th><th>Reward Increase</th></tr>
+          </thead>
+          <tbody>
+            <tr><td><strong>Champion</strong></td><td>Baseline champion — mild increase over normal mobs</td><td>Low bonus</td></tr>
+            <tr><td><strong>Champion II</strong></td><td>Noticeably tougher HP, damage, and defense</td><td>Moderate bonus</td></tr>
+            <tr><td><strong>Champion III</strong></td><td>Significant stat increase — requires solid gear</td><td>Good bonus</td></tr>
+            <tr><td><strong>Champion IV</strong></td><td>Hard — high HP, high damage, fast attack speed</td><td>High bonus</td></tr>
+            <tr><td><strong>Champion V</strong></td><td>Very hard — challenging even for well-geared players</td><td>Very high bonus</td></tr>
+            <tr><td><strong>Champion X</strong></td><td>Extreme — maximum stats, maximum challenge</td><td>Maximum bonus</td></tr>
+          </tbody>
+        </table>
+
+        <h3 id="champion-how">How to Use It</h3>
+        <ol class="step-list">
+          <li>Open the Community Board (<code>Alt+B</code>) and select <strong>Champion Hard</strong>.</li>
+          <li>Click <strong>Info</strong> on any tier to preview its stat modifiers and rewards.</li>
+          <li>Click <strong>Select</strong> on the tier you want to activate.</li>
+          <li>To revert to the server default, click <strong>Disable Champion Selection</strong>.</li>
+        </ol>
+
+        <div class="info-box warning">
+          <div class="box-label">Zone Scaling Warning</div>
+          <p>
+            Your champion level applies across <em>all</em> zones — including more advanced ones you move
+            into as you progress. If you push to a higher zone and find champion mobs too difficult to kill,
+            <strong>lower your champion tier</strong> until your gear catches up. Never sacrifice efficient
+            farming trying to brute-force a tier that's above your current power level.
+          </p>
+        </div>
+
+        <div class="info-box tip">
+          <div class="box-label">General Advice</div>
+          <p>
+            Set the highest champion tier where you can kill champions comfortably without dying.
+            As you improve your gear and rebirths, push the tier up one step at a time to maximise
+            rewards without losing efficiency.
+          </p>
         </div>
 
         <!-- ==================== SERVER TOOLS ==================== -->
