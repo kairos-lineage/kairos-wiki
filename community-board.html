@@ -59,6 +59,7 @@
           <li><a href="community-board.html" class="active"><span class="nav-icon">📋</span> Overview</a></li>
           <li><a href="community-board.html#buffer"><span class="nav-icon">✨</span> Buffer</a></li>
           <li><a href="community-board.html#rebirth"><span class="nav-icon">🔄</span> Rebirth</a></li>
+          <li><a href="community-board.html#nobless"><span class="nav-icon">👑</span> Noblesse</a></li>
           <li><a href="community-board.html#tarot"><span class="nav-icon">🃏</span> Tarot Cards</a></li>
           <li><a href="community-board.html#faction-war"><span class="nav-icon">⚔️</span> Faction War</a></li>
           <li><a href="community-board.html#raid-teleport"><span class="nav-icon">🌀</span> Raid Teleport</a></li>
@@ -245,9 +246,116 @@
 
         <!-- ==================== REBIRTH ==================== -->
         <h2 id="rebirth">Rebirth</h2>
+        <p>
+          The Rebirth system resets your character back to level 1 in exchange for a
+          <strong>Rebirth Point</strong> — a permanent currency used to unlock and upgrade a large pool
+          of custom passive skills. Rebirths also serve as a hard requirement in several other systems
+          (such as the <a href="#buffer">Buffer</a> level-up). Accumulating rebirths is one of the most
+          important long-term progressions on Kairos.
+        </p>
+
+        <figure class="wiki-figure wiki-figure--lg">
+          <img src="images/rebirth-system.png" alt="Rebirth Skills panel showing stat and damage skill trees">
+          <figcaption>The Rebirth Skills panel — spend points across stats and PvE damage categories.</figcaption>
+        </figure>
+
+        <h3 id="rebirth-requirements">Requirements</h3>
+        <table class="wiki-table">
+          <thead>
+            <tr><th>Condition</th><th>Detail</th></tr>
+          </thead>
+          <tbody>
+            <tr><td><strong>Level</strong></td><td>Must be level <strong>85</strong> to perform a Rebirth</td></tr>
+            <tr><td><strong>Gold Bars (GB)</strong></td><td>Cost scales with each rebirth — see table below</td></tr>
+            <tr><td><strong>SP Scrolls</strong></td><td>Cost scales with each rebirth — see table below</td></tr>
+          </tbody>
+        </table>
+
+        <h3 id="rebirth-cost">Scaling Cost</h3>
+        <p>
+          Each consecutive rebirth costs more than the last. The cost equals the rebirth number in both
+          Gold Bars and SP Scrolls:
+        </p>
+        <table class="wiki-table">
+          <thead>
+            <tr><th>Rebirth #</th><th>Gold Bars</th><th>SP Scrolls</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>1st</td><td>1 GB</td><td>1 SP Scroll</td></tr>
+            <tr><td>2nd</td><td>2 GB</td><td>2 SP Scrolls</td></tr>
+            <tr><td>3rd</td><td>3 GB</td><td>3 SP Scrolls</td></tr>
+            <tr><td>Nth</td><td>N GB</td><td>N SP Scrolls</td></tr>
+          </tbody>
+        </table>
+
+        <h3 id="rebirth-sp-scrolls">SP Scrolls</h3>
+        <p>
+          SP Scrolls are crafted by converting accumulated SP points using a special skill unlocked upon
+          becoming <a href="#nobless">Noblesse</a>:
+        </p>
+        <ul>
+          <li><strong>Rate:</strong> 1,000,000,000 SP (1 billion) = 1 SP Scroll</li>
+          <li><strong>Cooldown:</strong> 1 minute per conversion</li>
+        </ul>
+        <div class="info-box tip">
+          <div class="box-label">Tip</div>
+          <p>
+            Farm SP-heavy zones and let it accumulate before converting. With a 1-minute cooldown per
+            scroll the conversion is fast — stock up before your next rebirth.
+          </p>
+        </div>
+
+        <h3 id="rebirth-skills">Rebirth Skills</h3>
+        <p>
+          Each Rebirth Point can be spent in the Rebirth Skills panel. There are <strong>over 40 skills</strong>
+          across two pages — stat bonuses and PvE damage modifiers:
+        </p>
+        <table class="wiki-table">
+          <thead>
+            <tr><th>Category</th><th>Skills</th><th>Bonus per Level</th><th>Max Levels</th></tr>
+          </thead>
+          <tbody>
+            <tr><td><strong>Strength</strong></td><td>STR</td><td>+1 STR</td><td>10</td></tr>
+            <tr><td><strong>Vitality</strong></td><td>CON</td><td>+1 CON / MEN</td><td>10</td></tr>
+            <tr><td><strong>Dexterity</strong></td><td>DEX</td><td>+1 DEX</td><td>10</td></tr>
+            <tr><td><strong>Intellect</strong></td><td>INT</td><td>+1 INT</td><td>10</td></tr>
+            <tr><td><strong>Wisdom</strong></td><td>WIT</td><td>+1 WIT</td><td>10</td></tr>
+            <tr><td><strong>PvE Melee</strong></td><td>P.PvE Dmg</td><td>+1% Physical PvE Dmg</td><td>10</td></tr>
+            <tr><td><strong>PvE Skill</strong></td><td>P.Skill PvE</td><td>+1% Skill PvE Dmg</td><td>10</td></tr>
+            <tr><td><strong>PvE Bow</strong></td><td>Bow PvE</td><td>+1% Bow PvE Dmg</td><td>10</td></tr>
+            <tr><td><strong>PvE BowSkill</strong></td><td>Bow SkillPvE</td><td>+1% Bow Skill PvE Dmg</td><td>10</td></tr>
+            <tr><td><strong>PvE Magic</strong></td><td>M.PvE Dmg</td><td>+1% Magic PvE Dmg</td><td>10</td></tr>
+          </tbody>
+        </table>
         <div class="info-box">
-          <div class="box-label">Coming Soon</div>
-          <p>Detailed documentation for the Rebirth system will be added here.</p>
+          <div class="box-label">More Skills</div>
+          <p>Use the <strong>Previous / Next</strong> buttons in the panel to browse all available skill pages — there are over 40 skills in total.</p>
+        </div>
+
+        <h3 id="nobless">Noblesse</h3>
+        <p>
+          Noblesse status is required to unlock the SP conversion skill needed for Rebirth. Obtain it
+          through the <strong>Noblesse Manager NPC in Giran</strong> by providing a
+          <strong>Cardinal Letter</strong>.
+        </p>
+        <table class="wiki-table">
+          <thead>
+            <tr><th>Item</th><th>How to Obtain</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Cardinal Letter</strong></td>
+              <td>Farm crafting materials in the <strong>Vesper Noble Zone</strong> — spoil/sweep mobs for free drops, or obtain via donation</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="info-box tip">
+          <div class="box-label">Free &amp; Easy</div>
+          <p>
+            Spoiling mobs in the Vesper Noble Zone is the free route — it's straightforward and requires
+            no special items. A full Noblesse guide with mob locations and exact material drops will be
+            added soon.
+          </p>
         </div>
 
         <!-- ==================== TAROT ==================== -->
