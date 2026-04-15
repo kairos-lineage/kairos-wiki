@@ -59,6 +59,7 @@
           <li><a href="community-board.html" class="active"><span class="nav-icon">📋</span> Overview</a></li>
           <li><a href="community-board.html#buffer"><span class="nav-icon">✨</span> Buffer</a></li>
           <li><a href="community-board.html#rebirth"><span class="nav-icon">🔄</span> Rebirth</a></li>
+          <li><a href="community-board.html#tarot"><span class="nav-icon">🃏</span> Tarot Cards</a></li>
           <li><a href="community-board.html#faction-war"><span class="nav-icon">⚔️</span> Faction War</a></li>
           <li><a href="community-board.html#raid-teleport"><span class="nav-icon">🌀</span> Raid Teleport</a></li>
           <li><a href="community-board.html#collection"><span class="nav-icon">📦</span> Collection</a></li>
@@ -106,6 +107,11 @@
             <div class="card-icon">🔄</div>
             <div class="card-title">Rebirth</div>
             <div class="card-desc">Reset your character for permanent stat bonuses.</div>
+          </a>
+          <a href="#tarot" class="card">
+            <div class="card-icon">🃏</div>
+            <div class="card-title">Tarot Cards</div>
+            <div class="card-desc">Open card packs from bosses for Doll pieces, Relic pieces, and enchants.</div>
           </a>
           <a href="#faction-war" class="card">
             <div class="card-icon">⚔️</div>
@@ -242,6 +248,109 @@
         <div class="info-box">
           <div class="box-label">Coming Soon</div>
           <p>Detailed documentation for the Rebirth system will be added here.</p>
+        </div>
+
+        <!-- ==================== TAROT ==================== -->
+        <h2 id="tarot">Tarot Cards</h2>
+        <p>
+          Tarot Cards is a system that lets players open card packs to obtain enchants, random items,
+          and most importantly — pieces for the <a href="#dolls">Doll System</a> and
+          <a href="#relics">Relics</a>.
+        </p>
+
+        <figure class="wiki-figure wiki-figure--lg">
+          <img src="images/tarot-cards.png" alt="Tarot Cards panel showing Common, Rare and Epic cards">
+          <figcaption>The Tarot Cards panel — three card grades, two boss sources, and bulk-open options.</figcaption>
+        </figure>
+
+        <h3 id="tarot-cards-grades">Card Grades</h3>
+        <p>There are three card grades, each with increasing rarity and better reward pools:</p>
+        <table class="wiki-table">
+          <thead>
+            <tr><th>Grade</th><th>Appearance</th><th>Primary Rewards</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Common</strong></td>
+              <td>Dark brown card</td>
+              <td>Doll pieces, basic items</td>
+            </tr>
+            <tr>
+              <td><strong>Rare</strong></td>
+              <td>Silver card</td>
+              <td>Doll pieces, equipment enchants, improved items</td>
+            </tr>
+            <tr>
+              <td><strong>Epic</strong></td>
+              <td>Gold card</td>
+              <td>Relic pieces, top-tier enchants, special rewards</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h3 id="tarot-sources">Where Cards Drop</h3>
+        <p>
+          Cards are separated into two pools depending on the boss difficulty. Use the
+          <strong>Home</strong> and <strong>Hard</strong> tabs in the panel to switch between them:
+        </p>
+        <table class="wiki-table">
+          <thead>
+            <tr><th>Tab</th><th>Boss Type</th><th>Cards Obtained</th><th>Rewards Focus</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Home</strong></td>
+              <td>Normal Bosses</td>
+              <td>Common &amp; Rare cards</td>
+              <td>Doll pieces and items</td>
+            </tr>
+            <tr>
+              <td><strong>Hard</strong></td>
+              <td>Hard Bosses</td>
+              <td>Epic cards</td>
+              <td>Relic pieces and top enchants</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h3 id="tarot-opening">Opening Cards</h3>
+        <p>
+          Each card grade supports bulk opening. Select the amount before opening:
+        </p>
+        <table class="wiki-table">
+          <thead>
+            <tr><th>Option</th><th>Cards Opened</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>x1</td><td>Single card</td></tr>
+            <tr><td>x5</td><td>5 cards at once</td></tr>
+            <tr><td>x25</td><td>25 cards at once</td></tr>
+            <tr><td>x250</td><td>250 cards at once</td></tr>
+          </tbody>
+        </table>
+
+        <div class="info-box tip">
+          <div class="box-label">Check Rewards First</div>
+          <p>
+            Click the <strong>?</strong> button next to any card grade to preview the full reward table
+            before opening — useful for planning which boss type to farm.
+          </p>
+        </div>
+
+        <h3 id="tarot-rewards">Special Rewards</h3>
+        <p>Beyond Doll and Relic pieces, Tarot Cards can yield:</p>
+        <ul>
+          <li><strong>Weapon enchant scrolls</strong> — upgrade your weapon's enchant level</li>
+          <li><strong>Armor enchant scrolls</strong> — upgrade your armor's enchant level</li>
+          <li>Various other items depending on card grade and current event pool</li>
+        </ul>
+
+        <div class="info-box">
+          <div class="box-label">Related Systems</div>
+          <p>
+            Doll pieces obtained from Normal card packs are used in the <a href="#dolls">Doll System</a>.
+            Epic card pieces feed into <a href="#relics">Relics</a>. Both grant powerful passive bonuses.
+          </p>
         </div>
 
         <!-- ==================== FACTION WAR ==================== -->
