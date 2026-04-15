@@ -63,6 +63,7 @@
           <li><a href="community-board.html#raid-teleport"><span class="nav-icon">🌀</span> Raid Teleport</a></li>
           <li><a href="community-board.html#collection"><span class="nav-icon">📦</span> Collection</a></li>
           <li><a href="community-board.html#alchemy"><span class="nav-icon">⚗️</span> Alchemy</a></li>
+          <li><a href="community-board.html#multiskill"><span class="nav-icon">📚</span> MultiSkill</a></li>
           <li><a href="community-board.html#server-tools"><span class="nav-icon">🔧</span> Server Tools</a></li>
         </ul>
       </div>
@@ -273,9 +274,125 @@
 
         <!-- ==================== SERVER TOOLS ==================== -->
         <h2 id="multiskill">MultiSkill</h2>
+        <p>
+          MultiSkill lets you learn passive and active skills from <strong>any retail class</strong> in the game,
+          as well as exclusive <strong>Custom Skills</strong> unique to Kairos. Skills are organised by class and
+          grouped into progression tiers — the higher the tier, the stronger the skill and the rarer the
+          material required.
+        </p>
+
+        <figure class="wiki-figure wiki-figure--sm">
+          <img src="images/multiskills.png" alt="MultiSkill panel showing retail classes and custom skills">
+          <figcaption>The MultiSkill panel — retail classes listed in red, Custom Skills highlighted at the bottom.</figcaption>
+        </figure>
+
         <div class="info-box">
-          <div class="box-label">Coming Soon</div>
-          <p>Detailed documentation for the MultiSkill system will be added here. For an early use-case see <a href="getting-started.html#mana-issue">Getting Started — Mana Issue Fix</a>.</p>
+          <div class="box-label">Cost Rule</div>
+          <p>
+            <strong>First time learning a skill:</strong> Adena + Class Stone + SP<br>
+            <strong>Upgrading an existing skill:</strong> Adena + SP only — no stone needed.
+          </p>
+        </div>
+
+        <h3 id="multiskill-retail">Retail Classes</h3>
+        <p>
+          All retail classes are available and grouped by their class-change tier. Each tier requires
+          a specific <strong>Class Stone</strong> to unlock the first level of any skill in that group.
+          Stones drop from monsters in the corresponding farming zones.
+        </p>
+
+        <table class="wiki-table">
+          <thead>
+            <tr>
+              <th>Tier</th>
+              <th>Class Change</th>
+              <th>Level Requirement</th>
+              <th>Stone Required</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><span class="badge badge-gold">Tier 1</span></td>
+              <td>Starting Classes</td>
+              <td>—</td>
+              <td>Class Stone I</td>
+            </tr>
+            <tr>
+              <td><span class="badge badge-gold">Tier 2</span></td>
+              <td>1st Class Change</td>
+              <td>Level 20</td>
+              <td>Class Stone II</td>
+            </tr>
+            <tr>
+              <td><span class="badge badge-gold">Tier 3</span></td>
+              <td>2nd Class Change</td>
+              <td>Level 40</td>
+              <td>Class Stone III</td>
+            </tr>
+            <tr>
+              <td><span class="badge badge-gold">Tier 4</span></td>
+              <td>3rd Class Change</td>
+              <td>Level 76</td>
+              <td>Class Stone IV</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="info-box tip">
+          <div class="box-label">Example</div>
+          <p>
+            Want to learn the Orc Shaman <em>Weapon Mastery</em> skill? It's a starting-class skill —
+            grab a <strong>Class Stone I</strong> from a low-level farming zone, open MultiSkill,
+            find the Orc class, and learn it. Subsequent level upgrades cost Adena + SP only.
+            See <a href="getting-started.html#mana-issue">Getting Started — Mana Fix</a> for a walkthrough.
+          </p>
+        </div>
+
+        <h3 id="multiskill-custom">Custom Skills</h3>
+        <p>
+          At the bottom of the MultiSkill panel sits the <strong>Custom Skills</strong> section — a set of
+          exclusive skills available only on Kairos. These follow the same learning pattern as retail skills
+          but use a rarer material obtained in higher-level zones.
+        </p>
+
+        <table class="wiki-table">
+          <thead>
+            <tr>
+              <th>Property</th>
+              <th>Details</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Stone Required</strong></td>
+              <td>Class Stone V — drops in higher-level farming zones</td>
+            </tr>
+            <tr>
+              <td><strong>First Unlock</strong></td>
+              <td>Adena + Class Stone V + SP</td>
+            </tr>
+            <tr>
+              <td><strong>Level Upgrades</strong></td>
+              <td>Adena + SP only (no additional stone)</td>
+            </tr>
+            <tr>
+              <td><strong>Skill Type</strong></td>
+              <td>All custom skills are <strong>passive</strong></td>
+            </tr>
+            <tr>
+              <td><strong>Enchanting</strong></td>
+              <td>Supported — use the standard Lineage 2 skill enchantment system</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="info-box warning">
+          <div class="box-label">Hint</div>
+          <p>
+            All Custom Skills are <strong>passive</strong> — they work automatically once learned with no
+            activation needed. They can also be <strong>enchanted</strong> using the standard L2 skill
+            enchantment system, making them significantly stronger at higher enchant levels.
+          </p>
         </div>
 
         <h2 id="server-tools">Server Tools</h2>
