@@ -287,6 +287,10 @@ body::after {
   animation: fadeUp 0.6s var(--ease) both;
 }
 
+.content-wrapper ul {
+  padding-left: 2rem;
+}
+
 @keyframes fadeUp {
   from { opacity: 0; transform: translateY(16px); }
   to { opacity: 1; transform: translateY(0); }
@@ -415,7 +419,7 @@ h1, h2, h3, h4, h5, h6 {
 h2 {
   font-size: 1.25rem;
   font-weight: 400;
-  margin-top: 2.8rem;
+  margin-top: 5.8rem;
   margin-bottom: 1rem;
   padding-bottom: 0.5rem;
   border-bottom: 1px solid var(--border);
@@ -610,6 +614,20 @@ strong { color: var(--text-bright); font-weight: 700; }
   font-weight: 600;
 }
 
+.todo {
+  display: inline-block;
+  background: #b8860b;
+  color: #fff8e1;
+  font-family: var(--font-body);
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  padding: 0.15em 0.55em;
+  border-radius: 2px;
+  border: 1px solid #d4a017;
+}
+
 code {
   font-family: var(--font-mono);
   font-size: 0.82em;
@@ -631,6 +649,7 @@ h2:target, h3:target {
   border-radius: 4px;
   padding-left: 0.5rem;
   margin-left: -0.5rem;
+  padding-top: 5rem;
 }
 
 /* ===== WIKI IMAGES ===== */
