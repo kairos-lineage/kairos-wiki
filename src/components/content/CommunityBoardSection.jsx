@@ -125,10 +125,24 @@ export default function CommunityBoardSection({ data }) {
             </>
           )}
 
+          {/* How to Obtain (same shape as howItWorks) */}
+          {data.obtaining && <HowItWorks data={data.obtaining} />}
+
+          {/* Grades table (same shape as a generic table entry) */}
+          {data.grades && (
+            <div>
+              <SectionHeading id={data.grades.id} level={3}>{data.grades.title}</SectionHeading>
+              <SectionTable data={data.grades} />
+            </div>
+          )}
+
           {/* How It Works */}
           {data.howItWorks && <HowItWorks data={data.howItWorks} />}
 
-          {/* Upgrade costs table (guardians) */}
+          {/* Leveling steps (same shape as howItWorks) */}
+          {data.leveling && <HowItWorks data={data.leveling} />}
+
+          {/* Upgrade costs table (guardians, dolls, relics) */}
           {data.upgradeCosts && <UpgradeTable data={data.upgradeCosts} />}
 
           {/* Difficulty rewards figure (player-difficulty) */}

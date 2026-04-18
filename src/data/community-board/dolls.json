@@ -1,1 +1,59 @@
-{ "id": "dolls", "title": "Dolls", "stub": true, "stubNote": "Doll pieces are obtained by opening Normal boss Tarot Cards — see the Tarot Cards section." }
+{
+  "id": "dolls",
+  "title": "Dolls",
+  "intro": "Dolls are passive companions that permanently boost your character's stats once registered. Each activated Doll has its own stats — the more you activate, the stronger your character becomes. Dolls also have their own levels, further increasing their benefit as you invest in them.",
+  "obtaining": {
+    "id": "dolls-obtaining",
+    "title": "How to Obtain Dolls",
+    "steps": [
+      "Kill **Normal Raid Bosses** — they drop Normal Tarot Cards.",
+      "Open the Community Board (`Alt+B`) → **Tarot Cards** and open your Normal card packs. Bulk opening (x1, x5, x25, x250) is available.",
+      "Doll pieces appear directly in your **inventory** after opening the cards.",
+      "Open the Community Board (`Alt+B`) → **Dolls** and register your doll pieces to activate them."
+    ]
+  },
+  "grades": {
+    "id": "dolls-grades",
+    "title": "Doll Grades",
+    "preText": "There are **5 grades** of Dolls, progressing from the most basic to the most powerful. Higher grades require rarer Tarot Card pieces but provide significantly stronger permanent stats:",
+    "columns": ["Grade", "Tier", "Power"],
+    "rows": [
+      { "cells": ["No Grade", "1 — Starter",  "Basic stat bonuses"] },
+      { "cells": ["D Grade",  "2",             "Improved bonuses"] },
+      { "cells": ["C Grade",  "3",             "Notable stat boost"] },
+      { "cells": ["B Grade",  "4",             "Strong bonuses"] },
+      { "cells": ["A Grade",  "5 — Endgame",   "Maximum stat gains"] }
+    ]
+  },
+  "leveling": {
+    "id": "dolls-leveling",
+    "title": "Unlocking & Leveling",
+    "steps": [
+      "**Unlock the Doll first** — register the required pieces to activate the Doll slot.",
+      "**Level up 10 times** — each Doll can be leveled from 1 to 10 after unlocking.",
+      "Each level requires **more Doll pieces** and **more Gold Bars (GB)** than the previous.",
+      "Each level increases the Doll's permanent stat contribution to your character."
+    ]
+  },
+  "upgradeCosts": {
+    "id": "dolls-upgrade-costs",
+    "title": "Level Costs (No Grade Example)",
+    "columns": ["Level", "Dolls Required", "Gold Bars (GB)"],
+    "rows": [
+      { "cells": ["Unlock",   null, null], "todo": "add unlock cost" },
+      { "cells": ["Lv 1 → 2", null, null], "todo": "add level costs" }
+    ]
+  },
+  "infoBoxes": [
+    {
+      "variant": "tip",
+      "label": "Stack Your Dolls",
+      "body": "Each *activated* Doll adds its stats independently — registering more Dolls stacks the bonuses. Focus on unlocking as many slots as possible before pushing individual Doll levels too high."
+    },
+    {
+      "variant": "",
+      "label": "Related System",
+      "body": "**Relics** follow the same principle but use pieces from **Hard boss Tarot Cards** and are considerably more powerful. See the Relics section for details."
+    }
+  ]
+}
