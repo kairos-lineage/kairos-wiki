@@ -1,0 +1,70 @@
+{
+  "id": "faction-war",
+  "title": "Faction War",
+  "intro": "Faction War is a simple server-wide competition between two factions. Choose a side, contribute to help it grow, and earn powerful rewards as your faction levels up.",
+  "figure": {
+    "src": "images/faction-war.png",
+    "alt": "Faction War panel showing both factions and the Faction Leader buff",
+    "caption": "The Faction War panel — current standings, your contribution, and the leading faction's passive buff.",
+    "size": "lg"
+  },
+  "tables": [
+    {
+      "id": "faction-war-factions",
+      "title": "The Two Factions",
+      "columns": ["Faction", "Description"],
+      "rows": [
+        { "cells": ["Order of Einhasad", "The faction of light — join to fight under Einhasad's banner."] },
+        { "cells": ["Cult of Shilen",    "The faction of darkness — join to serve under Shilen's power."] }
+      ]
+    }
+  ],
+  "infoBoxes": [
+    {
+      "id": "faction-balance",
+      "variant": "warning",
+      "label": "Keep the Balance",
+      "body": "Only the **leading faction** receives the buff. Join the faction with fewer members to help keep competition fair."
+    }
+  ],
+  "howItWorks": {
+    "id": "faction-war-how",
+    "title": "How It Works",
+    "steps": [
+      "Open the Community Board (`Alt+B`) and select **Faction War**.",
+      "Click **Join Einhasad** or **Join Shilen** to pick your faction.",
+      "Contribute **Gold Bars** using the *Contribute EXP* button to increase your faction's experience.",
+      "As the faction's level rises, members receive **new items and rewards**.",
+      "The faction in the lead earns the **Faction Leader** passive buff for all its members."
+    ]
+  },
+  "factionLeaderBuff": {
+    "figure": {
+      "src": "images/faction-buff.png",
+      "alt": "Faction Leader Lv 1 passive skill tooltip",
+      "caption": "Faction Leader Lv 1 — passive buff granted to all members of the leading faction.",
+      "size": "sm"
+    },
+    "id": "faction-war-buff",
+    "title": "Faction Leader Buff",
+    "columns": ["Stat", "Bonus (Lv 1)"],
+    "rows": [
+      { "cells": ["PvE Damage",   "+15%"] },
+      { "cells": ["Drop Rate",    "+10%"] },
+      { "cells": ["Spoil Rate",   "+10%"] },
+      { "cells": ["Adena Amount", "+15%"] },
+      { "cells": ["Max HP",       "+1,000"] },
+      { "cells": ["Speed",        "+35"] }
+    ]
+  },
+  "rewardsTable": {
+    "id": "faction-war-rewards",
+    "title": "Rewards & Rankings",
+    "columns": ["Button", "Action"],
+    "rows": [
+      { "cells": ["Contribute EXP",  "Spend Gold Bars to add EXP to your faction's total."] },
+      { "cells": ["View Rewards",    "See the items unlocked at each faction level."] },
+      { "cells": ["View Rankings",   "Check top contributors across both factions."] }
+    ]
+  }
+}

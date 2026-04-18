@@ -1,0 +1,56 @@
+{
+  "id": "collection",
+  "title": "Collection",
+  "intro": "Collection is one of the **most important long-term systems** in Kairos. As your character progresses through gear tiers you will need to continuously revisit the Collection system — farming materials from multiple zones, enchanting specific items, and completing sets to earn permanent stat boosts that compound over time.",
+  "figure": {
+    "src": "images/collections.png",
+    "alt": "Weapon Collections panel showing Dragon Sword entries",
+    "caption": "The Weapon Collections panel — each entry requires specific items, some with enchant requirements.",
+    "size": "lg"
+  },
+  "howItWorks": {
+    "id": "collection-how",
+    "title": "How It Works",
+    "steps": [
+      "Open the Community Board (`Alt+B`) and select **Collection**.",
+      "Browse the categories — Weapons, Armors, Jewels, and more.",
+      "Click **View** on any entry to see the required items and enchant levels.",
+      "Farm and enchant the required materials, then submit them to complete the collection.",
+      "Every **5 completed collections** the system levels up and grants a passive stat boost."
+    ]
+  },
+  "tables": [
+    {
+      "id": "collection-rewards",
+      "title": "Rewards",
+      "columns": ["Milestone", "Reward"],
+      "rows": [
+        { "cells": ["Every 5 collections completed",   "System level-up + permanent passive stat improvement"] },
+        { "cells": ["Individual collection completed", "Counts toward the next level-up milestone"] }
+      ]
+    },
+    {
+      "id": "collection-categories",
+      "title": "Categories",
+      "preText": "Collections are grouped by item type. You will need to farm materials across **multiple zones** as you progress:",
+      "columns": ["Category", "Focus"],
+      "rows": [
+        { "cells": ["Weapons", "Weapons at various enchant levels from different gear tiers"] },
+        { "cells": ["Armors",  "Armor pieces and sets, some requiring enchantment"] },
+        { "cells": ["Jewels",  "Accessories and jewelry from progressive zones"] }
+      ]
+    }
+  ],
+  "infoBoxes": [
+    {
+      "variant": "warning",
+      "label": "Don't Rush",
+      "body": "Do not try to complete collections all at once early on — the material and enchant requirements scale with gear tier. Progress collections naturally as you upgrade your equipment. Each new gear tier will unlock new collection entries requiring better-enchanted versions of the items you're already using."
+    },
+    {
+      "variant": "tip",
+      "label": "Long-Term Strategy",
+      "body": "Treat Collection as a permanent side activity — every time you upgrade a piece of gear, check if the old version (possibly enchanted) completes a collection entry before discarding it. The passive stat bonuses add up significantly over hundreds of completed entries."
+    }
+  ]
+}

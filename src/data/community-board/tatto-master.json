@@ -1,0 +1,73 @@
+{
+  "id": "tatto-master",
+  "title": "Tatto Master",
+  "intro": "Tatto Master is a system of **passive skills** that permanently improve your character's stats. Skills are activated by obtaining the required materials and registering them in the system — no active casting needed once learned.",
+  "intro2": "There are **4 pages** of tattoos covering a wide range of bonuses. Some are learned once and stay at a fixed level; others can be upgraded progressively as you reach higher zones and content.",
+  "figure": {
+    "src": "images/tatoo-master.png",
+    "alt": "Tatto Master panel showing skill list and levels",
+    "caption": "Tatto Master panel — 4 pages of passive skills, each showing current level and a View Stats button.",
+    "size": "lg"
+  },
+  "howItWorks": {
+    "id": "tatto-master-how",
+    "title": "How It Works",
+    "steps": [
+      "Open the Community Board (`Alt+B`) and select **Tatto Master**.",
+      "Browse the 4 pages of available tattoos using the **Next** button.",
+      "Click **View Stats** on any tattoo to see what it does and what materials it requires.",
+      "Farm the required materials and return to register the tattoo — the passive activates immediately.",
+      "For upgradeable tattoos, repeat with higher-tier materials to increase the level."
+    ]
+  },
+  "tables": [
+    {
+      "id": "tatto-master-types",
+      "title": "Tattoo Types",
+      "columns": ["Type", "Description"],
+      "rows": [
+        { "cells": ["Single Learn", "Learned once — fixed passive bonus, no upgrade path"] },
+        { "cells": ["Progressive",  "Can be upgraded through multiple levels — each level requires better materials and grants a stronger bonus"] }
+      ]
+    },
+    {
+      "id": "tatto-master-sources",
+      "title": "Material Sources",
+      "preText": "Tattoo materials come from a variety of content — the harder the source, the stronger the tattoo it unlocks:",
+      "columns": ["Source", "Examples"],
+      "rows": [
+        { "cells": ["Farming Zones",       "Regular mob drops as you progress through zones"] },
+        { "cells": ["Instances",           "Instanced dungeon runs"] },
+        { "cells": ["Catacombs",           "Catacomb-specific mob drops"] },
+        { "cells": ["Special Raid Events", "Event raid bosses and seasonal content"] }
+      ]
+    },
+    {
+      "id": "tatto-master-skills",
+      "title": "Known Tattoos (Page 1)",
+      "columns": ["Tattoo Name", "Focus"],
+      "rows": [
+        { "cells": ["Ultimate Power Mastery", "General power increase"] },
+        { "cells": ["Boos Zone",              "Boss zone performance"] },
+        { "cells": ["Raid Boss Detection",    "Raid boss encounters"] },
+        { "cells": ["Flame Light",            "Offensive stat boost"] },
+        { "cells": ["Execution Grounds",      "Execution Grounds zone content"] },
+        { "cells": ["Catacomb Master",        "Catacomb zone performance"] },
+        { "cells": ["Balok Mastery",          "Balok raid encounter"] },
+        { "cells": ["Scorpion Mastery",       "Scorpion zone content"] }
+      ]
+    }
+  ],
+  "infoBoxes": [
+    {
+      "variant": "",
+      "label": "3 More Pages",
+      "body": "Page 1 of 4 is shown above. Use the **Next** button in the panel to browse the remaining tattoos — full details available via the **View Stats** button on each entry."
+    },
+    {
+      "variant": "tip",
+      "label": "Strategy",
+      "body": "Prioritise tattoos that match the content you are actively farming. If you spend a lot of time in catacombs, unlock **Catacomb Master** first. As you move into harder zones and instances, unlock and upgrade the relevant tattoos to stay efficient."
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "id": "tarot",
+  "title": "Tarot Cards",
+  "intro": "Tarot Cards is a system that lets players open card packs to obtain enchants, random items, and most importantly — pieces for the Doll System and Relics.",
+  "figure": {
+    "src": "images/tarot-cards.png",
+    "alt": "Tarot Cards panel showing Common, Rare and Epic cards",
+    "caption": "The Tarot Cards panel — three card grades, two boss sources, and bulk-open options.",
+    "size": "lg"
+  },
+  "tables": [
+    {
+      "id": "tarot-cards-grades",
+      "title": "Card Grades",
+      "preText": "Both boss pools share the same three grades. The boss type determines what you get — grade affects the quality of extras alongside the main reward:",
+      "columns": ["Grade", "Normal Bosses → Dolls", "Hard Bosses → Relics"],
+      "rows": [
+        { "cells": ["Common", "Doll pieces + basic items",                    "Relic pieces + basic items"] },
+        { "cells": ["Rare",   "Doll pieces + equipment enchants",             "Relic pieces + equipment enchants"] },
+        { "cells": ["Epic",   "Doll pieces + top enchants & special rewards", "Relic pieces + top enchants & special rewards"] }
+      ]
+    },
+    {
+      "id": "tarot-sources",
+      "title": "Where Cards Drop & What They Give",
+      "preText": "Cards are split into two pools by boss difficulty. Use the Home and Hard tabs in the panel to switch between them:",
+      "columns": ["Tab", "Boss Type", "Cards Available", "All Grades Reward"],
+      "rows": [
+        { "cells": ["Home", "Normal Bosses", "Common Normal, Rare Normal, Epic Normal", "Doll pieces"] },
+        { "cells": ["Hard", "Hard Bosses",   "Common Hard, Rare Hard, Epic Hard",       "Relic pieces"] }
+      ]
+    },
+    {
+      "id": "tarot-opening",
+      "title": "Opening Cards",
+      "preText": "Each card grade supports bulk opening. Select the amount before opening:",
+      "columns": ["Option", "Cards Opened"],
+      "rows": [
+        { "cells": ["x1",   "Single card"] },
+        { "cells": ["x5",   "5 cards at once"] },
+        { "cells": ["x25",  "25 cards at once"] },
+        { "cells": ["x250", "250 cards at once"] }
+      ]
+    }
+  ],
+  "infoBoxes": [
+    {
+      "variant": "",
+      "label": "Key Rule",
+      "body": "**Normal boss cards (all grades) → Dolls.** **Hard boss cards (all grades) → Relics.** Higher grade cards within the same pool give better enchants and extra items alongside the Doll or Relic piece."
+    },
+    {
+      "variant": "tip",
+      "label": "Check Rewards First",
+      "body": "Click the **?** button next to any card grade to preview the full reward table before opening — useful for planning which boss type to farm."
+    }
+  ],
+  "specialRewards": {
+    "id": "tarot-rewards",
+    "title": "Special Rewards",
+    "preText": "Beyond Doll and Relic pieces, Tarot Cards can yield:",
+    "items": [
+      "**Weapon enchant scrolls** — upgrade your weapon's enchant level",
+      "**Armor enchant scrolls** — upgrade your armor's enchant level",
+      "Various other items depending on card grade and current event pool"
+    ]
+  }
+}

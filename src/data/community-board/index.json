@@ -1,0 +1,27 @@
+{
+  "title": "Community Board",
+  "tagline": "Your central hub for server features — press Alt+B in-game to open it.",
+  "intro": "The Community Board is a custom in-game panel that gives access to all of Kairos's extended features from one place. Open it at any time by pressing Alt+B. The left-hand menu lists every available section — click any entry to navigate to it.",
+  "cards": [
+    { "id": "server-tools",     "icon": "🔧", "title": "Server Tools",      "desc": "Utility tools — premium status, offline trade, and more." },
+    { "id": "faction-war",      "icon": "⚔️", "title": "Faction War",       "desc": "Join a faction and compete in ongoing PvP conflicts." },
+    { "id": "buffer",           "icon": "✨", "title": "Buffer",             "desc": "Save and apply personal buff schemes. Level up with L-Coin." },
+    { "id": "tarot",            "icon": "🃏", "title": "Tarot Cards",       "desc": "Open card packs from bosses for Doll pieces, Relic pieces, and enchants." },
+    { "id": "nobless",          "icon": "👑", "title": "Noblesse",          "desc": "Unlock Noblesse status to enable SP conversion for Rebirth." },
+    { "id": "rebirth",          "icon": "🔄", "title": "Rebirth",           "desc": "Reset your character for permanent rebirth skill points." },
+    { "id": "raid-teleport",    "icon": "🌀", "title": "Raid Teleport",     "desc": "Instantly teleport to raid boss locations." },
+    { "id": "collection",       "icon": "📦", "title": "Collection",        "desc": "Complete item sets for permanent passive stat boosts." },
+    { "id": "alchemy",          "icon": "⚗️", "title": "Alchemy",           "desc": "Combine materials into powerful consumables." },
+    { "id": "champion",         "icon": "💀", "title": "Champion Hard",     "desc": "Choose your difficulty — higher champion tier, harder mobs, better rewards." },
+    { "id": "multiskill",       "icon": "📚", "title": "MultiSkill",        "desc": "Learn skills from any retail class or unlock exclusive custom passives." },
+    { "id": "tatto-master",     "icon": "🔱", "title": "Tatto Master",      "desc": "Register tattoo passives using zone materials for permanent stat boosts." },
+    { "id": "player-difficulty","icon": "⚖️", "title": "Player Difficulty", "desc": "Adjust personal difficulty settings for extra challenge and rewards." },
+    { "id": "guardians",        "icon": "🛡️", "title": "Guardians",         "desc": "Powerful guardian companions that assist in combat." },
+    { "id": "dolls",            "icon": "🪆", "title": "Dolls",             "desc": "Collectible dolls built from Normal Tarot card pieces granting passive bonuses." },
+    { "id": "relics",           "icon": "💎", "title": "Relics",            "desc": "Powerful relics built from Hard Tarot card pieces." },
+    { "id": "compound",         "icon": "🔩", "title": "Compound",          "desc": "Combine items and materials into enhanced equipment." },
+    { "id": "pets",             "icon": "🐾", "title": "Pets",              "desc": "Tame and level pets that provide buffs and assistance." },
+    { "id": "skinning",         "icon": "🎨", "title": "Skinning",          "desc": "Customise your character's appearance with skins." },
+    { "id": "torment",          "icon": "🌀", "title": "Torment",           "desc": "A challenging endgame system with unique rewards." }
+  ]
+}

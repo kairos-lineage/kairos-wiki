@@ -1,0 +1,63 @@
+{
+  "id": "guardians",
+  "title": "Guardians",
+  "intro": "Guardians are powerful companions that fight alongside you. Each character can have up to three guardians — one of each type — but only **one guardian can be active at a time**. You choose which guardian to deploy based on your current needs.",
+  "intro2": "Guardian progress is **permanent**: switching your active guardian never resets the levels of the others. Every guardian you have leveled stays at that level until you level it further.",
+  "figure": {
+    "src": "images/guardians.png",
+    "alt": "Guardian selection panel showing Attack, Defense, and Support guardians",
+    "caption": "The Guardian panel — three guardian slots, each with its own level and EXP bar.",
+    "size": "md"
+  },
+  "tables": [
+    {
+      "id": "guardian-types",
+      "title": "Guardian Types",
+      "columns": ["Type", "Role", "Best For"],
+      "rows": [
+        { "cells": ["Attack",  "Offensive companion — focuses on dealing damage to enemies.", "Boosting kill speed during solo grinding."] },
+        { "cells": ["Defense", "Protective companion — increases your survivability.",        "Tanking tougher zones or boss fights."] },
+        { "cells": ["Support", "Utility companion — provides buffs and healing assistance.", "Sustaining long farming sessions or group play."] }
+      ]
+    }
+  ],
+  "howItWorks": {
+    "id": "guardian-leveling",
+    "title": "Leveling Your Guardian",
+    "steps": [
+      "**Gain EXP automatically** — guardian EXP accumulates passively over time while you are online and farming. No manual action required.",
+      "**Reach the EXP threshold** — each guardian displays its current EXP progress (e.g. 0 / 100). Once the bar fills, the guardian is ready to level up.",
+      "**Pay Gold Bars (GB)** — leveling up costs Gold Bars. The cost scales with the guardian's current level.",
+      "**Enjoy stronger stats** — each level increases the guardian's contribution to your combat effectiveness."
+    ]
+  },
+  "upgradeCosts": {
+    "id": "guardian-upgrade-costs",
+    "title": "Upgrade Costs",
+    "columns": ["Level", "EXP Required", "Gold Bars (GB)"],
+    "rows": [
+      { "cells": ["1 → 2", "100", "—"] },
+      { "cells": ["2 → 3", "150", "15"] },
+      { "cells": ["3 → 4", "210", "25"] },
+      { "cells": ["4 → 5", "270", "50"] },
+      { "cells": ["5 → 6", "330", "45"] },
+      { "cells": ["6 → 7", "390", "55"] },
+      { "cells": ["7 → 8", "450", "65"] },
+      { "cells": ["8 → 9", "510", "75"] },
+      { "cells": ["9 → 10","570", "85"] },
+      { "cells": ["10 → ?", null, null], "todo": "add remaining levels" }
+    ]
+  },
+  "infoBoxes": [
+    {
+      "variant": "tip",
+      "label": "Switching Guardians",
+      "body": "You can freely switch between your three guardians at any time using the **Activate** button in the Guardian panel. The previously active guardian becomes inactive but **retains its level** — there is no penalty for switching."
+    },
+    {
+      "variant": "",
+      "label": "Gold Bars",
+      "body": "Gold Bars (GB) are the premium currency used to upgrade guardians. They can be earned through gameplay — convert Adena to GB using the GM Shop > Consumables."
+    }
+  ]
+}

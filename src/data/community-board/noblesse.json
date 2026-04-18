@@ -1,0 +1,22 @@
+{
+  "id": "nobless",
+  "title": "Noblesse",
+  "intro": "Noblesse status is required to unlock the SP conversion skill needed for Rebirth. Obtain it through the **Noblesse Manager NPC in Giran** by providing a **Caradine's Letter**.",
+  "tables": [
+    {
+      "id": "nobless-obtain",
+      "title": "How to Obtain",
+      "columns": ["Item", "How to Obtain"],
+      "rows": [
+        { "cells": ["Caradine's Letter", "Farm crafting materials in the **Vesper Noble Zone** — spoil/sweep mobs for free drops, or obtain via donation"] }
+      ]
+    }
+  ],
+  "infoBoxes": [
+    {
+      "variant": "tip",
+      "label": "Free & Easy",
+      "body": "Spoiling mobs in the Vesper Noble Zone is the free route. A full Noblesse guide with mob locations and exact material drops will be added soon."
+    }
+  ]
+}

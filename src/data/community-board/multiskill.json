@@ -1,0 +1,55 @@
+{
+  "id": "multiskill",
+  "title": "MultiSkill",
+  "intro": "MultiSkill lets you learn passive and active skills from **any retail class** in the game, as well as exclusive **Custom Skills** unique to Kairos. Skills are organised by class and grouped into progression tiers — the higher the tier, the stronger the skill and the rarer the material required.",
+  "figure": {
+    "src": "images/multiskills.png",
+    "alt": "MultiSkill panel showing retail classes and custom skills",
+    "caption": "The MultiSkill panel — retail classes listed in red, Custom Skills highlighted at the bottom.",
+    "size": "sm"
+  },
+  "costRule": {
+    "label": "Cost Rule",
+    "body": "**First time learning a skill:** Adena + Class Stone + SP\n**Upgrading an existing skill:** Adena + SP only — no stone needed."
+  },
+  "tables": [
+    {
+      "id": "multiskill-retail",
+      "title": "Retail Classes",
+      "preText": "All retail classes are available and grouped by their class-change tier. Each tier requires a specific **Class Stone** to unlock the first level of any skill in that group. Stones drop from monsters in the corresponding farming zones.",
+      "columns": ["Tier", "Class Change", "Level Requirement", "Stone Required"],
+      "rows": [
+        { "cells": ["Tier 1", "Starting Classes",  "—",        "Class Stone I"] },
+        { "cells": ["Tier 2", "1st Class Change",  "Level 20", "Class Stone II"] },
+        { "cells": ["Tier 3", "2nd Class Change",  "Level 40", "Class Stone III"] },
+        { "cells": ["Tier 4", "3rd Class Change",  "Level 76", "Class Stone IV"] }
+      ],
+      "tierBadgeColumn": 0
+    },
+    {
+      "id": "multiskill-custom-table",
+      "title": "Custom Skills",
+      "preText": "At the bottom of the MultiSkill panel sits the **Custom Skills** section — a set of exclusive skills available only on Kairos. These follow the same learning pattern as retail skills but use a rarer material obtained in higher-level zones.",
+      "columns": ["Property", "Details"],
+      "rows": [
+        { "cells": ["Stone Required",  "Class Stone V — drops in higher-level farming zones"] },
+        { "cells": ["First Unlock",    "Adena + Class Stone V + SP"] },
+        { "cells": ["Level Upgrades",  "Adena + SP only (no additional stone)"] },
+        { "cells": ["Skill Type",      "All custom skills are **passive**"] },
+        { "cells": ["Enchanting",      "Supported — use the standard Lineage 2 skill enchantment system"] }
+      ]
+    }
+  ],
+  "infoBoxes": [
+    {
+      "variant": "tip",
+      "label": "Example",
+      "body": "Want to learn the Orc Shaman *Weapon Mastery* skill? It's a starting-class skill — grab a **Class Stone I** from a low-level farming zone, open MultiSkill, find the Orc class, and learn it. Subsequent level upgrades cost Adena + SP only."
+    },
+    {
+      "variant": "warning",
+      "label": "Hint",
+      "body": "All Custom Skills are **passive** — they work automatically once learned with no activation needed. They can also be **enchanted** using the standard L2 skill enchantment system, making them significantly stronger at higher enchant levels."
+    }
+  ]
+}

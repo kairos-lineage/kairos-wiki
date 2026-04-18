@@ -1,0 +1,55 @@
+{
+  "id": "buffer",
+  "title": "Buffer",
+  "intro": "The Buffer lets you build a personal buff scheme — a saved list of buffs that can be applied to your character with a single click. No NPC hunting required once your scheme is set up.",
+  "figure": {
+    "src": "images/buffer.png",
+    "alt": "Buffer panel showing buff groups and scheme controls",
+    "caption": "The Buffer panel — buff groups in columns, Apply Scheme and Clean Scheme at the bottom.",
+    "size": "lg"
+  },
+  "howItWorks": {
+    "id": "buffer-how",
+    "title": "How It Works",
+    "steps": [
+      "Open the Community Board (`Alt+B`) and select **Buffer** from the left menu.",
+      "Browse the buff groups — each column represents a category (combat, support, etc.).",
+      "Click the **+** button next to any buff to add it to your saved scheme.",
+      "Click **Apply Scheme** to instantly cast all saved buffs on your character.",
+      "Your scheme is saved per character and persists between sessions — set it up once and reuse it anytime."
+    ]
+  },
+  "tables": [
+    {
+      "id": "buffer-controls",
+      "title": "Applying and Clearing",
+      "columns": ["Button", "What it does"],
+      "rows": [
+        { "cells": ["Apply Scheme", "Applies all buffs in your scheme to your character."] },
+        { "cells": ["Clean Scheme", "Removes all buffs from your saved scheme (does not remove active buffs)."] }
+      ]
+    },
+    {
+      "id": "buffer-leveling",
+      "title": "Buffer Level & Progression",
+      "columns": ["EXP Gain", "L-Coin Cost"],
+      "rows": [
+        { "cells": ["+1,000 EXP",  "1,000 L-Coin"] },
+        { "cells": ["+5,000 EXP",  "5,000 L-Coin"] },
+        { "cells": ["+10,000 EXP", "10,000 L-Coin"] }
+      ]
+    }
+  ],
+  "infoBoxes": [
+    {
+      "variant": "warning",
+      "label": "Requirement",
+      "body": "Buffer leveling is locked until approximately **150 Rebirths** are completed."
+    },
+    {
+      "variant": "",
+      "label": "L-Coin",
+      "body": "L-Coin drops from regular mobs, raid and world bosses, and seasonal events."
+    }
+  ]
+}

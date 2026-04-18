@@ -1,0 +1,49 @@
+{
+  "id": "champion",
+  "title": "Champion System",
+  "intro": "The Champion System is a unique Kairos feature that lets you control how difficult champion-tier mobs are — and how rewarding they become. You choose the champion level; the server applies it to champions throughout every zone you hunt in.",
+  "figure": {
+    "src": "images/champion-system.png",
+    "alt": "Champion System panel showing six champion types",
+    "caption": "The Champion System panel — six difficulty tiers, each with a Select and Info button.",
+    "size": "lg"
+  },
+  "tables": [
+    {
+      "id": "champion-tiers",
+      "title": "Champion Tiers",
+      "preText": "There are six tiers to choose from. Each step up increases champion stats and rewards:",
+      "columns": ["Tier", "Difficulty Increase", "Reward Increase"],
+      "rows": [
+        { "cells": ["Champion",   "Baseline champion — mild increase over normal mobs",              "Low bonus"] },
+        { "cells": ["Champion II", "Noticeably tougher HP, damage, and defense",                    "Moderate bonus"] },
+        { "cells": ["Champion III","Significant stat increase — requires solid gear",                "Good bonus"] },
+        { "cells": ["Champion IV", "Hard — high HP, high damage, fast attack speed",                "High bonus"] },
+        { "cells": ["Champion V",  "Very hard — challenging even for well-geared players",          "Very high bonus"] },
+        { "cells": ["Champion X",  "Extreme — maximum stats, maximum challenge",                    "Maximum bonus"] }
+      ]
+    }
+  ],
+  "howItWorks": {
+    "id": "champion-how",
+    "title": "How to Use It",
+    "steps": [
+      "Open the Community Board (`Alt+B`) and select **Champion Hard**.",
+      "Click **Info** on any tier to preview its stat modifiers and rewards.",
+      "Click **Select** on the tier you want to activate.",
+      "To revert to the server default, click **Disable Champion Selection**."
+    ]
+  },
+  "infoBoxes": [
+    {
+      "variant": "warning",
+      "label": "Zone Scaling Warning",
+      "body": "Your champion level applies across *all* zones — including more advanced ones you move into as you progress. If you push to a higher zone and find champion mobs too difficult to kill, **lower your champion tier** until your gear catches up. Never sacrifice efficient farming trying to brute-force a tier that's above your current power level."
+    },
+    {
+      "variant": "tip",
+      "label": "General Advice",
+      "body": "Set the highest champion tier where you can kill champions comfortably without dying. As you improve your gear and rebirths, push the tier up one step at a time to maximise rewards without losing efficiency."
+    }
+  ]
+}
