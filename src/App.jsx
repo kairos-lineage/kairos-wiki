@@ -1,19 +1,14 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Layout         from './components/layout/Layout'
 import ScrollToHash   from './components/routing/ScrollToHash'
-import CommunityBoard from './pages/CommunityBoard'
 
-// Pages (replaced as each task completes)
-function ComingSoonPage({ title }) {
-  return (
-    <div style={{ padding: '4rem 2rem', textAlign: 'center' }}>
-      <h1 style={{ fontFamily: 'var(--font-display)', color: 'var(--gold)', fontSize: '2rem', marginBottom: '1rem' }}>
-        {title}
-      </h1>
-      <p style={{ color: 'var(--text-dim)' }}>This page is being built — check back soon.</p>
-    </div>
-  )
-}
+// Pages
+import Home           from './pages/Home'
+import GettingStarted from './pages/GettingStarted'
+import CommunityBoard from './pages/CommunityBoard'
+import Commands       from './pages/Commands'
+import NotFound       from './pages/NotFound'
+import StubPage       from './pages/StubPage'
 
 export default function App() {
   return (
@@ -21,18 +16,18 @@ export default function App() {
       <ScrollToHash />
       <Routes>
         <Route element={<Layout />}>
-          <Route index                    element={<ComingSoonPage title="Home" />} />
-          <Route path="getting-started"   element={<ComingSoonPage title="Getting Started" />} />
-          <Route path="server-info"       element={<ComingSoonPage title="Server Info" />} />
-          <Route path="classes"           element={<ComingSoonPage title="Classes" />} />
-          <Route path="zones"             element={<ComingSoonPage title="Zones" />} />
-          <Route path="bosses"            element={<ComingSoonPage title="Bosses" />} />
-          <Route path="events"            element={<ComingSoonPage title="Events" />} />
+          <Route index                    element={<Home />} />
+          <Route path="getting-started"   element={<GettingStarted />} />
+          <Route path="server-info"       element={<StubPage title="Server Info"  tagline="Server rates, features, and rules." />} />
+          <Route path="classes"           element={<StubPage title="Classes"      tagline="Class guides, builds, and progression paths." />} />
+          <Route path="zones"             element={<StubPage title="Zones"        tagline="Hunting grounds, level ranges, and drop tables." />} />
+          <Route path="bosses"            element={<StubPage title="Bosses"       tagline="Raid bosses, world bosses, and epic loot." />} />
+          <Route path="events"            element={<StubPage title="Events"       tagline="Scheduled events, PvP tournaments, and seasonal content." />} />
           <Route path="community-board"   element={<CommunityBoard />} />
-          <Route path="commands"          element={<ComingSoonPage title="Commands" />} />
-          <Route path="donations"         element={<ComingSoonPage title="Donations" />} />
-          <Route path="faq"               element={<ComingSoonPage title="FAQ" />} />
-          <Route path="*"                 element={<ComingSoonPage title="404 — Page Not Found" />} />
+          <Route path="commands"          element={<Commands />} />
+          <Route path="donations"         element={<StubPage title="Donations"    tagline="Support the server and see donation perks." />} />
+          <Route path="faq"               element={<StubPage title="FAQ"          tagline="Common questions answered." />} />
+          <Route path="*"                 element={<NotFound />} />
         </Route>
       </Routes>
     </BrowserRouter>
