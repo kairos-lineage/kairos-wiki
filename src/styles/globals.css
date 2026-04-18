@@ -455,35 +455,35 @@ code {
 .step-list {
   list-style: none;
   counter-reset: steps;
-  display: flex;
-  flex-direction: column;
-  gap: 0.45rem;
   margin: 1rem 0;
+  padding: 0;
 }
 
 .step-list li {
   counter-increment: steps;
-  display: flex;
-  gap: 0.75rem;
-  align-items: center;
   background: var(--bg-panel);
   border: 1px solid var(--border);
   border-left: 3px solid var(--gold-dim);
   border-radius: 6px;
-  padding: 0.6rem 1rem;
+  padding: 0.55rem 1rem 0.55rem 0.85rem;
+  margin-bottom: 0.45rem;
+  line-height: 1.6;
 }
 
 .step-list li::before {
   content: counter(steps);
-  flex-shrink: 0;
-  width: 1.8rem; height: 1.8rem;
-  line-height: 1.8rem;
-  text-align: center;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.5rem;
+  height: 1.5rem;
   background: var(--gold-glow);
   border: 1px solid var(--gold-dim);
   border-radius: 50%;
   font-family: var(--font-display);
-  font-size: 0.7rem;
+  font-size: 0.68rem;
   color: var(--gold);
   font-weight: 700;
+  margin-right: 0.6rem;
+  vertical-align: middle;
 }
