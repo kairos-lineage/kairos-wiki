@@ -21,17 +21,14 @@
   "grades": {
     "id": "relics-grades",
     "title": "Relic Grades",
-    "preText": "There are **8 grades** of Relics, ranging from the most basic to the most elite. Higher grades require rarer Hard Tarot Card pieces but provide dramatically stronger permanent stats:",
+    "preText": "There are **5 grades** of Relics, ranging from the most basic to the most elite. Higher grades require rarer Hard Tarot Card pieces but provide dramatically stronger permanent stats:",
     "columns": ["Grade", "Tier", "Power"],
     "rows": [
       { "cells": ["N-Grade", "1 — Starter",  "Basic stat bonuses"] },
       { "cells": ["D Grade",  "2",             "Improved bonuses"] },
       { "cells": ["C Grade",  "3",             "Notable stat boost"] },
       { "cells": ["B Grade",  "4",             "Strong bonuses"] },
-      { "cells": ["A Grade",  "5",             "Very strong bonuses"] },
-      { "cells": ["S Grade",  "6",             "Powerful bonuses"] },
-      { "cells": ["L Grade",  "7",             "Elite bonuses"] },
-      { "cells": ["X Grade",  "8 — Endgame",   "Maximum stat gains"] }
+      { "cells": ["A Grade",  "5 — Endgame",   "Maximum stat gains"] }
     ]
   },
   "leveling": {
