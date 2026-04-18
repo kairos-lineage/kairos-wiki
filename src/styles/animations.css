@@ -1,0 +1,40 @@
+/* ===== KEYFRAMES ===== */
+@keyframes pulse-glow {
+  0%, 100% { opacity: 0.4; transform: scale(1); }
+  50%       { opacity: 0.8; transform: scale(1.1); }
+}
+
+@keyframes hero-breathe {
+  0%, 100% { opacity: 0.2; transform: translateX(-50%) scale(1); }
+  50%       { opacity: 0.4; transform: translateX(-50%) scale(1.15); }
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(16px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes section-blink {
+  0%   { background: rgba(212, 168, 67, 0.18); box-shadow: 0 0 0 3px rgba(212, 168, 67, 0.35); }
+  60%  { background: rgba(212, 168, 67, 0.08); box-shadow: 0 0 0 3px rgba(212, 168, 67, 0.15); }
+  100% { background: transparent; box-shadow: none; }
+}
+
+/* ===== ANCHOR HIGHLIGHT ===== */
+/* Used by ScrollToHash component via classList toggle */
+.anchor-highlight {
+  animation: section-blink 1.6s var(--ease) forwards;
+  border-radius: 4px;
+  padding-left: 0.5rem;
+  margin-left: -0.5rem;
+  padding-top: 5rem;
+}
+
+/* Native :target fallback */
+h2:target, h3:target {
+  animation: section-blink 1.6s var(--ease) forwards;
+  border-radius: 4px;
+  padding-left: 0.5rem;
+  margin-left: -0.5rem;
+  padding-top: 5rem;
+}
