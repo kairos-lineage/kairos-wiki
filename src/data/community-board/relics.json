@@ -1,1 +1,74 @@
-{ "id": "relics", "title": "Relics", "stub": true, "stubNote": "Relic pieces are obtained by opening Hard boss Tarot Cards — see the Tarot Cards section." }
+{
+  "id": "relics",
+  "title": "Relics",
+  "intro": "Relics are powerful passive companions that permanently boost your character's stats once registered. Like Dolls, each activated Relic contributes its stats independently — the more you register, the stronger your character becomes. Relics are considerably more powerful than Dolls and are harder to obtain, requiring pieces from Hard boss Tarot Cards.",
+  "figure": {
+    "src": "images/relics.png",
+    "alt": "Relics collection UI showing all grades and active stat bonuses",
+    "caption": "The Relics UI — A-grade Relics provide massive combat stat bonuses like P.Atk, Crit Dmg, and PvE Phys Dmg.",
+    "size": "lg"
+  },
+  "obtaining": {
+    "id": "relics-obtaining",
+    "title": "How to Obtain Relics",
+    "steps": [
+      "Kill **Hard Raid Bosses** — they drop Hard Tarot Cards.",
+      "Open the Community Board (`Alt+B`) → **Tarot Cards** and open your Hard card packs. Bulk opening (x1, x5, x25, x250) is available.",
+      "Relic pieces appear directly in your **inventory** after opening the cards.",
+      "Open the Community Board (`Alt+B`) → **Relics** and register your relic pieces to activate them."
+    ]
+  },
+  "grades": {
+    "id": "relics-grades",
+    "title": "Relic Grades",
+    "preText": "There are **8 grades** of Relics, ranging from the most basic to the most elite. Higher grades require rarer Hard Tarot Card pieces but provide dramatically stronger permanent stats:",
+    "columns": ["Grade", "Tier", "Power"],
+    "rows": [
+      { "cells": ["N-Grade", "1 — Starter",  "Basic stat bonuses"] },
+      { "cells": ["D Grade",  "2",             "Improved bonuses"] },
+      { "cells": ["C Grade",  "3",             "Notable stat boost"] },
+      { "cells": ["B Grade",  "4",             "Strong bonuses"] },
+      { "cells": ["A Grade",  "5",             "Very strong bonuses"] },
+      { "cells": ["S Grade",  "6",             "Powerful bonuses"] },
+      { "cells": ["L Grade",  "7",             "Elite bonuses"] },
+      { "cells": ["X Grade",  "8 — Endgame",   "Maximum stat gains"] }
+    ]
+  },
+  "leveling": {
+    "id": "relics-leveling",
+    "title": "Unlocking & Leveling",
+    "steps": [
+      "**Unlock the Relic first** — register the required pieces to activate the Relic slot.",
+      "**Level up 10 times** — each Relic can be leveled from 1 to 10 after unlocking.",
+      "Each level requires **more Relic pieces** and **more Gold Bars (GB)** than the previous.",
+      "Each level increases the Relic's permanent stat contribution to your character."
+    ]
+  },
+  "upgradeFigure": {
+    "src": "images/relics-upgread.png",
+    "alt": "A-grade Relic at Level 4 showing current stats and required upgrade materials",
+    "caption": "An A-grade Relic at Level 4 — stats scale significantly with each level up to the max of 10.",
+    "size": "md"
+  },
+  "upgradeCosts": {
+    "id": "relics-upgrade-costs",
+    "title": "Level Costs (A Grade Example)",
+    "columns": ["Level", "Relics Required", "Gold Bars (GB)"],
+    "rows": [
+      { "cells": ["Unlock",   null, null], "todo": "add unlock cost" },
+      { "cells": ["Lv 1 → 2", null, null], "todo": "add level costs" }
+    ]
+  },
+  "infoBoxes": [
+    {
+      "variant": "tip",
+      "label": "Stack Your Relics",
+      "body": "Each *activated* Relic adds its stats independently — registering more Relics stacks the bonuses. Focus on unlocking as many slots as possible before pushing individual Relic levels too high."
+    },
+    {
+      "variant": "warning",
+      "label": "Relics vs Dolls",
+      "body": "Relics are significantly stronger than **Dolls** but require drops from **Hard Raid Bosses**, making them a mid-to-late game investment. Prioritize Dolls first, then transition to Relics as you progress."
+    }
+  ]
+}
