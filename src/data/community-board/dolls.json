@@ -2,6 +2,12 @@
   "id": "dolls",
   "title": "Dolls",
   "intro": "Dolls are passive companions that permanently boost your character's stats once registered. Each activated Doll has its own stats — the more you activate, the stronger your character becomes. Dolls also have their own levels, further increasing their benefit as you invest in them.",
+  "figure": {
+    "src": "dolls.png",
+    "alt": "Dolls collection UI showing all grades and active stat bonuses",
+    "caption": "The Dolls UI — each registered Doll adds permanent stat bonuses to your character.",
+    "size": "lg"
+  },
   "obtaining": {
     "id": "dolls-obtaining",
     "title": "How to Obtain Dolls",
@@ -34,6 +40,12 @@
       "Each level requires **more Doll pieces** and **more Gold Bars (GB)** than the previous.",
       "Each level increases the Doll's permanent stat contribution to your character."
     ]
+  },
+  "upgradeFigure": {
+    "src": "dolls-upgrade.png",
+    "alt": "A-grade Doll at Level 10 showing max stats",
+    "caption": "An A-grade Doll at maximum level — showing the substantial stat bonuses a fully leveled Doll provides.",
+    "size": "md"
   },
   "upgradeCosts": {
     "id": "dolls-upgrade-costs",

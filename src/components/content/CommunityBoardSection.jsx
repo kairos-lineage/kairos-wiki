@@ -142,6 +142,16 @@ export default function CommunityBoardSection({ data }) {
           {/* Leveling steps (same shape as howItWorks) */}
           {data.leveling && <HowItWorks data={data.leveling} />}
 
+          {/* Optional figure before upgrade costs (dolls, relics) */}
+          {data.upgradeFigure && (
+            <WikiFigure
+              src={data.upgradeFigure.src}
+              alt={data.upgradeFigure.alt}
+              caption={data.upgradeFigure.caption}
+              size={data.upgradeFigure.size}
+            />
+          )}
+
           {/* Upgrade costs table (guardians, dolls, relics) */}
           {data.upgradeCosts && <UpgradeTable data={data.upgradeCosts} />}
 
