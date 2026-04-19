@@ -23,7 +23,7 @@
         { "cells": ["Level 6",  "-50% Dmg", "-500% Resist",  "15"] },
         { "cells": ["Level 7",  "-60% Dmg", "-600% Resist",  "25"] },
         { "cells": ["Level 8",  "-70% Dmg", "-700% Resist",  "40"] },
-        { "cells": ["Level 9",  "-80% Dmg", "-800% Resist",  "30"] },
+        { "cells": ["Level 9",  "-80% Dmg", "-800% Resist",  "60"] },
         { "cells": ["Level 10", "-90% Dmg", "-1000% Resist", "100"] }
       ]
     }

@@ -1,10 +1,8 @@
-import PageHero            from '../components/ui/PageHero'
-import SectionHeading      from '../components/ui/SectionHeading'
-import CardGrid            from '../components/ui/CardGrid'
-import Card                from '../components/ui/Card'
-import CommunityBoardSection from '../components/content/CommunityBoardSection'
-import cbIndex             from '../data/community-board/index.json'
-import sections            from '../data/community-board/sections'
+import PageHero       from '../components/ui/PageHero'
+import SectionHeading from '../components/ui/SectionHeading'
+import CardGrid       from '../components/ui/CardGrid'
+import Card           from '../components/ui/Card'
+import cbIndex        from '../data/community-board/index.json'
 
 export default function CommunityBoard() {
   return (
@@ -18,17 +16,13 @@ export default function CommunityBoard() {
         {cbIndex.cards.map((card) => (
           <Card
             key={card.id}
-            to={`/community-board#${card.id}`}
+            to={`/community-board/${card.id}`}
             icon={card.icon}
             title={card.title}
             desc={card.desc}
           />
         ))}
       </CardGrid>
-
-      {sections.map((section) => (
-        <CommunityBoardSection key={section.id} data={section} />
-      ))}
     </>
   )
 }

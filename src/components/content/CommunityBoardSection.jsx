@@ -42,12 +42,12 @@ function SectionTable({ data, isTierTable }) {
  * Handles: stub, figure, intro, howItWorks, tables, upgradeCosts,
  * infoBoxes, and section-specific shapes (faction-war buff, tarot special rewards, etc.)
  */
-export default function CommunityBoardSection({ data }) {
+export default function CommunityBoardSection({ data, standalone = false }) {
   if (!data) return null
 
   return (
     <section>
-      <SectionHeading id={data.id}>{data.title}</SectionHeading>
+      {!standalone && <SectionHeading id={data.id}>{data.title}</SectionHeading>}
 
       {/* STUB */}
       {data.stub && (
