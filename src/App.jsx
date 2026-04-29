@@ -9,6 +9,7 @@ import CommunityBoard            from './pages/CommunityBoard'
 import CommunityBoardSectionPage from './pages/CommunityBoardSectionPage'
 import Commands       from './pages/Commands'
 import NotFound       from './pages/NotFound'
+import Zones          from './pages/Zones'
 import StubPage       from './pages/StubPage'
 
 export default function App() {
@@ -21,7 +22,7 @@ export default function App() {
           <Route path="getting-started"   element={<GettingStarted />} />
           <Route path="server-info"       element={<StubPage title="Server Info"  tagline="Server rates, features, and rules." />} />
           <Route path="classes"           element={<StubPage title="Classes"      tagline="Class guides, builds, and progression paths." />} />
-          <Route path="zones"             element={<StubPage title="Zones"        tagline="Hunting grounds, level ranges, and drop tables." />} />
+          <Route path="zones"             element={<Zones />} />
           <Route path="bosses"            element={<StubPage title="Bosses"       tagline="Raid bosses, world bosses, and epic loot." />} />
           <Route path="events"            element={<StubPage title="Events"       tagline="Scheduled events, PvP tournaments, and seasonal content." />} />
           <Route path="community-board"            element={<CommunityBoard />} />

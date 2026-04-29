@@ -1,13 +1,15 @@
-import SectionHeading from '../ui/SectionHeading'
-import WikiFigure     from '../ui/WikiFigure'
-import WikiTable      from '../ui/WikiTable'
-import InfoBox        from '../ui/InfoBox'
-import HowItWorks     from './HowItWorks'
-import UpgradeTable   from './UpgradeTable'
-import ComingSoon     from './ComingSoon'
-import Badge          from '../ui/Badge'
-import TodoBadge      from '../ui/TodoBadge'
-import { renderText } from '../../utils/renderText'
+import SectionHeading        from '../ui/SectionHeading'
+import WikiFigure             from '../ui/WikiFigure'
+import WikiCarousel           from '../ui/WikiCarousel'
+import WikiTable              from '../ui/WikiTable'
+import InfoBox                from '../ui/InfoBox'
+import HowItWorks             from './HowItWorks'
+import UpgradeTable           from './UpgradeTable'
+import ScrollableDetailTable  from './ScrollableDetailTable'
+import ComingSoon             from './ComingSoon'
+import Badge                  from '../ui/Badge'
+import TodoBadge              from '../ui/TodoBadge'
+import { renderText }         from '../../utils/renderText'
 
 /** Render a cell value — handles null, TodoBadge rows, plain strings */
 function Cell({ value, rowTodo, isLast }) {
@@ -72,13 +74,41 @@ export default function CommunityBoardSection({ data, standalone = false }) {
             </InfoBox>
           )}
 
-          {/* Generic tables */}
-          {data.tables?.map((t) => (
-            <div key={t.id}>
-              <SectionHeading id={t.id} level={3}>{t.title}</SectionHeading>
-              <SectionTable data={t} isTierTable={t.tierBadgeColumn !== undefined} />
-            </div>
-          ))}
+          {/* Generic tables — also handles inline carousels and detail-modal tables */}
+          {data.tables?.map((t) => {
+            if (t.carousel) {
+              return (
+                <div key={t.id}>
+                  <SectionHeading id={t.id} level={3}>{t.title}</SectionHeading>
+                  <WikiCarousel slides={t.slides} />
+                </div>
+              )
+            }
+            if (t.detailsModal) {
+              return (
+                <div key={t.id}>
+                  <SectionHeading id={t.id} level={3}>{t.title}</SectionHeading>
+                  {t.preText && <p>{renderText(t.preText)}</p>}
+                  <ScrollableDetailTable data={t} />
+                </div>
+              )
+            }
+            return (
+              <div key={t.id}>
+                <SectionHeading id={t.id} level={3}>{t.title}</SectionHeading>
+                {t.scrollable ? (
+                  <>
+                    <div className="wiki-table-scroll-wrapper">
+                      <SectionTable data={t} isTierTable={t.tierBadgeColumn !== undefined} />
+                    </div>
+                    <p className="wiki-table-scroll-note">↕ Scroll to see all {t.rows.length} {t.scrollNote ?? 'entries'}</p>
+                  </>
+                ) : (
+                  <SectionTable data={t} isTierTable={t.tierBadgeColumn !== undefined} />
+                )}
+              </div>
+            )
+          })}
 
           {/* SP Scrolls list (rebirth) */}
           {data.spScrolls && (

@@ -2,13 +2,78 @@
   "id": "rebirth",
   "title": "Rebirth",
   "intro": "The Rebirth system resets your character back to level 1 in exchange for a **Rebirth Point** — a permanent currency used to unlock and upgrade a large pool of custom passive skills. Rebirths also serve as a hard requirement in several other systems (such as the Buffer level-up). Accumulating rebirths is one of the most important long-term progressions on Kairos.",
-  "figure": {
-    "src": "images/rebirth-system.png",
-    "alt": "Rebirth Skills panel showing stat and damage skill trees",
-    "caption": "The Rebirth Skills panel — spend points across stats and PvE damage categories.",
-    "size": "lg"
-  },
   "tables": [
+    {
+      "id": "rebirth-skills-carousel",
+      "title": "Rebirth Skills — All Pages",
+      "carousel": true,
+      "slides": [
+        { "src": "images/rebirth-system-1.png", "alt": "Rebirth Skills page 1 — Defence and Combat stats", "caption": "Page 1 — STR, DEX, CON, INT, WIT and PvE bonuses & skills" },
+        { "src": "images/rebirth-system-2.png", "alt": "Rebirth Skills page 2 — PvP and Elemental Power", "caption": "Page 2 — Shield, Might, Boost Body, Accuracy, Evasion and more" },
+        { "src": "images/rebirth-system-3.png", "alt": "Rebirth Skills page 3 — Elemental Power and Resistance", "caption": "Page 3 — Crit Rate, Move Speed, PvP bonuses, Fire & Water Power" },
+        { "src": "images/rebirth-system-4.png", "alt": "Rebirth Skills page 4 — Drops, EXP and Debuff reduction", "caption": "Page 4 — Wind, Earth, Holy, Dark Power and all Elemental Resistances" },
+        { "src": "images/rebirth-system-5.png", "alt": "Rebirth Skills page 5 — Advanced Abilities", "caption": "Page 5 — Crit Dmg, Wild Magic, EXP, SP, Adena & Drop bonuses" }
+      ]
+    },
+    {
+      "id": "rebirth-skills",
+      "title": "All Rebirth Skills",
+      "scrollable": true,
+      "scrollNote": "skills",
+      "columns": ["Skill", "Bonus per Level", "Max Levels"],
+      "rows": [
+        { "cells": ["Strength",      "+1 STR",             "10"] },
+        { "cells": ["Vitality",      "+1 CON/MEN",         "10"] },
+        { "cells": ["Dexterity",     "+1 DEX",             "10"] },
+        { "cells": ["Intellect",     "+1 INT",             "10"] },
+        { "cells": ["Wisdom",        "+1 WIT",             "10"] },
+        { "cells": ["PvE Melee",     "+1% P.PvE Dmg",      "10"] },
+        { "cells": ["PvE Skill",     "+1% P.Skill PvE",    "10"] },
+        { "cells": ["PvE Bow",       "+1% Bow PvE",        "10"] },
+        { "cells": ["PvE BowSkill",  "+1% Bow.SkillPvE",   "10"] },
+        { "cells": ["PvE Magic",     "+1% M.PvE Dmg",      "10"] },
+        { "cells": ["Shield",        "+1% P.Def",          "10"] },
+        { "cells": ["Magic Barrier", "+1% M.Def",          "10"] },
+        { "cells": ["Might",         "+1% P.Atk",          "10"] },
+        { "cells": ["Empower",       "+1% M.Atk",          "10"] },
+        { "cells": ["Boost Body",    "+1% HP/MP/CP",        "10"] },
+        { "cells": ["Accuracy",      "+1 Accuracy",         "10"] },
+        { "cells": ["Evasion",       "+1 Evasion",          "10"] },
+        { "cells": ["Inventory",     "+3 Inventory Slots",  "10"] },
+        { "cells": ["Weight",        "+1% Weight Limit",    "10"] },
+        { "cells": ["M. Crit Rate",  "+2 M.Crit Rate",      "10"] },
+        { "cells": ["Crit Rate",     "+1% Crit Rate",       "10"] },
+        { "cells": ["Move Spd",      "+1% Speed",           "10"] },
+        { "cells": ["P.Atk PvP",     "+1% P.PvP Dmg",       "10"] },
+        { "cells": ["M.Atk PvP",     "+1% M.PvP Dmg",       "10"] },
+        { "cells": ["P. Power PvP",  "+1% P.Skill PvP Dmg", "10"] },
+        { "cells": ["P.Def PvP",     "+1% P.PvP Def",       "10"] },
+        { "cells": ["M.Def PvP",     "+1% M.PvP Def",       "10"] },
+        { "cells": ["Def.Skill PvP", "+1% P.SkillPvP Def",  "10"] },
+        { "cells": ["Fire Power",    "+5 Fire Power",        "10"] },
+        { "cells": ["Water Power",   "+5 Water Power",       "10"] },
+        { "cells": ["Wind Power",    "+5 Wind Power",        "10"] },
+        { "cells": ["Earth Power",   "+5 Earth Power",       "10"] },
+        { "cells": ["Holy Power",    "+5 Holy Power",        "10"] },
+        { "cells": ["Dark Power",    "+5 Dark Power",        "10"] },
+        { "cells": ["Fire Resist",   "+10 Fire Resist",      "10"] },
+        { "cells": ["Wind Resist",   "+10 Wind Resist",      "10"] },
+        { "cells": ["Water Resist",  "+10 Water Resist",     "10"] },
+        { "cells": ["Earth Resist",  "+10 Earth Resist",     "10"] },
+        { "cells": ["Holy Resist",   "+10 Holy Resist",      "10"] },
+        { "cells": ["Dark Resist",   "+10 Dark Resist",      "10"] },
+        { "cells": ["D. Whisper",    "+1% Crit Dmg",         "10"] },
+        { "cells": ["Wild Magic",    "+1% M.Crit Dmg",       "10"] },
+        { "cells": ["R.Critical",    "-1% Def Crit Dmg",     "10"] },
+        { "cells": ["R.Crit Rate",   "-1% Def Crit Rate",    "10"] },
+        { "cells": ["EXP",           "+1% EXP",              "10"] },
+        { "cells": ["SP",            "+1% SP",               "10"] },
+        { "cells": ["Adena Drop",    "+1% Adena Drop",       "10"] },
+        { "cells": ["Drop Count",    "+1% Drop Amount",      "10"] },
+        { "cells": ["Drop Rate",     "+1% Drop Rate",        "10"] },
+        { "cells": ["Spoil Rate",    "+1% Spoil Rate",       "10"] }
+      ]
+    },
     {
       "id": "rebirth-requirements",
       "title": "Requirements",
@@ -22,31 +87,32 @@
     {
       "id": "rebirth-cost",
       "title": "Scaling Cost",
-      "preText": "Each consecutive rebirth costs more. The cost equals the rebirth number in both Gold Bars and SP Scrolls:",
-      "columns": ["Rebirth #", "Gold Bars", "SP Scrolls"],
+      "preText": "Each rebirth costs exactly its number in both SP Scrolls and Gold Bars — rebirth #50 costs 50 of each, #150 costs 150 of each:",
+      "columns": ["Rebirth #", "SP Scrolls", "Gold Bars"],
       "rows": [
-        { "cells": ["1st", "1 GB",  "1 SP Scroll"] },
-        { "cells": ["2nd", "2 GB",  "2 SP Scrolls"] },
-        { "cells": ["3rd", "3 GB",  "3 SP Scrolls"] },
-        { "cells": ["Nth", "N GB",  "N SP Scrolls"] }
+        { "cells": ["1",   "1",   "1"] },
+        { "cells": ["2",   "2",   "2"] },
+        { "cells": ["3",   "3",   "3"] },
+        { "cells": ["10",  "10",  "10"] },
+        { "cells": ["25",  "25",  "25"] },
+        { "cells": ["50",  "50",  "50"] },
+        { "cells": ["100", "100", "100"] },
+        { "cells": ["150", "150", "150"] }
       ]
     },
     {
-      "id": "rebirth-skills",
-      "title": "Rebirth Skills",
-      "preText": "Each Rebirth Point can be spent in the Rebirth Skills panel. There are **over 40 skills** across multiple pages — stat bonuses and PvE damage modifiers:",
-      "columns": ["Category", "Skills", "Bonus per Level", "Max Levels"],
+      "id": "rebirth-total-cost",
+      "title": "Cumulative Cost to Reach 150 Rebirths",
+      "preText": "Running total of everything spent from rebirth 1 up to each milestone (sum of 1 + 2 + … + N):",
+      "columns": ["After Rebirth #", "Total SP Scrolls spent", "Total Gold Bars spent"],
       "rows": [
-        { "cells": ["Strength",    "STR",          "+1 STR",                "10"] },
-        { "cells": ["Vitality",    "CON",          "+1 CON / MEN",          "10"] },
-        { "cells": ["Dexterity",   "DEX",          "+1 DEX",                "10"] },
-        { "cells": ["Intellect",   "INT",          "+1 INT",                "10"] },
-        { "cells": ["Wisdom",      "WIT",          "+1 WIT",                "10"] },
-        { "cells": ["PvE Melee",   "P.PvE Dmg",    "+1% Physical PvE Dmg",  "10"] },
-        { "cells": ["PvE Skill",   "P.Skill PvE",  "+1% Skill PvE Dmg",     "10"] },
-        { "cells": ["PvE Bow",     "Bow PvE",      "+1% Bow PvE Dmg",       "10"] },
-        { "cells": ["PvE BowSkill","Bow SkillPvE", "+1% Bow Skill PvE Dmg", "10"] },
-        { "cells": ["PvE Magic",   "M.PvE Dmg",    "+1% Magic PvE Dmg",     "10"] }
+        { "cells": ["10",  "55",    "55"] },
+        { "cells": ["25",  "325",   "325"] },
+        { "cells": ["50",  "1,275", "1,275"] },
+        { "cells": ["75",  "2,850", "2,850"] },
+        { "cells": ["100", "5,050", "5,050"] },
+        { "cells": ["125", "7,875", "7,875"] },
+        { "cells": ["150", "11,325","11,325"] }
       ]
     }
   ],
@@ -60,6 +126,11 @@
     ]
   },
   "infoBoxes": [
+    {
+      "variant": "",
+      "label": "Grand Total — 150 Rebirths",
+      "body": "To complete all **150 Rebirths** you need **11,325 SP Scrolls** and **11,325 Gold Bars** in total. At 1 billion SP per scroll, that is **11,325 billion SP** farmed in total."
+    },
     {
       "variant": "tip",
       "label": "Tip",

@@ -19,8 +19,11 @@ export default function Home() {
   return (
     <>
       <div className="hero">
-        <div className="hero-ornament">✦ ✦ ✦</div>
-        <h1 className="hero-title">Kairos</h1>
+        <img
+          src={`${import.meta.env.BASE_URL}images/logo.png`}
+          alt="L2 Kairos Multiskill logo"
+          className="hero-logo"
+        />
         <p className="hero-tagline">Lineage 2 Custom Server — Community Wiki</p>
       </div>
 

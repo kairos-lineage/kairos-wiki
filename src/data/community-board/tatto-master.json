@@ -2,25 +2,31 @@
   "id": "tatto-master",
   "title": "Tatto Master",
   "intro": "Tatto Master is a system of **passive skills** that permanently improve your character's stats. Skills are activated by obtaining the required materials and registering them in the system — no active casting needed once learned.",
-  "intro2": "There are **4 pages** of tattoos covering a wide range of bonuses. Some are learned once and stay at a fixed level; others can be upgraded progressively as you reach higher zones and content.",
-  "figure": {
-    "src": "images/tatoo-master.png",
-    "alt": "Tatto Master panel showing skill list and levels",
-    "caption": "Tatto Master panel — 4 pages of passive skills, each showing current level and a View Stats button.",
-    "size": "lg"
-  },
+  "intro2": "There are **5 pages** of tattoos covering a wide range of bonuses. Some are learned once and stay at a fixed level; others can be upgraded progressively as you reach higher zones and content.",
   "howItWorks": {
     "id": "tatto-master-how",
     "title": "How It Works",
     "steps": [
       "Open the Community Board (`Alt+B`) and select **Tatto Master**.",
-      "Browse the 4 pages of available tattoos using the **Next** button.",
+      "Browse the 5 pages of available tattoos using the **Next** button.",
       "Click **View Stats** on any tattoo to see what it does and what materials it requires.",
       "Farm the required materials and return to register the tattoo — the passive activates immediately.",
       "For upgradeable tattoos, repeat with higher-tier materials to increase the level."
     ]
   },
   "tables": [
+    {
+      "id": "tatto-master-carousel",
+      "title": "All 5 Pages",
+      "carousel": true,
+      "slides": [
+        { "src": "images/master-tattoo-1.png", "alt": "Tatto Master page 1", "caption": "Page 1 — Ultimate Power Mastery, Boss Zone, Raid Boss Detection and more" },
+        { "src": "images/master-tattoo-2.png", "alt": "Tatto Master page 2", "caption": "Page 2 — Makkum, Krakel, Vashtire, Isadora, Varbaeon and more" },
+        { "src": "images/master-tattoo-3.png", "alt": "Tatto Master page 3", "caption": "Page 3 — Barak, Catacomb Master 2 & 3, Foundation Oath and more" },
+        { "src": "images/master-tattoo-4.png", "alt": "Tatto Master page 4", "caption": "Page 4 — Sage's Ward, Vanguard Stance, Archmage's Focus and more" },
+        { "src": "images/master-tattoo-5.png", "alt": "Tatto Master page 5", "caption": "Page 5 — Bunny" }
+      ]
+    },
     {
       "id": "tatto-master-types",
       "title": "Tattoo Types",
@@ -44,26 +50,288 @@
     },
     {
       "id": "tatto-master-skills",
-      "title": "Known Tattoos (Page 1)",
-      "columns": ["Tattoo Name", "Focus"],
+      "title": "All Tattoos",
+      "scrollable": true,
+      "detailsModal": true,
+      "scrollNote": "tattoos",
+      "columns": ["Tattoo Name", "Page"],
       "rows": [
-        { "cells": ["Ultimate Power Mastery", "General power increase"] },
-        { "cells": ["Boos Zone",              "Boss zone performance"] },
-        { "cells": ["Raid Boss Detection",    "Raid boss encounters"] },
-        { "cells": ["Flame Light",            "Offensive stat boost"] },
-        { "cells": ["Execution Grounds",      "Execution Grounds zone content"] },
-        { "cells": ["Catacomb Master",        "Catacomb zone performance"] },
-        { "cells": ["Balok Mastery",          "Balok raid encounter"] },
-        { "cells": ["Scorpion Mastery",       "Scorpion zone content"] }
+        {
+          "cells": ["Ultimate Power Mastery", "1"],
+          "details": {
+            "slides": [
+              { "src": "images/tattoo-master/ultimate-power-mastery.png", "alt": "Ultimate Power Mastery upgrade screen" }
+            ],
+            "body": [
+              { "type": "p", "text": "Requires basic crafting materials dropped by standard mobs in early farming zones. Farm Armor, Jewel, and Weapon Pieces to unlock this tattoo." },
+              { "type": "img", "src": "images/mats/armor-mats.png", "alt": "Armor piece materials", "caption": "Armor Piece I — dropped by standard zone mobs" },
+              { "type": "img", "src": "images/mats/jewels-mats.png", "alt": "Jewel piece materials", "caption": "Jewel Piece I — dropped by standard zone mobs" },
+              { "type": "img", "src": "images/mats/weapon-mats.png", "alt": "Weapon piece materials", "caption": "Weapon Piece I — dropped by standard zone mobs" }
+            ]
+          }
+        },
+        {
+          "cells": ["Boss Zone", "1"],
+          "details": {
+            "slides": [
+              { "src": "images/tattoo-master/boss-zone.png", "alt": "Boss Zone upgrade screen" }
+            ],
+            "body": [
+              { "type": "p", "text": "Requires basic crafting materials plus Ring items. Farm Armor, Jewel, and Weapon Pieces from standard zone mobs and collect Ring drops from boss encounters." },
+              { "type": "img", "src": "images/mats/armor-mats.png", "alt": "Armor piece materials", "caption": "Armor Piece I — dropped by standard zone mobs" },
+              { "type": "img", "src": "images/mats/jewels-mats.png", "alt": "Jewel piece materials", "caption": "Jewel Piece I — dropped by standard zone mobs" },
+              { "type": "img", "src": "images/mats/weapon-mats.png", "alt": "Weapon piece materials", "caption": "Weapon Piece I — dropped by standard zone mobs" }
+            ]
+          }
+        },
+        {
+          "cells": ["Raid Boss Detection", "1"],
+          "details": {
+            "slides": [
+              { "src": "images/tattoo-master/raid-boss-detection.png", "alt": "Raid Boss Detection upgrade screen" }
+            ]
+          }
+        },
+        {
+          "cells": ["Flame Light", "1"],
+          "details": {
+            "slides": [
+              { "src": "images/tattoo-master/flame-light.png", "alt": "Flame Light upgrade screen" }
+            ]
+          }
+        },
+        {
+          "cells": ["Execution Grounds", "1"],
+          "details": {
+            "slides": [
+              { "src": "images/tattoo-master/execution-grounds.png", "alt": "Execution Grounds upgrade screen" }
+            ]
+          }
+        },
+        {
+          "cells": ["Catacomb Master", "1"],
+          "details": {
+            "slides": [
+              { "src": "images/tattoo-master/catacomb-master.png", "alt": "Catacomb Master upgrade screen" }
+            ]
+          }
+        },
+        {
+          "cells": ["Barik Mastery", "1"],
+          "details": {
+            "slides": [
+              { "src": "images/tattoo-master/barik-mastery.png", "alt": "Barik Mastery upgrade screen" }
+            ]
+          }
+        },
+        {
+          "cells": ["Scorpion Mastery", "1"],
+          "details": {
+            "slides": [
+              { "src": "images/tattoo-master/scorpion-mastery.png", "alt": "Scorpion Mastery upgrade screen" }
+            ]
+          }
+        },
+        {
+          "cells": ["Makkum Mastery", "2"],
+          "details": {
+            "slides": [
+              { "src": "images/tattoo-master/makkum-mastery.png", "alt": "Makkum Mastery upgrade screen" }
+            ]
+          }
+        },
+        {
+          "cells": ["Krakel Mastery", "2"],
+          "details": {
+            "slides": [
+              { "src": "images/tattoo-master/krakel-mastery.png", "alt": "Krakel Mastery upgrade screen" }
+            ]
+          }
+        },
+        {
+          "cells": ["Vashtire Mastery", "2"],
+          "details": {
+            "slides": [
+              { "src": "images/tattoo-master/vashtire-mastery.png", "alt": "Vashtire Mastery upgrade screen" }
+            ]
+          }
+        },
+        {
+          "cells": ["Isadora Mastery", "2"],
+          "details": {
+            "slides": [
+              { "src": "images/tattoo-master/isadora-mastery.png", "alt": "Isadora Mastery upgrade screen" }
+            ]
+          }
+        },
+        {
+          "cells": ["Varbaeon Mastery", "2"],
+          "details": {
+            "slides": [
+              { "src": "images/tattoo-master/varbaeon-mastery.png", "alt": "Varbaeon Mastery upgrade screen" }
+            ]
+          }
+        },
+        {
+          "cells": ["Harz Mastery", "2"],
+          "details": {
+            "slides": [
+              { "src": "images/tattoo-master/harz-mastery.png", "alt": "Harz Mastery upgrade screen" }
+            ]
+          }
+        },
+        {
+          "cells": ["Vengeful Mastery", "2"],
+          "details": {
+            "slides": [
+              { "src": "images/tattoo-master/vengeful-mastery.png", "alt": "Vengeful Mastery upgrade screen" }
+            ]
+          }
+        },
+        {
+          "cells": ["Tarku Mastery", "2"],
+          "details": {
+            "slides": [
+              { "src": "images/tattoo-master/tarku-mastery.png", "alt": "Tarku Mastery upgrade screen" }
+            ]
+          }
+        },
+        {
+          "cells": ["Barak Mastery", "3"],
+          "details": {
+            "slides": [
+              { "src": "images/tattoo-master/barak-mastery.png", "alt": "Barak Mastery upgrade screen" }
+            ]
+          }
+        },
+        {
+          "cells": ["Catacomb Master 2", "3"],
+          "details": {
+            "slides": [
+              { "src": "images/tattoo-master/catacomb-master-2.png", "alt": "Catacomb Master 2 upgrade screen" }
+            ]
+          }
+        },
+        {
+          "cells": ["Catacomb Master 3", "3"],
+          "details": {
+            "slides": [
+              { "src": "images/tattoo-master/catacomb-master-3.png", "alt": "Catacomb Master 3 upgrade screen" }
+            ]
+          }
+        },
+        {
+          "cells": ["Foundation Oath", "3"],
+          "details": {
+            "slides": [
+              { "src": "images/tattoo-master/foundation-oath.png", "alt": "Foundation Oath upgrade screen" }
+            ]
+          }
+        },
+        {
+          "cells": ["Adept's Surge", "3"],
+          "details": null
+        },
+        {
+          "cells": ["Warrior's Crest", "3"],
+          "details": {
+            "slides": [
+              { "src": "images/tattoo-master/warriors-crest.png", "alt": "Warrior's Crest upgrade screen" }
+            ]
+          }
+        },
+        {
+          "cells": ["Arcane Aegis", "3"],
+          "details": {
+            "slides": [
+              { "src": "images/tattoo-master/arcane-aegis.png", "alt": "Arcane Aegis upgrade screen" }
+            ]
+          }
+        },
+        {
+          "cells": ["Dragon's Roar", "3"],
+          "details": {
+            "slides": [
+              { "src": "images/tattoo-master/dragons-roar.png", "alt": "Dragon's Roar upgrade screen" }
+            ]
+          }
+        },
+        {
+          "cells": ["Sage's Ward", "4"],
+          "details": {
+            "slides": [
+              { "src": "images/tattoo-master/sages-ward.png", "alt": "Sage's Ward upgrade screen" }
+            ]
+          }
+        },
+        {
+          "cells": ["Vanguard Stance", "4"],
+          "details": {
+            "slides": [
+              { "src": "images/tattoo-master/vanguard-stance.png", "alt": "Vanguard Stance upgrade screen" }
+            ]
+          }
+        },
+        {
+          "cells": ["Archmage's Focus", "4"],
+          "details": {
+            "slides": [
+              { "src": "images/tattoo-master/archmages-focus.png", "alt": "Archmage's Focus upgrade screen" }
+            ]
+          }
+        },
+        {
+          "cells": ["Colossus Guard", "4"],
+          "details": {
+            "slides": [
+              { "src": "images/tattoo-master/colossus-guard.png", "alt": "Colossus Guard upgrade screen" }
+            ]
+          }
+        },
+        {
+          "cells": ["Ether Dominion", "4"],
+          "details": {
+            "slides": [
+              { "src": "images/tattoo-master/ether-dominion.png", "alt": "Ether Dominion upgrade screen" }
+            ]
+          }
+        },
+        {
+          "cells": ["Omnipotent Ascension", "4"],
+          "details": {
+            "slides": [
+              { "src": "images/tattoo-master/omnipotent-ascension.png", "alt": "Omnipotent Ascension upgrade screen" }
+            ]
+          }
+        },
+        {
+          "cells": ["Captain Morgul", "4"],
+          "details": {
+            "slides": [
+              { "src": "images/tattoo-master/captain-morgul.png", "alt": "Captain Morgul upgrade screen" }
+            ]
+          }
+        },
+        {
+          "cells": ["Zokan and Gorsha", "4"],
+          "details": {
+            "slides": [
+              { "src": "images/tattoo-master/zokan-and-gorsha.png", "alt": "Zokan and Gorsha upgrade screen" }
+            ]
+          }
+        },
+        {
+          "cells": ["Bunny", "5"],
+          "details": {
+            "slides": [
+              { "src": "images/tattoo-master/bunny.png", "alt": "Bunny upgrade screen" }
+            ]
+          }
+        }
       ]
     }
   ],
   "infoBoxes": [
-    {
-      "variant": "",
-      "label": "3 More Pages",
-      "body": "Page 1 of 4 is shown above. Use the **Next** button in the panel to browse the remaining tattoos — full details available via the **View Stats** button on each entry."
-    },
     {
       "variant": "tip",
       "label": "Strategy",

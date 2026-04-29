@@ -12,7 +12,7 @@ export default function StepList({ steps, ordered = true }) {
   return (
     <Tag className="step-list">
       {steps.map((step, i) => (
-        <li key={i}>{renderText(step)}</li>
+        <li key={i}>{typeof step === 'string' ? renderText(step) : step}</li>
       ))}
     </Tag>
   )

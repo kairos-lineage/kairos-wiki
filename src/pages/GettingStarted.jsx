@@ -1,9 +1,9 @@
-import PageHero      from '../components/ui/PageHero'
-import SectionHeading from '../components/ui/SectionHeading'
-import InfoBox        from '../components/ui/InfoBox'
-import WikiFigure     from '../components/ui/WikiFigure'
-import StepList       from '../components/ui/StepList'
-import { Link }       from 'react-router-dom'
+import PageHero        from '../components/ui/PageHero'
+import SectionHeading  from '../components/ui/SectionHeading'
+import InfoBox         from '../components/ui/InfoBox'
+import WikiFigure      from '../components/ui/WikiFigure'
+import StepList        from '../components/ui/StepList'
+import { Link }        from 'react-router-dom'
 
 export default function GettingStarted() {
   return (
@@ -47,13 +47,13 @@ export default function GettingStarted() {
       <SectionHeading id="free-buffer" level={3}>Step 1 — Use the Free Buffer</SectionHeading>
       <p>
         Before doing anything else, open the{' '}
-        <Link to="/community-board#buffer">Community Board Buffer</Link>
+        <Link to="/community-board/buffer">Community Board Buffer</Link>
         {' '}(<code>Alt+B</code> → <strong>Buffer</strong>) and apply your buff scheme.
         The Buffer is free — no NPC hunting required. It gives you a full set of combat and support buffs
         that make a significant difference even at starter level.
       </p>
       <InfoBox variant="tip" label="New to the Buffer?">
-        <p>See the <Link to="/community-board#buffer">Buffer guide</Link> to learn how to build and save your own scheme.</p>
+        <p>See the <Link to="/community-board/buffer">Buffer guide</Link> to learn how to build and save your own scheme.</p>
       </InfoBox>
 
       <SectionHeading id="beginner-pack" level={3}>Step 2 — Claim Your Beginner Pack</SectionHeading>
@@ -84,7 +84,7 @@ export default function GettingStarted() {
       </InfoBox>
 
       <SectionHeading id="equip-gear" level={3}>Step 4 — Equip Your Gear</SectionHeading>
-      <p>Open your inventory (<code>Alt+I</code>), right-click each gear piece to equip it. Make sure your weapon and armor are on before engaging any enemies.</p>
+      <p>Open your inventory (<code>Alt+B</code> or <code>I</code>), right-click each gear piece to equip it. Make sure your weapon and armor are on before engaging any enemies.</p>
 
       <SectionHeading id="auto-play" level={3}>Step 5 — Start Hunting with Auto Play</SectionHeading>
       <p>
@@ -104,36 +104,14 @@ export default function GettingStarted() {
       {/* ===== CHECKLIST ===== */}
       <SectionHeading id="checklist">Quick Checklist</SectionHeading>
       <StepList steps={[
-        <><code>Alt+B</code> → Buffer and apply your buff scheme.</>,
+        '`Alt+B` → Buffer and apply your buff scheme.',
         'Claim and unpack the Beginner Pack from your inventory.',
         'Use both Cocktails (Blue & Red) for extra buffs.',
         'Equip all gear pieces from the pack.',
-        <><code>.play</code> and configure Auto Play to start grinding.</>,
+        '`.play` and configure Auto Play to start grinding.',
       ]} />
       <InfoBox variant="success" label="You're Ready">
         <p>With buffs active, gear equipped, and Auto Play running you're set to progress through the No-Grade Zone and beyond.</p>
-      </InfoBox>
-
-      {/* ===== MANA ISSUE ===== */}
-      <SectionHeading id="mana-issue">Mana Issue — We Have a Fix</SectionHeading>
-      <p>
-        Once you start using skills to farm you'll quickly run into mana problems. Potions are expensive
-        at this stage — but don't worry, you don't need them.
-      </p>
-      <p>
-        The fix is to head into the <strong>MultiSkill</strong> system (<code>Alt+B</code> → MultiSkill),
-        navigate to the <strong>Orc class</strong> beginner skills, and learn the{' '}
-        <strong>Weapon Mastery</strong> skill. This passive will keep your mana regenerating
-        fast enough to sustain skill-based farming without any potions.
-      </p>
-      <WikiFigure src="images/multiskills.png" alt="MultiSkill panel — Orc beginner skills" caption="MultiSkill panel — open via Alt+B → MultiSkill. Find the Orc class beginner skills section." size="md" />
-      <WikiFigure src="images/mana-issues.png" alt="Mana depleting while farming with skills" caption="Mana draining fast during skill-based farming — a common early problem." size="md" />
-      <WikiFigure src="images/mana-fix.png" alt="Weapon Mastery skill in MultiSkill" caption="Weapon Mastery — learn this skill to keep your mana full while farming." size="md" />
-      <InfoBox variant="success" label="Problem Solved">
-        <p>
-          After learning <strong>Weapon Mastery</strong> from MultiSkill you can farm freely with skills — no mana potions needed.
-          See <Link to="/community-board#multiskill">Community Board — MultiSkill</Link> for the full system guide.
-        </p>
       </InfoBox>
     </>
   )
