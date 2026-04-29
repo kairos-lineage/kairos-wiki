@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Kairos Wiki — Community-maintained guide for the Kairos L2 private server." />
+  <title>Kairos Wiki</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Nunito:wght@400;600;700&family=Fira+Code:wght@400&display=swap" rel="stylesheet">
+  <script>
+    // SPA redirect decode — restores the full URL encoded by 404.html
+    (function () {
+      var q = window.location.search.slice(1).split('&').reduce(function (acc, s) {
+        var r = s.split('=');
+        acc[decodeURIComponent(r[0])] = decodeURIComponent(r.slice(1).join('=').replace(/~and~/g, '&'));
+        return acc;
+      }, {});
+      if (q.p) history.replaceState(null, null, q.p + (q.q ? '?' + q.q : '') + (location.hash || ''));
+    })();
+  </script>
+  <script type="module" crossorigin src="/kairos-wiki/assets/index-G1scr7wN.js"></script>
+  <link rel="stylesheet" crossorigin href="/kairos-wiki/assets/index-CV9XROrn.css">
+</head>
+<body>
+  <div id="root"></div>
+</body>
+</html>
