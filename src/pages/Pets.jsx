@@ -3,6 +3,7 @@ import { Link }        from 'react-router-dom'
 import PageHero        from '../components/ui/PageHero'
 import SectionHeading  from '../components/ui/SectionHeading'
 import WikiCarousel    from '../components/ui/WikiCarousel'
+import WikiFigure      from '../components/ui/WikiFigure'
 import WikiTable       from '../components/ui/WikiTable'
 import InfoBox         from '../components/ui/InfoBox'
 import { renderText }  from '../utils/renderText'
@@ -97,10 +98,23 @@ export default function Pets() {
       />
 
       <p>
-        Pets are summonable companions obtained from specific raid bosses across the world.
-        Each pet grants <strong>passive buffs</strong> that persist while it is active.
-        Pets can be upgraded progressively — the table below shows <strong>max level</strong> bonus values.
+        Pets are obtained by harvesting <strong>Dense Hide</strong> — a special material dropped
+        exclusively by <strong>Superior Raid Bosses</strong>. Be warned: Superiors are exceptionally
+        powerful enemies that require serious preparation to take down.
       </p>
+      <p>
+        To harvest Dense Hide after killing a Superior, you need a <strong>Skinning Knife</strong> —
+        a consumable tool purchased from the Store using Gold Bars, Event Coins, and Boss Blood Superior.
+        Once you have the hide, it can be exchanged for your pet.
+        Each pet grants <strong>passive buffs</strong> that persist while it is active and can be
+        upgraded progressively — the table below shows <strong>max level</strong> bonus values.
+      </p>
+      <WikiFigure
+        src="images/skinning-knife.png"
+        alt="Skinning Knife in the Store showing required items: Gold Bar x2500, Event Coin x125, Boss Blood Superior x1"
+        caption="Skinning Knife — required to harvest Dense Hide from Superior Raid Bosses."
+        size="md"
+      />
       <WikiCarousel slides={SLIDES} />
 
       <SectionHeading id="pets-buffs">All Pets — Max Level Buffs</SectionHeading>
@@ -146,6 +160,14 @@ export default function Pets() {
         <strong>M.Atk / M.Crit Power</strong> for mages, <strong>P.Def / HP</strong> for tanks, and{' '}
         <strong>M.Def / CP</strong> for support. Higher-tier pets from harder raid bosses provide
         significantly larger bonuses.
+      </InfoBox>
+
+      <InfoBox variant="tip" label="The Trick">
+        Having a pet will <strong>significantly</strong> boost your chances of killing a Superior Raid Boss —
+        but you need to kill one first to get a pet. Sound impossible?{' '}
+        A little help from friends who already farm Superiors goes a long way.
+        Find players with pets, group up for your first Superior kill, and once you have your pet
+        you will be able to return the favour.
       </InfoBox>
     </>
   )
