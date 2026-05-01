@@ -807,3 +807,58 @@ code {
   text-align: center;
   padding: 1.5rem 1rem;
 }
+
+/* ===== PET FILTERS ===== */
+.pet-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 0.75rem 0 1rem;
+  align-items: center;
+}
+
+.pet-filter-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.35rem 0.75rem;
+  background: var(--bg-surface);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  color: var(--text-dim);
+  font-size: 0.82rem;
+  font-family: var(--font-body);
+  cursor: pointer;
+  transition: border-color 0.15s, background 0.15s, color 0.15s;
+  user-select: none;
+}
+.pet-filter-chip input[type="checkbox"] { display: none; }
+.pet-filter-chip:hover {
+  border-color: var(--gold-dim);
+  color: var(--text);
+}
+.pet-filter-chip.active {
+  background: var(--gold-glow);
+  border-color: var(--gold);
+  color: var(--gold-bright);
+}
+
+.pet-filter-clear {
+  background: none;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  color: var(--text-dim);
+  font-family: var(--font-body);
+  font-size: 0.8rem;
+  padding: 0.35rem 0.65rem;
+  cursor: pointer;
+  transition: border-color 0.15s, color 0.15s;
+}
+.pet-filter-clear:hover { border-color: var(--text-dim); color: var(--text); }
+
+.pet-no-results {
+  color: var(--text-dim);
+  font-style: italic;
+  padding: 1.5rem 1rem;
+  text-align: center;
+}

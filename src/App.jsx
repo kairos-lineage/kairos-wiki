@@ -10,6 +10,7 @@ import CommunityBoardSectionPage from './pages/CommunityBoardSectionPage'
 import Commands       from './pages/Commands'
 import NotFound       from './pages/NotFound'
 import Zones          from './pages/Zones'
+import Pets           from './pages/Pets'
 import StubPage       from './pages/StubPage'
 
 export default function App() {
@@ -26,6 +27,7 @@ export default function App() {
           <Route path="bosses"            element={<StubPage title="Bosses"       tagline="Raid bosses, world bosses, and epic loot." />} />
           <Route path="events"            element={<StubPage title="Events"       tagline="Scheduled events, PvP tournaments, and seasonal content." />} />
           <Route path="community-board"            element={<CommunityBoard />} />
+          <Route path="community-board/pets"       element={<Pets />} />
           <Route path="community-board/:sectionId" element={<CommunityBoardSectionPage />} />
           <Route path="commands"          element={<Commands />} />
           <Route path="donations"         element={<StubPage title="Donations"    tagline="Support the server and see donation perks." />} />
