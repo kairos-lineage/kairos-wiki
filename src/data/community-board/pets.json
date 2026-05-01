@@ -1,1 +1,87 @@
-{ "id": "pets", "title": "Pets", "stub": true }
+{
+  "id": "pets",
+  "title": "Pets",
+  "intro": "Pets are summonable companions obtained from specific raid bosses across the world. When summoned, each pet provides **passive buffs** that persist as long as it remains active. Pets can be upgraded progressively — the table below shows **max level** bonus values.",
+  "figure": {
+    "src": "images/pets-1.png",
+    "alt": "Pet buff system UI showing pet upgrade panel",
+    "caption": "Pet upgrade panel — increase your pet's level to maximise its bonuses.",
+    "size": "md"
+  },
+  "tables": [
+    {
+      "id": "pets-gallery",
+      "title": "Pet System",
+      "carousel": true,
+      "slides": [
+        { "src": "images/pets-2.png", "alt": "Pet detail view showing current bonuses and required items", "caption": "Pet detail view — shows current bonuses and items required for the next upgrade." }
+      ]
+    },
+    {
+      "id": "pets-buffs",
+      "title": "All Pets — Max Level Buffs",
+      "scrollable": true,
+      "scrollNote": "pets",
+      "columns": ["Pet Name", "Max Level Buffs"],
+      "rows": [
+        { "cells": ["Summon Greyclaw Kutus",      "+179% P.Atk\n+110% Crit Dmg\n+5 STR"] },
+        { "cells": ["Turek Mercenary Captain",    "+220% P.Atk\n+215% PvE Phys Dmg\n+5 DEX"] },
+        { "cells": ["Retreat Spider Cletu",       "+110% M.Atk\n+110% M.Crit Power\n+5 INT"] },
+        { "cells": ["Furious Thieles",            "+68% M.Atk\n+215% PvE Magic Dmg\n+5 WIT"] },
+        { "cells": ["Ghost of Peasant Leader",    "+215% P.Def\n+320% Max HP\n+5 CON"] },
+        { "cells": ["3rd Underwater Guardian",    "+267% M.Def\n+215% Max CP\n+5 MEN"] },
+        { "cells": ["Pan Dryad",                  "+57% P.Def\n+57% M.Def\n+110% HP\n+110% CP"] },
+        { "cells": ["Breka Warlock Pastu",        "+236% Max CP"] },
+        { "cells": ["Stakato Queen Zyrnna",       "+372% PvE Phys Dmg\n+5% Crit Dmg\n+3 STR"] },
+        { "cells": ["Ketra Commander Atis",       "+372% PvE Magic Dmg\n+5% M.Crit Power\n+3 INT"] },
+        { "cells": ["Atraiban",                   "+480% P.Atk\n+215% PvE Phys Dmg\n+509% Crit Dmg\n+17 STR"] },
+        { "cells": ["Eva's Guardian Millenu",     "+520% P.Atk\n+173% Crit Dmg\n+17 DEX"] },
+        { "cells": ["Shilen's Messenger Cabrio",  "+320% M.Atk\n+110% PvE Magic Dmg\n+320% M.Crit Power\n+17 INT"] },
+        { "cells": ["Tirak",                      "+236% M.Atk\n+110% M.Crit Power\n+17 WIT"] },
+        { "cells": ["Remmel",                     "+530% P.Def\n+320% Max HP\n+17 CON"] },
+        { "cells": ["Barion",                     "+451% M.Def\n+320% Max CP\n+17 MEN"] },
+        { "cells": ["Karte",                      "+215% P.Def\n+215% M.Def\n+215% HP\n+215% CP"] },
+        { "cells": ["Verfa",                      "+551% Max CP"] },
+        { "cells": ["Rahha",                      "+530% PvE Phys Dmg\n+47% Crit Dmg\n+6 STR\n+5 DEX"] },
+        { "cells": ["Kernon",                     "+530% PvE Magic Dmg\n+47% M.Crit Power\n+6 INT\n+5 WIT"] },
+        { "cells": ["Beacon of Blue Sky",         "+1080% P.Atk\n+530% PvE Phys Dmg\n+1080% Crit Dmg\n+20 STR\n+17 DEX"] },
+        { "cells": ["Unrequited Kael",            "+1120% P.Atk\n+320% PvE Phys Dmg\n+540% Crit Dmg\n+20 DEX"] },
+        { "cells": ["Chertuba of Great Soul",     "+740% M.Atk\n+530% PvE Magic Dmg\n+740% M.Crit Power\n+20 INT\n+17 WIT"] },
+        { "cells": ["Wizard of Storm Teruk",      "+572% M.Atk\n+320% PvE Magic Dmg\n+320% M.Crit Power\n+20 WIT"] },
+        { "cells": ["Captain of Red Flag Shaka",  "+1160% P.Def\n+740% HP\n+530% CP\n+20 CON"] },
+        { "cells": ["Forest Watcher Ruell",       "+1002% M.Def\n+740% CP\n+20 MEN"] },
+        { "cells": ["Princess Molrang",           "+530% P.Def\n+530% M.Def\n+530% HP\n+530% CP"] },
+        { "cells": ["Cat's Eye Bandit",           "+320% HP\n+1120% CP"] },
+        { "cells": ["Leader of Cat Gang",         "+320% P.Atk\n+1160% PvE Phys Dmg\n+278% Crit Dmg\n+12 STR\n+25 DEX"] },
+        { "cells": ["Timak Orc Chief Ranger",     "+320% M.Atk\n+1160% PvE Magic Dmg\n+278% M.Crit Power\n+12 INT\n+25 WIT"] },
+        { "cells": ["Crazy Mechanic Golem",       "+1380% P.Atk\n+556% PvE Phys Dmg\n+1212% Crit Dmg\n+25 STR\n+25 DEX"] },
+        { "cells": ["Soulless Wild Boar",         "+1080% P.Atk\n+556% PvE Phys Dmg\n+556% Crit Dmg\n+25 DEX"] },
+        { "cells": ["Korim",                      "+950% M.Atk\n+556% PvE Magic Dmg\n+950% M.Crit Power\n+25 INT\n+25 WIT"] },
+        { "cells": ["Elf Renoa",                  "+740% M.Atk\n+425% PvE Magic Dmg\n+425% M.Crit Power\n+25 WIT"] },
+        { "cells": ["Sejarr's Servitor",          "+1475% P.Def\n+950% HP\n+425% CP\n+25 CON"] },
+        { "cells": ["Rotting Tree Repiro",        "+1278% M.Def\n+950% CP\n+25 MEN"] },
+        { "cells": ["Shacram",                    "+687% P.Def\n+687% M.Def\n+556% HP\n+556% CP"] },
+        { "cells": ["Sorcerer Isirr",             "+293% HP\n+1080% CP"] },
+        { "cells": ["Ghost of the Well Lidia",    "+425% P.Atk\n+884% PvE Phys Dmg\n+425% Crit Dmg\n+13 STR\n+16 DEX"] },
+        { "cells": ["Meana",                      "+425% M.Atk\n+884% PvE Magic Dmg\n+425% M.Crit Power\n+13 INT\n+16 WIT"] },
+        { "cells": ["Icarus Sample 1",            "+2399% P.Atk\n+950% PvE Phys Dmg\n+2000% Crit Dmg\n+40 STR\n+25 DEX"] },
+        { "cells": ["Guillotine",                 "+2084% P.Atk\n+740% PvE Phys Dmg\n+950% Crit Dmg\n+40 DEX"] },
+        { "cells": ["Berun",                      "+1664% M.Atk\n+950% PvE Magic Dmg\n+1664% M.Crit Power\n+40 INT\n+25 WIT"] },
+        { "cells": ["Leo",                        "+1412% M.Atk\n+740% PvE Magic Dmg\n+908% M.Crit Power\n+40 WIT"] },
+        { "cells": ["Tiger King Angel",           "+2420% P.Def\n+1475% HP\n+1160% CP\n+40 CON"] },
+        { "cells": ["Golkonda",                   "+2105% M.Def\n+1475% CP\n+40 MEN"] },
+        { "cells": ["Rashkos",                    "+1475% P.Def\n+1475% M.Def\n+1160% HP\n+1160% CP"] },
+        { "cells": ["Gharmash",                   "+530% HP\n+2084% CP"] },
+        { "cells": ["Carnage Lord Gato",          "+950% P.Atk\n+1475% PvE Phys Dmg\n+950% Crit Dmg\n+24 STR\n+30 DEX"] },
+        { "cells": ["Leto Chief Talkin",          "+950% M.Atk\n+1475% PvE Magic Dmg\n+950% M.Crit Power\n+24 INT\n+30 WIT"] }
+      ]
+    }
+  ],
+  "infoBoxes": [
+    {
+      "variant": "tip",
+      "label": "Choosing Your Pet",
+      "body": "Pick pets that complement your build — **P.Atk / Crit Dmg** pets for physical DPS, **M.Atk / M.Crit Power** for mages, **P.Def / Max HP** for tanks, and **M.Def / Max CP** for support. Higher-tier pets from harder raid bosses provide significantly larger bonuses."
+    }
+  ]
+}
