@@ -11,6 +11,7 @@ import Commands       from './pages/Commands'
 import NotFound       from './pages/NotFound'
 import Zones          from './pages/Zones'
 import Pets           from './pages/Pets'
+import Urn            from './pages/Urn'
 import StubPage       from './pages/StubPage'
 
 export default function App() {
@@ -29,6 +30,7 @@ export default function App() {
           <Route path="community-board"            element={<CommunityBoard />} />
           <Route path="community-board/pets"       element={<Pets />} />
           <Route path="community-board/:sectionId" element={<CommunityBoardSectionPage />} />
+          <Route path="urn"                         element={<Urn />} />
           <Route path="commands"          element={<Commands />} />
           <Route path="donations"         element={<StubPage title="Donations"    tagline="Support the server and see donation perks." />} />
           <Route path="faq"               element={<StubPage title="FAQ"          tagline="Common questions answered." />} />
