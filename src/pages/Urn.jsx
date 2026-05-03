@@ -58,14 +58,14 @@ const RECIPES = {
 
 // Goal items — tattoo:true items default to the tattoo requirement (×10)
 const GOALS = [
-  { id: 'hellfire-oil',     label: 'Hellfire Oil',     def: 10, tattoo: true  },
-  { id: 'nightmare-oil',    label: 'Nightmare Oil',    def: 10, tattoo: true  },
-  { id: 'lunargent',        label: 'Lunargent',        def: 10, tattoo: true  },
-  { id: 'midnight-oil',     label: 'Midnight Oil',     def: 10, tattoo: true  },
-  { id: 'demonic-essence',  label: 'Demonic Essence',  def: 10, tattoo: true  },
-  { id: 'abyss-oil',        label: 'Abyss Oil',        def: 10, tattoo: true  },
-  { id: 'draconic-essence', label: 'Draconic Essence', def: 0,  tattoo: false },
-  { id: 'pure-silver',      label: 'Pure Silver',      def: 0,  tattoo: false },
+  { id: 'hellfire-oil',     label: 'Hellfire Oil',     def: 0, tattoo: true  },
+  { id: 'nightmare-oil',    label: 'Nightmare Oil',    def: 0, tattoo: true  },
+  { id: 'lunargent',        label: 'Lunargent',        def: 0, tattoo: true  },
+  { id: 'midnight-oil',     label: 'Midnight Oil',     def: 0, tattoo: true  },
+  { id: 'demonic-essence',  label: 'Demonic Essence',  def: 0, tattoo: true  },
+  { id: 'abyss-oil',        label: 'Abyss Oil',        def: 0, tattoo: true  },
+  { id: 'draconic-essence', label: 'Draconic Essence', def: 0, tattoo: false },
+  { id: 'pure-silver',      label: 'Pure Silver',      def: 0, tattoo: false },
 ]
 
 const DEFAULTS = Object.fromEntries(GOALS.map(g => [g.id, g.def]))
@@ -155,7 +155,7 @@ export default function Urn() {
   return (
     <>
       <div style={{ marginBottom: '1rem' }}>
-        <Link to="/community-board/tatto-master">← Tatto Master</Link>
+        <Link to="/tattoo">← Tattoo</Link>
       </div>
       <PageHero
         title="URN Mixing Calculator"
