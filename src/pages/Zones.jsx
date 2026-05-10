@@ -39,21 +39,34 @@ const ZONES = [
   stdZone('Vesper Noble Grade', 10, [
     m('Seed of Evil Shard', 'images/mats/seed-of-evil-shard.png'),
   ]),
-  stdZone('Vorpal Grade',       11),
+  stdZone('Vorpal Grade',       11, [
+    m('Enria', 'images/mats/enria.png'),
+  ]),
   stdZone('Elegia Grade',       12),
   { name: 'Pagan Temple', mats: [
     m('Life Force',              'images/mats/life-force.png'),
     m('Mark of Betrayal',        'images/mats/mark-of-betrayal.png'),
     m('Scorpion Poison Stinger', 'images/mats/scorpion-poison-stinger.png'),
+    m('Ancient Tome of the Demon', 'images/mats/ancient-tome-of-the-demon.png'),
+    m("Darion's Badge",          'images/mats/darions-badge.png'),
+    m('Contained Life Force',    'images/mats/contained-life-force.png'),
   ]},
   stdZone('Elegia 2',           13),
   stdZone('Elegia 3',           14),
   stdZone('Elegia 4',           15),
-  stdZone('Elegia 5',           16),
-  stdZone('Elegia 6',           17),
+  stdZone('Elegia 5',           16, [
+    m('Moonstone Amulet', 'images/mats/moonstone-amulet.png'),
+  ]),
+  stdZone('Elegia 6',           17, [
+    m('Moonstone Amulet', 'images/mats/moonstone-amulet.png'),
+  ]),
   // stdZone('Elegia 7',           18),
-  { name: 'Ketra Orc', mats: [] },
-  { name: 'Elegia 7', mats: [] },
+  { name: 'Ketra Orc', mats: [
+    m('Moonstone Amulet', 'images/mats/moonstone-amulet.png'),
+  ]},
+  { name: 'Elegia 7', mats: [
+    m('Moonstone Amulet', 'images/mats/moonstone-amulet.png'),
+  ]},
 ]
 
 function MatChip({ src, label }) {

@@ -169,6 +169,39 @@ export default function Pets() {
         Find players with pets, group up for your first Superior kill, and once you have your pet
         you will be able to return the favour.
       </InfoBox>
+
+      <SectionHeading id="donation-pets">Donation Pets</SectionHeading>
+      <p>
+        Donation pets are purchased with <strong>Donation Coins</strong> from the Store and upgraded
+        through 5 levels. Unlike raid boss pets they focus on quality-of-life bonuses — drop rate,
+        experience, and instance energy. The table below shows the coin cost per upgrade level and
+        the max level buffs.
+      </p>
+
+      <SectionHeading id="belldandy" level={3}>Belldandy</SectionHeading>
+      <WikiTable
+        columns={['Level', 'Donation Coins']}
+        rows={[
+          ['1', '5'],
+          ['2', '7'],
+          ['3', '8'],
+          ['4', '10'],
+          ['5 (Max)', '15'],
+        ]}
+      />
+      <p style={{ marginTop: '1rem' }}><strong>Max Level Buffs (5/5):</strong></p>
+      <WikiTable
+        columns={['Buff']}
+        rows={[
+          ['+50% Drop Amount'],
+          ['+50% EXP'],
+          ['+50% SP'],
+          ['+50% Raid Drop Amount'],
+          ['-30% Instance Energy Cost'],
+          ['+100% Instance Energy Regen'],
+          ['+100 Instance Energy Max'],
+        ]}
+      />
     </>
   )
 }
