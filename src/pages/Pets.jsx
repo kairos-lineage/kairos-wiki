@@ -6,6 +6,7 @@ import WikiCarousel    from '../components/ui/WikiCarousel'
 import WikiFigure      from '../components/ui/WikiFigure'
 import WikiTable       from '../components/ui/WikiTable'
 import InfoBox         from '../components/ui/InfoBox'
+import StepList        from '../components/ui/StepList'
 import { renderText }  from '../utils/renderText'
 
 const SLIDES = [
@@ -168,6 +169,28 @@ export default function Pets() {
         A little help from friends who already farm Superiors goes a long way.
         Find players with pets, group up for your first Superior kill, and once you have your pet
         you will be able to return the favour.
+      </InfoBox>
+
+      <SectionHeading id="pet-attack">Controlling Your Pet to Attack</SectionHeading>
+      <WikiFigure
+        src="images/pets/pet-attack.png"
+        alt="Pet Attack action button in the Actions panel"
+        caption="Pet Attack action — drag this from your Actions panel into your shortcut bar."
+        size="sm"
+      />
+      <StepList steps={[
+        'Play as a **Summoner** class (or party with one) — only Summoners can use regular Pets.',
+        'Learn and **summon** a regular Pet from your Summoner skill list.',
+        'Open your **Actions** panel and locate the **Pet Attack** action.',
+        '**Drag** the Pet Attack action into your shortcut bar alongside your regular skills.',
+        'Select a target, then press the **Pet Attack** shortcut to command your pet to attack it.',
+      ]} />
+      <InfoBox variant="tip" label="Giran Harbor Macro Trick">
+        <p>
+          Create a <strong>macro</strong> that fires the Pet Attack action on a toggle, then drop
+          the macro into your shortcut bar. Activate it during <strong>Giran Harbor</strong> events
+          and your pet will automatically attack your current target — no extra keypresses needed.
+        </p>
       </InfoBox>
 
       <SectionHeading id="donation-pets">Donation Pets</SectionHeading>
