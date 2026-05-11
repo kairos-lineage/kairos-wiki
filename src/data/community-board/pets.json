@@ -77,11 +77,33 @@
       ]
     }
   ],
+  "howItWorks": {
+    "id": "pet-attack",
+    "title": "Controlling Your Pet to Attack",
+    "figure": {
+      "src": "images/pets/pet-attack.png",
+      "alt": "Pet Attack action button in the Actions panel",
+      "caption": "Pet Attack action — drag this from your Actions panel into your shortcut bar.",
+      "size": "sm"
+    },
+    "steps": [
+      "Play as a **Summoner** class (or party with one) — only Summoners can use regular Pets.",
+      "Learn and **summon** a regular Pet from your Summoner skill list.",
+      "Open your **Actions** panel and locate the **Pet Attack** action.",
+      "**Drag** the Pet Attack action into your shortcut bar alongside your regular skills.",
+      "Select a target, then press the **Pet Attack** shortcut to command your pet to attack it."
+    ]
+  },
   "infoBoxes": [
     {
       "variant": "tip",
       "label": "Choosing Your Pet",
       "body": "Pick pets that complement your build — **P.Atk / Crit Dmg** pets for physical DPS, **M.Atk / M.Crit Power** for mages, **P.Def / Max HP** for tanks, and **M.Def / Max CP** for support. Higher-tier pets from harder raid bosses provide significantly larger bonuses."
+    },
+    {
+      "variant": "tip",
+      "label": "Giran Harbor Macro Trick",
+      "body": "Create a **macro** that fires the Pet Attack action on a toggle, then drop the macro into your shortcut bar. Activate it during **Giran Harbor** events and your pet will automatically attack your current target — no extra keypresses needed."
     }
   ]
 }
