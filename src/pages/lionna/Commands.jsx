@@ -16,10 +16,15 @@ export default function LionnaCommands() {
         <p>Type any command directly into the in-game chat and press Enter. Commands are not case-sensitive.</p>
       </InfoBox>
 
-      <SectionHeading id="commands">Available Commands</SectionHeading>
+      {/* ===== GENERAL ===== */}
+      <SectionHeading id="general">General Commands</SectionHeading>
       <WikiTable
         columns={['Command', 'Description']}
         rows={[
+          [
+            <code key="cp">.changepassword</code>,
+            'Change your account password.',
+          ],
           [
             <code key="farm">.farm</code>,
             <>
@@ -45,6 +50,23 @@ export default function LionnaCommands() {
           <code>.offlinefarm</code>. If Auto Farm is not running, the offline session will not start.
         </p>
       </InfoBox>
+
+      {/* ===== TELEPORT ===== */}
+      <SectionHeading id="teleport">Teleport Commands</SectionHeading>
+      <p>Instantly teleport to a town. Character must be <strong>out of combat</strong> to use these commands.</p>
+      <WikiTable
+        columns={['Command', 'Destination']}
+        rows={[
+          [<code key="aden">.aden</code>,       'Aden Town'],
+          [<code key="dion">.dion</code>,       'Dion Town'],
+          [<code key="giran">.giran</code>,     'Giran Town'],
+          [<code key="gludio">.gludio</code>,   'Gludio Town'],
+          [<code key="gludin">.gludin</code>,   'Gludin Village'],
+          [<code key="goddard">.goddard</code>, 'Goddard Town'],
+          [<code key="heine">.heine</code>,     'Heine Town'],
+          [<code key="oren">.oren</code>,       'Oren Town'],
+        ]}
+      />
     </>
   )
 }
