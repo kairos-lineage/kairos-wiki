@@ -3,8 +3,12 @@ import { Outlet, useLocation } from 'react-router-dom'
 import Header from './Header'
 import Sidebar from './Sidebar'
 import Footer from './Footer'
+import multiskillNav from '../../data/multiskill/navigation.json'
+import lionnaNav from '../../data/lionna/navigation.json'
 
-export default function Layout() {
+const NAV = { multiskill: multiskillNav, lionna: lionnaNav }
+
+export default function Layout({ server }) {
   const [sidebarOpen, setSidebarOpen] = useState(false)
   const location = useLocation()
 
@@ -20,7 +24,7 @@ export default function Layout() {
     <>
       <Header sidebarOpen={sidebarOpen} onToggleSidebar={toggleSidebar} />
       <div className="site-wrapper">
-        <Sidebar open={sidebarOpen} />
+        <Sidebar nav={NAV[server]} open={sidebarOpen} />
         <main className="main-content">
           <div className="content-wrapper">
             <Outlet />

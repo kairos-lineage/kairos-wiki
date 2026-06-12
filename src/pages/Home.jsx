@@ -4,15 +4,15 @@ import SectionHeading from '../components/ui/SectionHeading'
 import InfoBox        from '../components/ui/InfoBox'
 
 const NAV_CARDS = [
-  { to: '/getting-started',  icon: '📖', title: 'Getting Started',  desc: 'Download the client, create your account, and connect.' },
-  { to: '/server-info',      icon: '🖥️', title: 'Server Info',      desc: 'Rates, features, rules, and what makes Kairos unique.' },
-  { to: '/classes',          icon: '⚔️', title: 'Classes',          desc: 'Class guides, builds, and progression paths.' },
-  { to: '/zones',            icon: '🗺️', title: 'Zones',            desc: 'Hunting grounds, level ranges, and drop tables.' },
-  { to: '/bosses',           icon: '👹', title: 'Bosses',           desc: 'Raid bosses, world bosses, and epic loot.' },
-  { to: '/events',           icon: '🎉', title: 'Events',           desc: 'Scheduled events, PvP tournaments, and seasonal content.' },
-  { to: '/community-board',  icon: '📋', title: 'Community Board',  desc: 'Buffer, Rebirth, Faction War, Alchemy, and more — all Alt+B features.' },
-  { to: '/commands',         icon: '💬', title: 'Commands',         desc: 'In-game chat command reference.' },
-  { to: '/faq',              icon: '❓', title: 'FAQ',              desc: 'Common questions answered.' },
+  { to: '/multiskill/getting-started',  icon: '📖', title: 'Getting Started',  desc: 'Download the client, create your account, and connect.' },
+  { to: '/multiskill/server-info',      icon: '🖥️', title: 'Server Info',      desc: 'Rates, features, rules, and what makes Kairos unique.' },
+  { to: '/multiskill/classes',          icon: '⚔️', title: 'Classes',          desc: 'Class guides, builds, and progression paths.' },
+  { to: '/multiskill/zones',            icon: '🗺️', title: 'Zones',            desc: 'Hunting grounds, level ranges, and drop tables.' },
+  { to: '/multiskill/bosses',           icon: '👹', title: 'Bosses',           desc: 'Raid bosses, world bosses, and epic loot.' },
+  { to: '/multiskill/events',           icon: '🎉', title: 'Events',           desc: 'Scheduled events, PvP tournaments, and seasonal content.' },
+  { to: '/multiskill/community-board',  icon: '📋', title: 'Community Board',  desc: 'Buffer, Rebirth, Faction War, Alchemy, and more — all Alt+B features.' },
+  { to: '/multiskill/commands',         icon: '💬', title: 'Commands',         desc: 'In-game chat command reference.' },
+  { to: '/multiskill/faq',              icon: '❓', title: 'FAQ',              desc: 'Common questions answered.' },
 ]
 
 export default function Home() {
@@ -34,7 +34,7 @@ export default function Home() {
         and event schedules.
       </p>
       <InfoBox variant="tip" label="New Player?">
-        <p>Head over to the <a href="/getting-started">Getting Started</a> page for client download, account creation, and your first steps in the world of Kairos.</p>
+        <p>Head over to the <a href="/multiskill/getting-started">Getting Started</a> page for client download, account creation, and your first steps in the world of Kairos.</p>
       </InfoBox>
 
       <SectionHeading id="explore">Explore</SectionHeading>

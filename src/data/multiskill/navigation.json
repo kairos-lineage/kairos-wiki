@@ -1,0 +1,61 @@
+[
+  {
+    "label": "General",
+    "items": [
+      { "icon": "🏠", "text": "Home",            "to": "/multiskill" },
+      { "icon": "📖", "text": "Getting Started", "to": "/multiskill/getting-started" },
+      { "icon": "🖥️", "text": "Server Info",     "to": "/multiskill/server-info" }
+    ]
+  },
+  {
+    "label": "Gameplay",
+    "items": [
+      { "icon": "⚔️", "text": "Classes", "to": "/multiskill/classes" },
+      { "icon": "🗺️", "text": "Zones",   "to": "/multiskill/zones" },
+      { "icon": "👹", "text": "Bosses",  "to": "/multiskill/bosses" },
+      { "icon": "🎉", "text": "Events",  "to": "/multiskill/events" }
+    ]
+  },
+  {
+    "label": "Community Board",
+    "items": [
+      { "icon": "📋", "text": "Overview",         "to": "/multiskill/community-board" },
+      { "icon": "🔧", "text": "Server Tools",     "to": "/multiskill/community-board/server-tools" },
+      { "icon": "⚔️", "text": "Faction War",      "to": "/multiskill/community-board/faction-war" },
+      { "icon": "✨", "text": "Buffer",            "to": "/multiskill/community-board/buffer" },
+      { "icon": "🃏", "text": "Tarot Cards",      "to": "/multiskill/community-board/tarot" },
+      { "icon": "👑", "text": "Noblesse",         "to": "/multiskill/community-board/nobless" },
+      { "icon": "🔄", "text": "Rebirth",          "to": "/multiskill/community-board/rebirth" },
+      { "icon": "🌀", "text": "Raid Teleport",    "to": "/multiskill/community-board/raid-teleport" },
+      { "icon": "📦", "text": "Collection",       "to": "/multiskill/community-board/collection" },
+      { "icon": "⚗️", "text": "Alchemy",          "to": "/multiskill/community-board/alchemy" },
+      { "icon": "💀", "text": "Champion Hard",    "to": "/multiskill/community-board/champion" },
+      { "icon": "📚", "text": "MultiSkill",       "to": "/multiskill/community-board/multiskill" },
+      { "icon": "🔱", "text": "Tatto Master",     "to": "/multiskill/community-board/tatto-master" },
+      { "icon": "⚖️", "text": "Player Difficulty","to": "/multiskill/community-board/player-difficulty" },
+      { "icon": "🛡️", "text": "Guardians",        "to": "/multiskill/community-board/guardians" },
+      { "icon": "🪆", "text": "Dolls",            "to": "/multiskill/community-board/dolls" },
+      { "icon": "💎", "text": "Relics",           "to": "/multiskill/community-board/relics" },
+      { "icon": "🔩", "text": "Compound",         "to": "/multiskill/community-board/compound" },
+      { "icon": "🐾", "text": "Pets",             "to": "/multiskill/community-board/pets" },
+      { "icon": "🎨", "text": "Skinning",         "to": "/multiskill/community-board/skinning" },
+      { "icon": "🌀", "text": "Torment",          "to": "/multiskill/community-board/torment" }
+    ]
+  },
+  {
+    "label": "Tattoo",
+    "items": [
+      { "icon": "🔱", "text": "Overview",       "to": "/multiskill/tattoo" },
+      { "icon": "📜", "text": "Tatto Master",   "to": "/multiskill/community-board/tatto-master" },
+      { "icon": "🏺", "text": "URN Calculator", "to": "/multiskill/urn" }
+    ]
+  },
+  {
+    "label": "Reference",
+    "items": [
+      { "icon": "💬", "text": "Commands",  "to": "/multiskill/commands" },
+      { "icon": "💎", "text": "Donations", "to": "/multiskill/donations" },
+      { "icon": "❓", "text": "FAQ",       "to": "/multiskill/faq" }
+    ]
+  }
+]

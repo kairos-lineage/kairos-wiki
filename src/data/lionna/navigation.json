@@ -1,0 +1,37 @@
+[
+  {
+    "label": "General",
+    "items": [
+      { "icon": "🏠", "text": "Home",            "to": "/lionna" },
+      { "icon": "📖", "text": "Getting Started", "to": "/lionna/getting-started" },
+      { "icon": "🖥️", "text": "Server Info",     "to": "/lionna/server-info" }
+    ]
+  },
+  {
+    "label": "Gameplay",
+    "items": [
+      { "icon": "⚔️", "text": "Classes", "to": "/lionna/classes" },
+      { "icon": "🗺️", "text": "Zones",   "to": "/lionna/zones" },
+      { "icon": "👹", "text": "Bosses",  "to": "/lionna/bosses" },
+      { "icon": "🎉", "text": "Events",  "to": "/lionna/events" }
+    ]
+  },
+  {
+    "label": "Community Board",
+    "items": [
+      { "icon": "📋", "text": "Overview",      "to": "/lionna/community-board" },
+      { "icon": "✨", "text": "Buffer",         "to": "/lionna/community-board/buffer" },
+      { "icon": "🔄", "text": "Rebirth",       "to": "/lionna/community-board/rebirth" },
+      { "icon": "📚", "text": "MultiSkill",    "to": "/lionna/community-board/multiskill" },
+      { "icon": "🐾", "text": "Pets",          "to": "/lionna/community-board/pets" }
+    ]
+  },
+  {
+    "label": "Reference",
+    "items": [
+      { "icon": "💬", "text": "Commands",  "to": "/lionna/commands" },
+      { "icon": "💎", "text": "Donations", "to": "/lionna/donations" },
+      { "icon": "❓", "text": "FAQ",       "to": "/lionna/faq" }
+    ]
+  }
+]
