@@ -1,8 +1,8 @@
-import PageHero       from '../../components/ui/PageHero'
-import SectionHeading from '../../components/ui/SectionHeading'
-import WikiFigure     from '../../components/ui/WikiFigure'
-import WikiTable      from '../../components/ui/WikiTable'
-import InfoBox        from '../../components/ui/InfoBox'
+import PageHero        from '../../components/ui/PageHero'
+import SectionHeading  from '../../components/ui/SectionHeading'
+import WikiCarousel    from '../../components/ui/WikiCarousel'
+import WikiTable       from '../../components/ui/WikiTable'
+import InfoBox         from '../../components/ui/InfoBox'
 
 export default function LionnaAutoFarm() {
   return (
@@ -12,11 +12,14 @@ export default function LionnaAutoFarm() {
         tagline="Configure automated hunting on Lionna Multiskill."
       />
 
-      <WikiFigure
-        src="images/lionna/farm.png"
-        alt="Auto Farm panel"
-        caption="The Auto Farm panel — opened with .farm in chat."
-        size="lg"
+      <WikiCarousel
+        slides={[
+          { src: 'images/lionna/farm.png',        alt: 'Auto Farm panel',             caption: 'Auto Farm panel — opened with .farm in chat.' },
+          { src: 'images/lionna/farm-assist.png', alt: 'Auto Farm — Assist mode',     caption: 'Assist mode — follow and help a selected party member.' },
+          { src: 'images/lionna/farm-buffs.png',  alt: 'Auto Farm — Buffs',           caption: 'Buffs — select skills to auto-cast when their duration expires.' },
+          { src: 'images/lionna/farm-spoil.png',  alt: 'Auto Farm — Spoil',           caption: 'Spoil — select your Spoil skill for automatic spoiling.' },
+          { src: 'images/lionna/farm-sweep.png',  alt: 'Auto Farm — Sweep',           caption: 'Sweep — select your Sweep skill to auto-sweep spoiled mobs.' },
+        ]}
       />
 
       <SectionHeading id="overview">Overview</SectionHeading>
