@@ -21,6 +21,7 @@ import Events         from './pages/Events'
 
 // Lionna pages
 import LionnaHome     from './pages/LionnaHome'
+import LionnaCommands from './pages/lionna/Commands'
 
 export default function App() {
   return (
@@ -59,7 +60,7 @@ export default function App() {
           <Route path="events"            element={<StubPage title="Events"          tagline="Scheduled events, PvP tournaments, and seasonal content." />} />
           <Route path="community-board"   element={<StubPage title="Community Board" tagline="Alt+B features — Buffer, Rebirth, MultiSkill, and more." />} />
           <Route path="community-board/:sectionId" element={<StubPage title="Community Board" tagline="Coming soon." />} />
-          <Route path="commands"          element={<StubPage title="Commands"        tagline="In-game chat command reference." />} />
+          <Route path="commands"          element={<LionnaCommands />} />
           <Route path="donations"         element={<StubPage title="Donations"       tagline="Support the server and see donation perks." />} />
           <Route path="faq"               element={<StubPage title="FAQ"             tagline="Common questions answered." />} />
         </Route>
