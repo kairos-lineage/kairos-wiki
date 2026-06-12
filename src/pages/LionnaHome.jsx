@@ -4,15 +4,9 @@ import SectionHeading from '../components/ui/SectionHeading'
 import InfoBox        from '../components/ui/InfoBox'
 
 const NAV_CARDS = [
-  { to: '/lionna/getting-started',  icon: '📖', title: 'Getting Started',  desc: 'Download the client, create your account, and connect.' },
-  { to: '/lionna/server-info',      icon: '🖥️', title: 'Server Info',      desc: 'Rates, features, rules, and what makes Lionna unique.' },
-  { to: '/lionna/classes',          icon: '⚔️', title: 'Classes',          desc: 'Class guides, builds, and progression paths.' },
-  { to: '/lionna/zones',            icon: '🗺️', title: 'Zones',            desc: 'Hunting grounds, level ranges, and drop tables.' },
-  { to: '/lionna/bosses',           icon: '👹', title: 'Bosses',           desc: 'Raid bosses, world bosses, and epic loot.' },
-  { to: '/lionna/events',           icon: '🎉', title: 'Events',           desc: 'Scheduled events, PvP tournaments, and seasonal content.' },
-  { to: '/lionna/community-board',  icon: '📋', title: 'Community Board',  desc: 'Buffer, Rebirth, MultiSkill, Pets, and more — all Alt+B features.' },
-  { to: '/lionna/commands',         icon: '💬', title: 'Commands',         desc: 'In-game chat command reference.' },
-  { to: '/lionna/faq',              icon: '❓', title: 'FAQ',              desc: 'Common questions answered.' },
+  { to: '/lionna/getting-started', icon: '📖', title: 'Getting Started', desc: 'Download the client, create your account, and connect.' },
+  { to: '/lionna/server-info',     icon: '🖥️', title: 'Server Info',     desc: 'Rates, features, rules, and what makes Lionna unique.' },
+  { to: '/lionna/commands',        icon: '💬', title: 'Commands',        desc: 'In-game chat command reference.' },
 ]
 
 export default function LionnaHome() {
