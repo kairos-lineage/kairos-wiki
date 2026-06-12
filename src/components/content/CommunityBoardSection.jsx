@@ -96,6 +96,7 @@ export default function CommunityBoardSection({ data, standalone = false }) {
             return (
               <div key={t.id}>
                 <SectionHeading id={t.id} level={3}>{t.title}</SectionHeading>
+                {t.figure && <WikiFigure {...t.figure} />}
                 {t.scrollable ? (
                   <>
                     <div className="wiki-table-scroll-wrapper">

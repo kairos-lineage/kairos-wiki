@@ -20,7 +20,7 @@ export default function Home() {
     <>
       <div className="hero">
         <img
-          src={`${import.meta.env.BASE_URL}images/logo.png`}
+          src={`${import.meta.env.BASE_URL}images/image-removebg-preview.png`}
           alt="L2 Kairos Multiskill logo"
           className="hero-logo"
         />

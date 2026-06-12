@@ -13,6 +13,7 @@ import Zones          from './pages/Zones'
 import Pets           from './pages/Pets'
 import Urn            from './pages/Urn'
 import Tattoo         from './pages/Tattoo'
+import Events         from './pages/Events'
 import StubPage       from './pages/StubPage'
 
 export default function App() {
@@ -27,7 +28,7 @@ export default function App() {
           <Route path="classes"           element={<StubPage title="Classes"      tagline="Class guides, builds, and progression paths." />} />
           <Route path="zones"             element={<Zones />} />
           <Route path="bosses"            element={<StubPage title="Bosses"       tagline="Raid bosses, world bosses, and epic loot." />} />
-          <Route path="events"            element={<StubPage title="Events"       tagline="Scheduled events, PvP tournaments, and seasonal content." />} />
+          <Route path="events"            element={<Events />} />
           <Route path="community-board"            element={<CommunityBoard />} />
           <Route path="community-board/pets"       element={<Pets />} />
           <Route path="community-board/:sectionId" element={<CommunityBoardSectionPage />} />

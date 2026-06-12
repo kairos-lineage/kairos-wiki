@@ -1,28 +1,92 @@
 # Kairos Wiki
 
-This repository contains a static multi-page wiki preview built for GitHub Pages.
+Kairos Wiki is a React + Vite static website for documenting Kairos server features,
+systems, commands, and player guides.
 
-## GitHub Pages Setup
+The site is built as a single page app and is configured for GitHub Pages under the
+`/kairos-wiki/` base path.
 
-- `index.html` is the homepage for GitHub Pages.
-- Select the `main` branch and `root` folder for Pages source to serve the website from the repository's root.
-- Shared design styles are located in `styles.css` and shared JavaScript is in `scripts.js`.
+## Run Locally
 
-## Pages Included
+Install dependencies if needed:
 
-- `index.html`
-- `getting-started.html`
-- `server-info.html`
-- `classes.html`
-- `zones.html`
-- `bosses.html`
-- `events.html`
-- `commands.html`
-- `donations.html`
-- `faq.html`
+```powershell
+npm install
+```
 
-## Notes
+Start the development server:
 
-- `kairos-preview.html` is kept as a design reference.
-- The sidebar navigation uses page-specific HTML links so the site works when pushed to GitHub.
-- Add new content pages by duplicating the existing layout and updating sidebar links.
+```powershell
+npm run dev
+```
+
+Vite will print a local URL. Because this project uses the `/kairos-wiki/` base path,
+open:
+
+```text
+http://localhost:5173/kairos-wiki/
+```
+
+## Build
+
+Create a production build:
+
+```powershell
+npm run build
+```
+
+Preview the production build:
+
+```powershell
+npm run preview
+```
+
+## Project Structure
+
+```text
+src/
+  App.jsx                         Routes for all pages
+  main.jsx                        React entry point
+  components/                     Shared layout, UI, and content components
+  data/
+    navigation.json               Sidebar navigation
+    community-board/              JSON content for community board sections
+  pages/                          Page-level React components
+  styles/                         Global, layout, and animation CSS
+
+images/                           Source image assets used by pages
+public/                           Static public files, including GitHub Pages 404
+dist/                             Production build output
+```
+
+## Important Files
+
+- `src/App.jsx` controls the route map.
+- `src/data/navigation.json` controls the sidebar menu.
+- `src/pages/` contains the main page components.
+- `src/data/community-board/` contains most Community Board content.
+- `src/styles/` contains shared CSS.
+- `vite.config.js` contains the GitHub Pages base path.
+
+## Adding Content
+
+For most Community Board pages, edit or add a JSON file in:
+
+```text
+src/data/community-board/
+```
+
+For custom pages with special layout or behavior, add a React component in:
+
+```text
+src/pages/
+```
+
+Then wire the route in `src/App.jsx` and add the sidebar link in
+`src/data/navigation.json`.
+
+## Deployment
+
+The project includes a GitHub Actions workflow in `.github/workflows/deploy.yml`.
+On deployment, Vite builds the app and publishes the generated output for GitHub
+Pages.

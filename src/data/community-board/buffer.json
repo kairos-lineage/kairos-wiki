@@ -30,13 +30,46 @@
       ]
     },
     {
-      "id": "buffer-leveling",
-      "title": "Buffer Level & Progression",
-      "columns": ["EXP Gain", "L-Coin Cost"],
+      "id": "buffer-level-buffs",
+      "title": "Level Up Buffer — Additional Custom Buffs",
+      "figure": {
+        "src": "images/buffer-level.png",
+        "alt": "Level Up Buffer panel showing additional custom buff slots",
+        "caption": "Level Up Buffer panel — unlocked after 150 Rebirths.",
+        "size": "lg"
+      },
+      "preText": "After reaching **150 Rebirths** you unlock access to the **Level Up Buffer**, which grants 10 additional custom buffs on top of your normal scheme. Each buff slot is purchased separately with L-Coins.",
+      "columns": ["Buff", "Effect"],
       "rows": [
-        { "cells": ["+1,000 EXP",  "1,000 L-Coin"] },
-        { "cells": ["+5,000 EXP",  "5,000 L-Coin"] },
-        { "cells": ["+10,000 EXP", "10,000 L-Coin"] }
+        { "cells": ["Chant of Tauren",   "P.Atk +300%, M.Atk +300%"] },
+        { "cells": ["Dance of Slither",  "Critical Damage +300%, M.Critical Power +300%"] },
+        { "cells": ["Eye of Light",      "P.Def +400%, M.Def +400%, Max HP +100%, Max CP +400%"] },
+        { "cells": ["Dance of Demonic",  "DEX +25, WIT +25, PvE Physical Skills Damage +400%, PvE Magical Damage +400%"] },
+        { "cells": ["Sword of Blood",    "STR +35, INT +35"] },
+        { "cells": ["Magic of Blood",    "M.Atk +500%, M.Critical Power +200%"] },
+        { "cells": ["Spirit of Elf",     "P.Atk +600%, Critical Damage +200%, Physical Skill Power +200%"] },
+        { "cells": ["Spirit of Dark Elf","Spoil Rate +25%, Drop Rate +25%, Adena Drop Rate +25%"] },
+        { "cells": ["Moonlight Hunter",  "Experience Bonus +200%"] },
+        { "cells": ["Superior Buffer",   "Global Drop Limit Multiplier +300%, Global Drop Limit Bonus +2,000"] }
+      ]
+    },
+    {
+      "id": "buffer-level-costs",
+      "title": "Unlock Cost per Buff Slot",
+      "preText": "Buff slots are unlocked one at a time in order. Each slot costs more than the previous.",
+      "columns": ["Buff Slot", "L-Coin Cost"],
+      "rows": [
+        { "cells": ["1", "50,000"] },
+        { "cells": ["2", "60,000"] },
+        { "cells": ["3", "70,000"] },
+        { "cells": ["4", "80,000"] },
+        { "cells": ["5", "90,000"] },
+        { "cells": ["6", "100,000"] },
+        { "cells": ["7", "110,000"] },
+        { "cells": ["8", "120,000"] },
+        { "cells": ["9", "130,000"] },
+        { "cells": ["10", "140,000"] },
+        { "cells": ["**Total**", "**950,000**"] }
       ]
     }
   ],
@@ -44,12 +77,17 @@
     {
       "variant": "warning",
       "label": "Requirement",
-      "body": "Buffer leveling is locked until approximately **150 Rebirths** are completed."
+      "body": "The Level Up Buffer is locked until **150 Rebirths** are completed."
     },
     {
       "variant": "",
       "label": "L-Coin",
       "body": "L-Coin drops from regular mobs, raid and world bosses, and seasonal events."
+    },
+    {
+      "variant": "tip",
+      "label": "Total Investment",
+      "body": "Unlocking all 10 buff slots costs **950,000 L-Coins** in total."
     }
   ]
 }
