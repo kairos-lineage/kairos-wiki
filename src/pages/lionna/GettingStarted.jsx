@@ -1,6 +1,7 @@
 import PageHero       from '../../components/ui/PageHero'
 import SectionHeading from '../../components/ui/SectionHeading'
 import WikiTable      from '../../components/ui/WikiTable'
+import WikiFigure     from '../../components/ui/WikiFigure'
 import InfoBox        from '../../components/ui/InfoBox'
 import StepList       from '../../components/ui/StepList'
 import { Link }       from 'react-router-dom'
@@ -25,7 +26,7 @@ export default function LionnaGettingStarted() {
         columns={['Class Type', 'Weapon', 'Note']}
         rows={[
           ['Archer / Fighter', 'B-grade Bow', <>Buy at least <strong>1 Arrow</strong> and place it in the bow ammo slot. Arrows are not consumed — one is enough, it just needs to be equipped.</>],
-          ['Mage',             'B-grade Mage Weapon', 'Staff or other mage weapon of your choice.'],
+          ['Mage',             'B-grade Mage Weapon', 'Staff your only choice.'],
         ]}
       />
 
@@ -44,6 +45,15 @@ export default function LionnaGettingStarted() {
         that works for both <strong>mages</strong> and <strong>warriors</strong> — you do not need
         to activate it manually, it applies automatically.
       </p>
+      <WikiFigure
+        src="images/lionna/soulshot-blessed.png"
+        alt="Custom Soulshot Blessed item"
+        caption="Custom Soulshot Blessed — auto-applies, valid for 30 days."
+        size="sm"
+      />
+      <InfoBox variant="warning" label="Expires after 30 days">
+        <p>Custom Soulshot Blessed is a <strong>time-limited item</strong> — it expires <strong>30 days</strong> after purchase. Return to the shop and buy a new one when it runs out.</p>
+      </InfoBox>
 
       <InfoBox variant="tip" label="Arrows">
         <p>Arrows are <strong>not consumed</strong> on Lionna. Buy just 1 and slot it — that is all you ever need.</p>
