@@ -3,7 +3,7 @@
     "label": "General",
     "items": [
       { "icon": "🏠", "text": "Home",            "to": "/lionna" },
-      { "icon": "📖", "text": "Getting Started", "to": "/lionna/getting-started" },
+      { "icon": "📖", "text": "Getting Started",  "to": "/lionna/getting-started" },
       { "icon": "🖥️", "text": "Server Info",     "to": "/lionna/server-info" }
     ]
   },

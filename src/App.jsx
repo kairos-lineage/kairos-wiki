@@ -20,9 +20,10 @@ import Tattoo         from './pages/Tattoo'
 import Events         from './pages/Events'
 
 // Lionna pages
-import LionnaHome     from './pages/LionnaHome'
-import LionnaCommands from './pages/lionna/Commands'
-import LionnaAutoFarm from './pages/lionna/AutoFarm'
+import LionnaHome          from './pages/LionnaHome'
+import LionnaGettingStarted from './pages/lionna/GettingStarted'
+import LionnaCommands      from './pages/lionna/Commands'
+import LionnaAutoFarm      from './pages/lionna/AutoFarm'
 
 export default function App() {
   return (
@@ -53,7 +54,7 @@ export default function App() {
         {/* Lionna Multiskill */}
         <Route path="lionna" element={<Layout server="lionna" />}>
           <Route index                    element={<LionnaHome />} />
-          <Route path="getting-started"   element={<StubPage title="Getting Started" tagline="Download the client, create your account, and connect." />} />
+          <Route path="getting-started"   element={<LionnaGettingStarted />} />
           <Route path="server-info"       element={<StubPage title="Server Info"     tagline="Server rates, features, and rules." />} />
           <Route path="classes"           element={<StubPage title="Classes"         tagline="Class guides, builds, and progression paths." />} />
           <Route path="zones"             element={<StubPage title="Zones"           tagline="Hunting grounds, level ranges, and drop tables." />} />
