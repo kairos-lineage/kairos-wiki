@@ -24,9 +24,8 @@ export default function LionnaGettingStarted() {
       <WikiTable
         columns={['Class Type', 'Weapon', 'Note']}
         rows={[
-          ['Archer',  'B-grade Bow',        <>Buy at least <strong>1 Arrow</strong> and place it in the bow ammo slot. Arrows are not consumed — one is enough, it just needs to be equipped.</>],
-          ['Mage',    'B-grade Magic Weapon', 'Staff or other mage weapon of your choice.'],
-          ['Fighter', 'B-grade Melee Weapon', 'Sword, blunt, dagger, etc. depending on your class.'],
+          ['Archer / Fighter', 'B-grade Bow', <>Buy at least <strong>1 Arrow</strong> and place it in the bow ammo slot. Arrows are not consumed — one is enough, it just needs to be equipped.</>],
+          ['Mage',             'B-grade Mage Weapon', 'Staff or other mage weapon of your choice.'],
         ]}
       />
 
