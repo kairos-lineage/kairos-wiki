@@ -1060,6 +1060,23 @@ code {
   color: var(--text);
 }
 
+/* ===== TATTOO TABLE ===== */
+.tattoo-details-link {
+  display: inline-block;
+  padding: 0.25rem 0.65rem;
+  border: 1px solid var(--border-accent);
+  border-radius: 4px;
+  font-size: 0.82rem;
+  color: var(--gold);
+  white-space: nowrap;
+  transition: background 0.15s, border-color 0.15s;
+}
+.tattoo-details-link:hover {
+  background: var(--gold-glow);
+  border-color: var(--gold);
+  color: var(--gold-bright);
+}
+
 /* ===== SERVER SELECT ===== */
 .server-select {
   min-height: 100vh;

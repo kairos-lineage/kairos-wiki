@@ -1,0 +1,10 @@
+[
+  {
+    "id": "libro-oscuro",
+    "name": "Libro Oscuro",
+    "type": "Custom Quest",
+    "effect": "—",
+    "obtain": "Collect 4 Secret Parts from 12 hidden locations across the world map",
+    "path": "/lionna/libro-oscuro"
+  }
+]

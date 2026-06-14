@@ -10,8 +10,14 @@
   {
     "label": "Gameplay",
     "items": [
-      { "icon": "🌾", "text": "Auto Farm",    "to": "/lionna/auto-farm" },
-      { "icon": "📖", "text": "Libro Oscuro", "to": "/lionna/libro-oscuro" }
+      { "icon": "🌾", "text": "Auto Farm", "to": "/lionna/auto-farm" }
+    ]
+  },
+  {
+    "label": "Tattoos",
+    "items": [
+      { "icon": "🔱", "text": "Custom Tattoos", "to": "/lionna/tattoos" },
+      { "icon": "📖", "text": "Libro Oscuro",   "to": "/lionna/libro-oscuro" }
     ]
   },
   {
