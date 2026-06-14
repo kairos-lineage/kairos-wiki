@@ -125,11 +125,11 @@ export default function LionnaAutoFarm() {
       <p>
         The <strong>Auto Farm</strong> button at the bottom of the panel starts and stops farming.
         All settings above are applied at the moment you press it. To farm offline, start Auto Farm
-        first and then use <code>.offlinefarm</code> in chat before closing the client.
+        first and then use <code>.offlineplay</code> in chat before closing the client.
       </p>
       <InfoBox variant="warning" label="Offline Farm">
         <p>
-          Auto Farm must be <strong>running</strong> before you trigger <code>.offlinefarm</code>.
+          Auto Farm must be <strong>running</strong> before you trigger <code>.offlineplay</code>.
           Offline mode stays active until the next server restart.
         </p>
       </InfoBox>

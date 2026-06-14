@@ -33,7 +33,7 @@ export default function LionnaCommands() {
             </>,
           ],
           [
-            <code key="offlinefarm">.offlinefarm</code>,
+            <code key="offlinefarm">.offlineplay</code>,
             <>
               Switches the character into <strong>offline farm mode</strong>.{' '}
               <strong>.farm must already be active</strong> — the character will continue
@@ -47,7 +47,7 @@ export default function LionnaCommands() {
       <InfoBox variant="warning" label="Offline Farm Requirement">
         <p>
           You must start <code>.farm</code> and configure your farming settings <strong>before</strong> triggering{' '}
-          <code>.offlinefarm</code>. If Auto Farm is not running, the offline session will not start.
+          <code>.offlineplay</code>. If Auto Farm is not running, the offline session will not start.
         </p>
       </InfoBox>
 

@@ -56,7 +56,7 @@ export default function LionnaLibroOscuro() {
       <SectionHeading id="overview">Overview</SectionHeading>
       <p>
         The <strong>Libro Oscuro</strong> is a custom quest item required for Tattoo progression.
-        It is assembled from <strong>4 Secret Parts</strong>, each found by visiting 3 hidden
+        It is assembled from <strong>4 Secret Parts</strong>, each in different hidden
         locations scattered across the Lineage II world map. Explore, find them all, and combine
         the parts to obtain the final item.
       </p>
