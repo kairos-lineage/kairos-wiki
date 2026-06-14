@@ -26,6 +26,7 @@ import LionnaCommands       from './pages/lionna/Commands'
 import LionnaAutoFarm       from './pages/lionna/AutoFarm'
 import LionnaLibroOscuro    from './pages/lionna/LibroOscuro'
 import LionnaTattoos        from './pages/lionna/Tattoos'
+import ElementalTattoo      from './pages/lionna/tattoos/ElementalTattoo'
 
 export default function App() {
   return (
@@ -67,7 +68,8 @@ export default function App() {
           <Route path="commands"          element={<LionnaCommands />} />
           <Route path="auto-farm"         element={<LionnaAutoFarm />} />
           <Route path="libro-oscuro"      element={<LionnaLibroOscuro />} />
-          <Route path="tattoos"           element={<LionnaTattoos />} />
+          <Route path="tattoos"             element={<LionnaTattoos />} />
+          <Route path="tattoos/elemental" element={<ElementalTattoo />} />
           <Route path="donations"         element={<StubPage title="Donations"       tagline="Support the server and see donation perks." />} />
           <Route path="faq"               element={<StubPage title="FAQ"             tagline="Common questions answered." />} />
         </Route>
