@@ -20,10 +20,11 @@ import Tattoo         from './pages/Tattoo'
 import Events         from './pages/Events'
 
 // Lionna pages
-import LionnaHome          from './pages/LionnaHome'
+import LionnaHome           from './pages/LionnaHome'
 import LionnaGettingStarted from './pages/lionna/GettingStarted'
-import LionnaCommands      from './pages/lionna/Commands'
-import LionnaAutoFarm      from './pages/lionna/AutoFarm'
+import LionnaCommands       from './pages/lionna/Commands'
+import LionnaAutoFarm       from './pages/lionna/AutoFarm'
+import LionnaLibroOscuro    from './pages/lionna/LibroOscuro'
 
 export default function App() {
   return (
@@ -64,6 +65,7 @@ export default function App() {
           <Route path="community-board/:sectionId" element={<StubPage title="Community Board" tagline="Coming soon." />} />
           <Route path="commands"          element={<LionnaCommands />} />
           <Route path="auto-farm"         element={<LionnaAutoFarm />} />
+          <Route path="libro-oscuro"      element={<LionnaLibroOscuro />} />
           <Route path="donations"         element={<StubPage title="Donations"       tagline="Support the server and see donation perks." />} />
           <Route path="faq"               element={<StubPage title="FAQ"             tagline="Common questions answered." />} />
         </Route>

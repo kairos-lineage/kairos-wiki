@@ -10,7 +10,8 @@
   {
     "label": "Gameplay",
     "items": [
-      { "icon": "🌾", "text": "Auto Farm", "to": "/lionna/auto-farm" }
+      { "icon": "🌾", "text": "Auto Farm",    "to": "/lionna/auto-farm" },
+      { "icon": "📖", "text": "Libro Oscuro", "to": "/lionna/libro-oscuro" }
     ]
   },
   {
