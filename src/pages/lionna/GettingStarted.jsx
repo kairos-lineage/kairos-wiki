@@ -66,6 +66,12 @@ export default function LionnaGettingStarted() {
         Your first target is the <strong>mini boss</strong> in that zone. It drops a custom
         material called <strong>Valkos Skull</strong>.
       </p>
+      <WikiFigure
+        src="images/lionna/valkos-skull.png"
+        alt="Valkos Skull item"
+        caption="Valkos Skull — dropped by the Zone 1 mini boss."
+        size="sm"
+      />
       <WikiTable
         columns={['Item', 'Amount Needed', 'Purpose']}
         rows={[
