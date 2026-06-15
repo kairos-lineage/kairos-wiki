@@ -1065,8 +1065,8 @@ code {
   display: block;
   width: 48px;
   height: 48px;
-  object-fit: contain;
-  image-rendering: pixelated;
+  object-fit: none;
+  object-position: left bottom;
 }
 
 .tattoo-effect-line {
