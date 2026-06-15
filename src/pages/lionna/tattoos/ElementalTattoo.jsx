@@ -8,7 +8,7 @@ import tattoos        from '../../../data/lionna/tattoos.json'
 
 const tattoo = tattoos.find(t => t.id === 'elemental')
 const BASE   = 'images/lionna/tattoo/'
-const ICON   = { Fire: '🔥', Water: '💧', Earth: '🌍', Air: '💨' }
+const ELEMENT_ICON = { 'Fire Element Part': '🔥', 'Water Element Part': '💧', 'Earth Element Part': '🌍', 'Air Element Part': '💨' }
 
 export default function ElementalTattoo() {
   const total = tattoo.materials.reduce((sum, m) => sum + m.qty, 0)
@@ -69,17 +69,17 @@ export default function ElementalTattoo() {
         ]}
       />
       <p>
-        Each elemental world boss has a chance to drop their <strong>unique element material</strong>{' '}
-        along with the shared drop — <strong>Warrior Halments</strong>. You will need{' '}
-        <strong>x25 Warrior Halments</strong> from each boss to complete your set.
+        Each elemental world boss has a chance to drop their <strong>unique Element Part</strong>{' '}
+        along with the shared drop — <strong>Warrior Halments</strong>. You need{' '}
+        <strong>x25 Warrior Halments total</strong> and <strong>x1 Element Part per boss</strong> to complete the recipe.
       </p>
 
       {/* ===== MATERIALS TABLE ===== */}
       <SectionHeading id="materials">Required Materials</SectionHeading>
+      <p>Bring the following items to <strong>Asta</strong> under <strong>Normal Tattoos</strong> to craft the Elemental Tattoo.</p>
       <table className="wiki-table">
         <thead>
           <tr>
-            <th>Element</th>
             <th>Material</th>
             <th>Source</th>
             <th style={{ textAlign: 'right' }}>Qty</th>
@@ -88,8 +88,7 @@ export default function ElementalTattoo() {
         <tbody>
           {tattoo.materials.map((m, i) => (
             <tr key={i}>
-              <td>{ICON[m.element]} {m.element}</td>
-              <td>{m.name}</td>
+              <td>{ELEMENT_ICON[m.name] ? <>{ELEMENT_ICON[m.name]} {m.name}</> : m.name}</td>
               <td>{m.source}</td>
               <td style={{ textAlign: 'right' }}>{m.qty}</td>
             </tr>
@@ -97,11 +96,26 @@ export default function ElementalTattoo() {
         </tbody>
         <tfoot>
           <tr>
-            <td colSpan={3}><strong>Total</strong></td>
+            <td colSpan={2}><strong>Total items</strong></td>
             <td style={{ textAlign: 'right' }}><strong>{total}</strong></td>
           </tr>
         </tfoot>
       </table>
+
+      <div style={{ display: 'flex', gap: '1.5rem', flexWrap: 'wrap', marginTop: '1.25rem' }}>
+        <WikiFigure
+          src={`${BASE}elemental-parts.png`}
+          alt="Element Parts — Fire, Water, Earth, Air"
+          caption="Element Parts — one from each elemental boss."
+          size="sm"
+        />
+        <WikiFigure
+          src={`${BASE}elemental-warrior-helmet.png`}
+          alt="Warrior Halments"
+          caption="Warrior Halments ×25 — dropped by all elemental bosses."
+          size="sm"
+        />
+      </div>
     </>
   )
 }
