@@ -15,7 +15,15 @@ export default function LionnaTattoos() {
     return tattoos.filter(t => {
       const matchType  = !activeType || t.type === activeType
       const q          = query.toLowerCase()
-      const matchQuery = !q || t.name.toLowerCase().includes(q) || t.type.toLowerCase().includes(q)
+      const matchQuery = !q
+        || t.name.toLowerCase().includes(q)
+        || t.type.toLowerCase().includes(q)
+        || t.obtain.toLowerCase().includes(q)
+        || t.materials.some(m =>
+            m.name.toLowerCase().includes(q) ||
+            m.source.toLowerCase().includes(q) ||
+            (m.element && m.element.toLowerCase().includes(q))
+          )
       return matchType && matchQuery
     })
   }, [query, activeType])
