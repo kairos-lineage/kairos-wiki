@@ -74,20 +74,28 @@ export default function LionnaTattoos() {
         <table className="wiki-table">
           <thead>
             <tr>
+              <th style={{ width: '52px' }}></th>
               <th>Name</th>
-              <th>Type</th>
               <th>Effect</th>
-              <th>How to Obtain</th>
-              <th></th>
+              <th style={{ width: '1%' }}></th>
             </tr>
           </thead>
           <tbody>
             {filtered.map(t => (
               <tr key={t.id}>
+                <td style={{ padding: '0.4rem' }}>
+                  <img
+                    src={`${import.meta.env.BASE_URL}${t.icon}`}
+                    alt={t.name}
+                    className="tattoo-icon"
+                  />
+                </td>
                 <td><strong>{t.name}</strong></td>
-                <td>{t.type}</td>
-                <td>{t.effect}</td>
-                <td>{t.obtain}</td>
+                <td>
+                  {t.effect.map((line, i) => (
+                    <span key={i} className="tattoo-effect-line">{line}</span>
+                  ))}
+                </td>
                 <td>
                   <Link to={t.path} className="tattoo-details-link">View Details →</Link>
                 </td>
