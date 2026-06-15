@@ -7,16 +7,8 @@ import InfoBox        from '../../../components/ui/InfoBox'
 import tattoos        from '../../../data/lionna/tattoos.json'
 
 const tattoo = tattoos.find(t => t.id === 'elemental')
-
-const BASE = 'images/lionna/tattoo/'
-
-const BOSS_SLIDES = [
-  { src: `${BASE}element-water-isadora.png`,       alt: 'Isadora — Water World Boss',       caption: '💧 Water — Isadora'       },
-  { src: `${BASE}element-earth-scorpion-lord.png`, alt: 'Scorpion Lord — Earth World Boss', caption: '🌍 Earth — Scorpion Lord' },
-  { src: `${BASE}element-air-eligos.png`,          alt: 'Eligos — Air World Boss',          caption: '💨 Air — Eligos'          },
-]
-
-const ICON = { Fire: '🔥', Water: '💧', Earth: '🌍', Air: '💨' }
+const BASE   = 'images/lionna/tattoo/'
+const ICON   = { Fire: '🔥', Water: '💧', Earth: '🌍', Air: '💨' }
 
 export default function ElementalTattoo() {
   const total = tattoo.materials.reduce((sum, m) => sum + m.qty, 0)
@@ -25,63 +17,64 @@ export default function ElementalTattoo() {
     <>
       <PageHero
         title="Elemental Tattoo"
-        tagline="Master all four elements — Fire, Water, Earth, and Air."
+        tagline="A custom tattoo forged from the power of four elemental world bosses."
       />
 
-      <SectionHeading id="overview">Overview</SectionHeading>
+      {/* ===== TATTOO ITEM ===== */}
+      <WikiFigure
+        src={`${BASE}element-master-tattoo.png`}
+        alt="Elemental Tattoo"
+        caption="Elemental Tattoo — the finished custom tattoo."
+        size="sm"
+      />
+
+      {/* ===== WHERE TO OBTAIN ===== */}
+      <SectionHeading id="obtain">Where to Obtain</SectionHeading>
       <p>
-        The <strong>Elemental Tattoo</strong> is crafted from materials dropped by four elemental
-        world bosses spread across the Lineage II world. Each element has its own dedicated zone
-        and boss. Hunt them down, collect <strong>Warrior Halments</strong>, and combine all four
-        elements to forge the tattoo.
+        Purchase the Elemental Tattoo from <strong>Asta</strong> under{' '}
+        <strong>Normal Tattoos</strong>. You will need the required materials in your inventory
+        before she will allow the exchange.
       </p>
-      <InfoBox variant="warning" label="Prepare for a grind">
-        <p>
-          Warrior Halments are <strong>not a guaranteed drop</strong>. You need{' '}
-          <strong>x25 per element</strong> (<strong>x{total} total</strong>) which means
-          hunting each boss multiple times. Plan sessions around respawn timers.
-        </p>
-      </InfoBox>
+
+      {/* ===== REQUIRED MATERIALS (tattoo shop items) ===== */}
+      <SectionHeading id="required-items">Required Items</SectionHeading>
+      <p>To craft the Elemental Tattoo you need to bring the following two items to Asta:</p>
+      <WikiCarousel
+        slides={[
+          { src: `${BASE}elemental-master-1.png`, alt: 'Elemental Master 1', caption: 'Elemental Master 1 — required material' },
+          { src: `${BASE}elemental-master-2.png`, alt: 'Elemental Master 2', caption: 'Elemental Master 2 — required material' },
+        ]}
+      />
+
+      {/* ===== ABOUT THE TATTOO ===== */}
+      <SectionHeading id="about">About the Elemental Tattoo</SectionHeading>
+      <p>
+        The Elemental Tattoo is a <strong>custom tattoo</strong> that cannot be obtained from
+        regular drops or quests. To craft it you must hunt <strong>four elemental world bosses</strong>,
+        each guarding a unique zone across the Lineage II world.
+      </p>
+      <p>
+        These bosses are powerful and their materials are <strong>not guaranteed drops</strong> —
+        expect to return to each zone multiple times before you have everything you need.
+      </p>
 
       {/* ===== BOSSES ===== */}
       <SectionHeading id="bosses">Elemental World Bosses</SectionHeading>
       <InfoBox variant="tip" label="Fire boss coming soon">
-        <p>The Fire element boss image will be added shortly. The other three bosses are shown below.</p>
+        <p>The Fire element boss will be added once available. Water, Earth, and Air bosses are shown below.</p>
       </InfoBox>
-      <WikiCarousel slides={BOSS_SLIDES} />
-
-      {/* ===== ELEMENT PARTS ===== */}
-      <SectionHeading id="parts">Element Parts</SectionHeading>
-      <p>Each boss drops its respective Element Part in addition to Warrior Halments. Collect one part per element.</p>
-      <WikiFigure
-        src={`${BASE}elemental-parts.png`}
-        alt="Elemental Parts — all four elements"
-        caption="Elemental Parts — Fire, Water, Earth, and Air."
-        size="md"
-      />
-
-      {/* ===== WARRIOR HALMENTS ===== */}
-      <SectionHeading id="warrior-halments">Warrior Halments</SectionHeading>
-      <p>
-        The core crafting material. Each of the four elemental world bosses has a chance to drop
-        their element's <strong>Warrior Halments</strong>. You need <strong>x25 per element</strong>.
-      </p>
-      <WikiFigure
-        src={`${BASE}elemental-warrior-helmet.png`}
-        alt="Warrior Halments"
-        caption="Warrior Halments — dropped by elemental world bosses."
-        size="sm"
-      />
-
-      {/* ===== MASTER TATTOOS ===== */}
-      <SectionHeading id="master">Elemental Master Tattoos</SectionHeading>
-      <p>Combine all four elements to create one of the two <strong>Elemental Master Tattoos</strong>.</p>
       <WikiCarousel
         slides={[
-          { src: `${BASE}elemental-master-1.png`, alt: 'Elemental Master Tattoo 1', caption: 'Elemental Master Tattoo — variant 1' },
-          { src: `${BASE}elemental-master-2.png`, alt: 'Elemental Master Tattoo 2', caption: 'Elemental Master Tattoo — variant 2' },
+          { src: `${BASE}element-water-isadora.png`,       alt: 'Isadora',       caption: '💧 Water — Isadora'       },
+          { src: `${BASE}element-earth-scorpion-lord.png`, alt: 'Scorpion Lord', caption: '🌍 Earth — Scorpion Lord' },
+          { src: `${BASE}element-air-eligos.png`,          alt: 'Eligos',        caption: '💨 Air — Eligos'          },
         ]}
       />
+      <p>
+        Each elemental world boss has a chance to drop their <strong>unique element material</strong>{' '}
+        along with the shared drop — <strong>Warrior Halments</strong>. You will need{' '}
+        <strong>x25 Warrior Halments</strong> from each boss to complete your set.
+      </p>
 
       {/* ===== MATERIALS TABLE ===== */}
       <SectionHeading id="materials">Required Materials</SectionHeading>
