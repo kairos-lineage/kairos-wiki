@@ -21,7 +21,7 @@
     "obtain": "Collect x25 Warrior Halments from each of the 4 elemental world bosses",
     "path": "/lionna/tattoos/elemental",
     "materials": [
-      { "name": "Warrior Halments", "qty": 25, "element": "Fire",  "source": "Fire World Boss"  },
+      { "name": "Warrior Halments", "qty": 25, "element": "Fire",  "source": "Hellfire"         },
       { "name": "Warrior Halments", "qty": 25, "element": "Water", "source": "Isadora"          },
       { "name": "Warrior Halments", "qty": 25, "element": "Earth", "source": "Scorpion Lord"    },
       { "name": "Warrior Halments", "qty": 25, "element": "Air",   "source": "Eligos"           }

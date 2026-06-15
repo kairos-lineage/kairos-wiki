@@ -60,11 +60,9 @@ export default function ElementalTattoo() {
 
       {/* ===== BOSSES ===== */}
       <SectionHeading id="bosses">Elemental World Bosses</SectionHeading>
-      <InfoBox variant="tip" label="Fire boss coming soon">
-        <p>The Fire element boss will be added once available. Water, Earth, and Air bosses are shown below.</p>
-      </InfoBox>
       <WikiCarousel
         slides={[
+          { src: `${BASE}element-fire-hellfire.png`,       alt: 'Hellfire',      caption: '🔥 Fire — Hellfire'       },
           { src: `${BASE}element-water-isadora.png`,       alt: 'Isadora',       caption: '💧 Water — Isadora'       },
           { src: `${BASE}element-earth-scorpion-lord.png`, alt: 'Scorpion Lord', caption: '🌍 Earth — Scorpion Lord' },
           { src: `${BASE}element-air-eligos.png`,          alt: 'Eligos',        caption: '💨 Air — Eligos'          },
