@@ -19,6 +19,7 @@ export default function Header({ sidebarOpen, onToggleSidebar }) {
         <span className="logo-title">Kairos</span>
         <div className="logo-divider" />
         <span className="logo-wiki">Wiki</span>
+        <span className="logo-version">v{__APP_VERSION__}</span>
       </Link>
 
       <button
