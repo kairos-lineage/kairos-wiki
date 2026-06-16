@@ -205,5 +205,216 @@
         ]
       }
     ]
+  },
+  {
+    "id": "zone-3",
+    "name": "Farm Zone 3",
+    "tagline": "Hunt Zone 3 monsters and exchange materials for upgraded gear — including A-Grade armor sets.",
+    "path": "/lionna/farm-zones/zone-3",
+    "overviewImage": "images/lionna/zona-3/z3s-boss.png",
+    "sections": [
+      {
+        "id": "shirt",
+        "title": "Shirt",
+        "desc": "Upgraded shirts — requires your Zone 2 shirt as a trade-in. Choose physical or magic variant.",
+        "mobImages": [
+          { "src": "images/lionna/zona-3/z3-shirt.png", "alt": "Shirt mob and drop info" }
+        ],
+        "items": [
+          {
+            "name": "Scale Shirt",
+            "slot": "Underwear",
+            "stats": ["P.Def: 23", "P.Atk +10%"],
+            "image": "images/lionna/zona-3/z3s-shirt-w.png",
+            "materials": [
+              { "name": "Event-Coin",                   "qty": 2,    "source": "Events" },
+              { "name": "Varnish",                      "qty": 4000, "source": "Zone 3 mobs" },
+              { "name": "Crafted Leather",              "qty": 4000, "source": "Zone 3 mobs" },
+              { "name": "Thin Leather Shirt [B]",       "qty": 1,    "source": "Zone 2 reward" }
+            ]
+          },
+          {
+            "name": "Striped Scale Shirt",
+            "slot": "Underwear",
+            "stats": ["P.Def: 26", "M.Atk +20%"],
+            "image": "images/lionna/zona-3/z3s-shirt-m.png",
+            "materials": [
+              { "name": "Event-Coin",                          "qty": 2,    "source": "Events" },
+              { "name": "Varnish",                             "qty": 4000, "source": "Zone 3 mobs" },
+              { "name": "Crafted Leather",                     "qty": 4000, "source": "Zone 3 mobs" },
+              { "name": "Thin Striped Leather Shirt [B]",      "qty": 1,    "source": "Zone 2 reward" }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "cloak",
+        "title": "Cloak",
+        "desc": "Cloak of Zaken — strong all-around defensive and offensive bonuses.",
+        "mobImages": [
+          { "src": "images/lionna/zona-3/z3-cloack.png", "alt": "Cloak mob and drop info" }
+        ],
+        "items": [
+          {
+            "name": "Cloak of Zaken",
+            "slot": "Cloak",
+            "stats": ["P.Def: 20", "P.Atk +6%", "M.Atk +12%", "P.Def +15%", "P.Def Base +100"],
+            "image": "images/lionna/zona-3/z3s-cloack.png",
+            "materials": [
+              { "name": "Event-Coin",             "qty": 2,    "source": "Events" },
+              { "name": "Red Dimensional Stone",  "qty": 1500, "source": "Zone 3 mobs" },
+              { "name": "Blue Dimensional Stone", "qty": 1500, "source": "Zone 3 mobs" },
+              { "name": "Green Dimensional Stone","qty": 1500, "source": "Zone 3 mobs" }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "belt",
+        "title": "Belt",
+        "desc": "Iron Belt — stronger defensive belt with boosted P.Def, M.Def and Max HP.",
+        "mobImages": [
+          { "src": "images/lionna/zona-3/z3-belt-1.png", "alt": "Belt mob drop — part 1" },
+          { "src": "images/lionna/zona-3/z3-belt-2.png", "alt": "Belt mob drop — part 2" },
+          { "src": "images/lionna/zona-3/z3-belt-3.png", "alt": "Belt mob drop — part 3" }
+        ],
+        "items": [
+          {
+            "name": "Iron Belt",
+            "slot": "Belt",
+            "stats": ["P.Def: 12", "P.Def +15%", "M.Def +15%", "Max HP +1500"],
+            "image": "images/lionna/zona-3/z3s-belt.png",
+            "materials": [
+              { "name": "Event-Coin",       "qty": 2,    "source": "Events" },
+              { "name": "Coarse Bone Powder","qty": 2000, "source": "Zone 3 mobs" },
+              { "name": "Cord",             "qty": 2000, "source": "Zone 3 mobs" },
+              { "name": "Leather",          "qty": 2000, "source": "Zone 3 mobs" }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "bracelet",
+        "title": "Bracelet",
+        "desc": "Steel Bracelet — upgraded bracelet using 3 talisman slots. Requires your Zone 2 Bronze Bracelet as a trade-in.",
+        "mobImages": [
+          { "src": "images/lionna/zona-3/z3-bracelet.png", "alt": "Bracelet mob and drop info" }
+        ],
+        "items": [
+          {
+            "name": "Steel Bracelet",
+            "slot": "Right Bracelet",
+            "stats": ["Uses 3 talisman slots", "P.Atk +6%", "M.Atk +12%"],
+            "image": "images/lionna/zona-3/z3s-bracelet.png",
+            "materials": [
+              { "name": "Event-Coin",        "qty": 2,     "source": "Events" },
+              { "name": "Varnish of Purity", "qty": 4500,  "source": "Zone 3 mobs" },
+              { "name": "Bronze Bracelet [B]","qty": 1,    "source": "Zone 2 reward" },
+              { "name": "Adena",             "qty": 75000, "source": "Common" }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "agathion",
+        "title": "Agathion",
+        "desc": "Upgraded Agathion Seal Bracelet with improved combat stats. Requires your Zone 2 Agathion as a trade-in.",
+        "mobImages": [
+          { "src": "images/lionna/zona-3/z3-agathion.png", "alt": "Agathion mob and drop info" }
+        ],
+        "items": [
+          {
+            "name": "Agathion Seal Bracelet — Baium",
+            "slot": "Left Bracelet",
+            "stats": ["P.Atk +4%", "M.Atk +8%", "Atk Speed +4%", "Casting Speed +4%", "Max HP +300"],
+            "image": "images/lionna/zona-3/z3s-agathion.png",
+            "materials": [
+              { "name": "Event-Coin",                       "qty": 2,      "source": "Events" },
+              { "name": "Thons",                            "qty": 1500,   "source": "Zone 3 mobs" },
+              { "name": "Agathion Seal Bracelet — Pegasus", "qty": 1,      "source": "Zone 2 reward" },
+              { "name": "Adena",                            "qty": 100000, "source": "Common" }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "accessories",
+        "title": "Accessories",
+        "desc": "Upgraded hair accessories — requires your Zone 2 accessory as a trade-in. Choose physical or magic variant.",
+        "mobImages": [
+          { "src": "images/lionna/zona-3/z3-accessory.png", "alt": "Accessory mob and drop info" }
+        ],
+        "items": [
+          {
+            "name": "Jester Hat",
+            "slot": "Hair Accessory",
+            "stats": ["P.Atk +10%"],
+            "image": "images/lionna/zona-3/z3s-accessory-w.png",
+            "materials": [
+              { "name": "Event-Coin",        "qty": 2,    "source": "Events" },
+              { "name": "Enria",             "qty": 5000, "source": "Zone 3 mobs" },
+              { "name": "Warsmith's Holder", "qty": 10,   "source": "Zone 3 mobs" },
+              { "name": "Refined Angel Ring","qty": 1,    "source": "Zone 2 reward" }
+            ]
+          },
+          {
+            "name": "Refined Wizard Hat",
+            "slot": "Hair Accessory",
+            "stats": ["M.Atk +20%"],
+            "image": "images/lionna/zona-3/z3s-accessory-m.png",
+            "materials": [
+              { "name": "Event-Coin",        "qty": 2,    "source": "Events" },
+              { "name": "Enria",             "qty": 5000, "source": "Zone 3 mobs" },
+              { "name": "Warsmith's Holder", "qty": 10,   "source": "Zone 3 mobs" },
+              { "name": "Wizard Hat",        "qty": 1,    "source": "Zone 2 reward" }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "jewels",
+        "title": "Jewels",
+        "desc": "Jewels obtained from the Zone 3 Jewel Boss — location shown below.",
+        "mobImages": [
+          { "src": "images/lionna/zona-3/z3-jewels.png",       "alt": "Jewels mob drop area" },
+          { "src": "images/lionna/zona-3/z3s-boss-jewele.png", "alt": "Jewel Boss location on map" }
+        ],
+        "items": []
+      },
+      {
+        "id": "armor",
+        "title": "A-Grade Armor",
+        "desc": "Full Dark Crystal armor set exchanged for Sealed pieces dropped by the Zone 3 boss. Choose warrior (Leather) or mage (Robe) — requires your B-Grade armor as a trade-in.",
+        "mobImages": [
+          { "src": "images/lionna/zona-3/z3s-boss-drop.png", "alt": "Zone 3 boss drop — Sealed Dark Crystal pieces" }
+        ],
+        "items": [
+          {
+            "name": "Dark Crystal Leather Set",
+            "slot": "Armor Set (Warrior)",
+            "stats": ["Dark Crystal Leather Armor [A]", "Dark Crystal Leggings [A]", "Dark Crystal Gloves [A]", "Dark Crystal Boots [A]"],
+            "image": "images/lionna/zona-3/z3s-armor-w.png",
+            "materials": [
+              { "name": "Event-Coin",                              "qty": 2,      "source": "Events" },
+              { "name": "Sealed Dark Crystal Leather Armor Pattern","qty": 20,    "source": "Zone 3 boss" },
+              { "name": "Leather Armor of Doom [B]",               "qty": 1,     "source": "Zone 2 reward" },
+              { "name": "Adena",                                   "qty": 250000, "source": "Common" }
+            ]
+          },
+          {
+            "name": "Dark Crystal Robe Set",
+            "slot": "Armor Set (Mage)",
+            "stats": ["Dark Crystal Robe [A]", "Dark Crystal Gloves [A]", "Dark Crystal Boots [A]", "Dark Crystal Helmet [A]"],
+            "image": "images/lionna/zona-3/z3s-armor-m.png",
+            "materials": [
+              { "name": "Event-Coin",                  "qty": 2,      "source": "Events" },
+              { "name": "Sealed Dark Crystal Robe Fabric","qty": 20,  "source": "Zone 3 boss" },
+              { "name": "Avadon Robe [B]",              "qty": 1,     "source": "Zone 2 reward" },
+              { "name": "Adena",                        "qty": 250000, "source": "Common" }
+            ]
+          }
+        ]
+      }
+    ]
   }
 ]
