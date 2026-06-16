@@ -1063,8 +1063,8 @@ code {
 /* ===== TATTOO TABLE ===== */
 .tattoo-icon {
   display: block;
-  width: 48px;
-  height: 48px;
+  width: 34px;
+  height: 39px;
   object-fit: none;
   object-position: left bottom;
 }
@@ -1090,6 +1090,314 @@ code {
   background: var(--gold-glow);
   border-color: var(--gold);
   color: var(--gold-bright);
+}
+
+/* ===== FARM ZONE LAYOUT ===== */
+.fz-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 300px;
+  gap: 1.5rem;
+  margin: 1.5rem 0 2.5rem;
+  align-items: start;
+}
+
+/* Left column — mob images. Always fills the same fixed-height dark box.
+   Images are centered inside; carousels stretch naturally. */
+.fz-mob-col {
+  min-width: 0;
+  min-height: 360px;
+  background: var(--bg-dark);
+  border: 1px solid var(--border);
+  border-radius: 0.5rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Carousel fills the full box */
+.fz-mob-col .wiki-carousel {
+  margin: 0;
+  width: 100%;
+  align-self: stretch;
+}
+
+/* Single figure: center image, never exceed column width */
+.fz-mob-col .wiki-figure {
+  margin: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.fz-mob-col .wiki-figure img,
+.fz-mob-col .wiki-figure--sm img,
+.fz-mob-col .wiki-figure--md img,
+.fz-mob-col .wiki-figure--lg img {
+  max-width: 100% !important;
+  max-height: 320px;
+  object-fit: contain;
+}
+
+/* Right column — one or more item cards stacked */
+.fz-items {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  min-width: 0;
+  width: 100%;
+}
+
+.fz-item {
+  border: 1px solid var(--border-accent);
+  border-radius: 0.5rem;
+  background: var(--bg-panel);
+  overflow: hidden;
+  min-width: 0;
+}
+
+/* Item store screenshot — full card width at top */
+.fz-item-screenshot {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg-dark);
+  padding: 0.6rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.fz-item-screenshot .wiki-figure { margin: 0; width: 100%; }
+.fz-item-screenshot .wiki-figure img,
+.fz-item-screenshot .wiki-figure--sm img,
+.fz-item-screenshot .wiki-figure--md img,
+.fz-item-screenshot .wiki-figure--lg img {
+  max-width: 100% !important;
+  max-height: 220px;
+  object-fit: contain;
+}
+
+/* Item name / slot / stat chips */
+.fz-item-header {
+  padding: 0.7rem 0.85rem 0.6rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.fz-item-name {
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: var(--gold);
+  margin: 0 0 0.15rem;
+  line-height: 1.3;
+}
+
+.fz-item-slot {
+  font-size: 0.67rem;
+  color: var(--text-dim);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin: 0 0 0.5rem;
+}
+
+.fz-stat-chips { display: flex; flex-wrap: wrap; gap: 0.3rem; }
+
+.fz-stat-chip {
+  background: rgba(212, 168, 67, 0.08);
+  border: 1px solid rgba(212, 168, 67, 0.22);
+  color: var(--gold);
+  font-size: 0.68rem;
+  padding: 0.18rem 0.5rem;
+  border-radius: 999px;
+  white-space: nowrap;
+}
+
+/* Materials table */
+.fz-mat-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.fz-mat-table th {
+  padding: 0.38rem 0.85rem;
+  font-size: 0.63rem;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  color: var(--text-dim);
+  background: var(--bg-elevated);
+  text-align: left;
+  font-family: var(--font-body);
+  font-weight: 600;
+}
+
+.fz-mat-table td {
+  padding: 0.42rem 0.85rem;
+  font-size: 0.78rem;
+  border-bottom: 1px solid var(--border);
+  color: var(--text);
+}
+
+.fz-mat-table td:last-child {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+  color: var(--gold-bright);
+  font-weight: 600;
+}
+
+.fz-mat-table tbody tr:last-child td { border-bottom: none; }
+.fz-mat-table tbody tr:hover { background: var(--bg-panel-hover); }
+
+.fz-item-placeholder {
+  border: 1px dashed var(--border-accent);
+  border-radius: 0.5rem;
+  padding: 1.5rem 1rem;
+  text-align: center;
+  color: var(--text-dim);
+  font-style: italic;
+  font-size: 0.85rem;
+}
+
+/* ===== FARM ZONE LISTING CARDS ===== */
+.fz-zone-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.25rem;
+  margin: 1.25rem 0 2rem;
+}
+
+.fz-zone-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+  padding: 1.2rem 1.25rem;
+  background: var(--bg-panel);
+  border: 1px solid var(--border-accent);
+  border-radius: 0.5rem;
+  text-decoration: none;
+  transition: border-color 0.18s var(--ease), background 0.18s var(--ease);
+}
+
+.fz-zone-card:hover {
+  border-color: var(--gold);
+  background: var(--bg-panel-hover);
+}
+
+.fz-zone-card-name {
+  font-family: var(--font-heading);
+  font-size: 0.95rem;
+  color: var(--gold);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.fz-zone-card-tagline {
+  font-size: 0.82rem;
+  color: var(--text);
+  line-height: 1.5;
+}
+
+.fz-zone-card-items {
+  font-size: 0.72rem;
+  color: var(--text-dim);
+  letter-spacing: 0.02em;
+  margin-top: 0.15rem;
+}
+
+.fz-zone-card-cta {
+  margin-top: 0.5rem;
+  font-size: 0.78rem;
+  color: var(--gold-dim);
+  font-weight: 600;
+  transition: color 0.15s;
+}
+
+.fz-zone-card:hover .fz-zone-card-cta { color: var(--gold-bright); }
+
+@media (max-width: 700px) {
+  .fz-layout { grid-template-columns: 1fr; }
+  .fz-zone-cards { grid-template-columns: 1fr; }
+}
+
+/* ===== MATERIALS FINDER ===== */
+.mf-search-bar {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.mf-search-input {
+  flex: 1;
+  max-width: 480px;
+  background: var(--bg-panel);
+  border: 1px solid var(--border-accent);
+  border-radius: 6px;
+  color: var(--text-primary);
+  font-size: 0.9rem;
+  padding: 0.55rem 0.9rem;
+  outline: none;
+  transition: border-color 0.15s;
+}
+.mf-search-input:focus { border-color: var(--gold); }
+.mf-search-input::placeholder { color: var(--text-muted); }
+
+.mf-result-count {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+}
+
+.mf-table-wrap {
+  overflow-x: auto;
+}
+
+.mf-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.62rem;
+}
+
+.mf-table th {
+  text-align: left;
+  padding: 0.4rem 0.75rem;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  border-bottom: 1px solid var(--border-accent);
+  white-space: nowrap;
+}
+
+.mf-table td {
+  padding: 0.45rem 0.75rem;
+  border-bottom: 1px solid var(--border);
+  vertical-align: middle;
+}
+
+.mf-table tbody tr:last-child td { border-bottom: none; }
+.mf-table tbody tr:hover { background: var(--bg-panel-hover); }
+
+.mf-cell-material { font-weight: 600; color: var(--gold); }
+.mf-cell-item     { color: var(--text-primary); }
+
+.mf-col-slot { width: 8rem; color: var(--text-muted); }
+.mf-col-zone { width: 8rem; color: var(--text-muted); }
+.mf-col-link { width: 7rem; text-align: right; }
+
+.mf-details-link {
+  color: var(--gold);
+  font-size: 0.78rem;
+  text-decoration: none;
+  white-space: nowrap;
+}
+.mf-details-link:hover { color: var(--gold-bright); text-decoration: underline; }
+
+.mf-empty {
+  padding: 2rem 0;
+  color: var(--text-muted);
+  font-size: 0.88rem;
+}
+
+@media (max-width: 700px) {
+  .mf-col-slot { display: none; }
 }
 
 /* ===== SERVER SELECT ===== */

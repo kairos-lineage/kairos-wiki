@@ -14,6 +14,14 @@
     ]
   },
   {
+    "label": "Farm Zones",
+    "items": [
+      { "icon": "🗺️", "text": "Farm Zones",        "to": "/lionna/farm-zones" },
+      { "icon": "🔍", "text": "Materials Finder",   "to": "/lionna/farm-zones/materials" },
+      { "icon": "2️⃣", "text": "Zone 2",            "to": "/lionna/farm-zones/zone-2" }
+    ]
+  },
+  {
     "label": "Tattoos",
     "items": [
       { "icon": "🔱", "text": "Custom Tattoos",   "to": "/lionna/tattoos" },

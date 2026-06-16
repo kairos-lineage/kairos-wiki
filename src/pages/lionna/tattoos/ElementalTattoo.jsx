@@ -97,7 +97,7 @@ export default function ElementalTattoo() {
         <tfoot>
           <tr>
             <td colSpan={2}><strong>Total items</strong></td>
-            <td style={{ textAlign: 'right' }}><strong>{total}</strong></td>
+            <td style={{ textAlign: 'right' }}><strong>N/A</strong></td>
           </tr>
         </tfoot>
       </table>

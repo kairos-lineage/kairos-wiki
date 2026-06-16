@@ -1,0 +1,209 @@
+[
+  {
+    "id": "zone-2",
+    "name": "Farm Zone 2",
+    "tagline": "Hunt Zone 2 monsters to collect crafting materials and trade them for exclusive gear.",
+    "path": "/lionna/farm-zones/zone-2",
+    "overviewImage": "images/lionna/zona-2/zona-2-boss.png",
+    "sections": [
+      {
+        "id": "shirt",
+        "title": "Shirt",
+        "desc": "Two underwear shirt variants — choose based on your character build.",
+        "mobImages": [
+          { "src": "images/lionna/zona-2/z2-shirt.png", "alt": "Shirt mob and drop info" }
+        ],
+        "items": [
+          {
+            "name": "Thin Leather Shirt",
+            "slot": "Underwear",
+            "stats": ["P.Def: 21", "P.Atk +5%"],
+            "image": "images/lionna/zona-2/z2s-shirt-w.png",
+            "materials": [
+              { "name": "Asofe",  "qty": 2000, "source": "Zone 2 mobs" },
+              { "name": "Adena",  "qty": 3000, "source": "Common" }
+            ]
+          },
+          {
+            "name": "Thin Striped Leather Shirt",
+            "slot": "Underwear",
+            "stats": ["P.Def: 22", "M.Atk +10%"],
+            "image": "images/lionna/zona-2/z2s-shirt-m.png",
+            "materials": [
+              { "name": "Asofe",  "qty": 2000, "source": "Zone 2 mobs" },
+              { "name": "Adena",  "qty": 3000, "source": "Common" }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "cloak",
+        "title": "Cloak",
+        "desc": "Holy Spirit's Cloak — reduces incoming Dark damage.",
+        "mobImages": [
+          { "src": "images/lionna/zona-2/z2-cloack-belt-1.png", "alt": "Cloak/Belt mob drop — part 1" },
+          { "src": "images/lionna/zona-2/z2-cloack-belt-2.png", "alt": "Cloak/Belt mob drop — part 2" },
+          { "src": "images/lionna/zona-2/z2-cloack-belt-3.png", "alt": "Cloak/Belt mob drop — part 3" }
+        ],
+        "items": [
+          {
+            "name": "Holy Spirit's Cloak",
+            "slot": "Cloak",
+            "stats": ["P.Def: 20", "Resistance to Dark +30"],
+            "image": "images/lionna/zona-2/z2s-cloack.png",
+            "materials": [
+              { "name": "Mold Lubricant", "qty": 1500, "source": "Zone 2 mobs" },
+              { "name": "Mold Glue",      "qty": 1500, "source": "Zone 2 mobs" },
+              { "name": "Mold Hardener",  "qty": 1500, "source": "Zone 2 mobs" },
+              { "name": "Adena",          "qty": 10000, "source": "Common" }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "bracelet",
+        "title": "Bracelet",
+        "desc": "Bronze Bracelet — uses 2 talisman slots and boosts both P.Atk and M.Atk.",
+        "mobImages": [
+          { "src": "images/lionna/zona-2/z2-cloack-belt-1.png", "alt": "Bracelet mob drop — part 1" },
+          { "src": "images/lionna/zona-2/z2-cloack-belt-2.png", "alt": "Bracelet mob drop — part 2" },
+          { "src": "images/lionna/zona-2/z2-cloack-belt-3.png", "alt": "Bracelet mob drop — part 3" }
+        ],
+        "items": [
+          {
+            "name": "Bronze Bracelet",
+            "slot": "Right Bracelet",
+            "stats": ["P.Atk +3%", "M.Atk +6%"],
+            "image": "images/lionna/zona-2/z2s-bracelet.png",
+            "materials": [
+              { "name": "Mold Lubricant", "qty": 1500, "source": "Zone 2 mobs" },
+              { "name": "Mold Glue",      "qty": 1500, "source": "Zone 2 mobs" },
+              { "name": "Mold Hardener",  "qty": 1500, "source": "Zone 2 mobs" },
+              { "name": "Adena",          "qty": 10000, "source": "Common" }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "agathion",
+        "title": "Agathion",
+        "desc": "Agathion Seal Bracelet that summons a Pegasus companion. Dimensional item — cannot be exchanged or dropped, but can be shared across characters on the same account.",
+        "mobImages": [
+          { "src": "images/lionna/zona-2/z2-agation.png", "alt": "Agathion mob drop" }
+        ],
+        "items": [
+          {
+            "name": "Agathion Seal Bracelet — Pegasus",
+            "slot": "Left Bracelet",
+            "stats": ["Summons Pegasus Agathion", "Account-shareable"],
+            "image": "images/lionna/zona-2/z2s-agathion.png",
+            "materials": [
+              { "name": "Fire Mantra",  "qty": 15,    "source": "Zone 2 mobs" },
+              { "name": "Wind Mantra",  "qty": 15,    "source": "Zone 2 mobs" },
+              { "name": "Water Mantra", "qty": 15,    "source": "Zone 2 mobs" },
+              { "name": "Adena",        "qty": 15000, "source": "Common" }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "belt",
+        "title": "Belt",
+        "desc": "Leather Belt — stacks defensive bonuses and raw HP. Functions can be enhanced further with a Grade B Magic Pin or Magic Pouch.",
+        "mobImages": [
+          { "src": "images/lionna/zona-2/z2-belt.png", "alt": "Belt mob drop" }
+        ],
+        "items": [
+          {
+            "name": "Leather Belt",
+            "slot": "Belt",
+            "stats": ["P.Def: 11", "P.Def +5%", "M.Def +5%", "Max HP +1000"],
+            "image": "images/lionna/zona-2/z2s-belt.png",
+            "materials": [
+              { "name": "Steel",           "qty": 3000,  "source": "Zone 2 mobs" },
+              { "name": "Cokes",           "qty": 3000,  "source": "Zone 2 mobs" },
+              { "name": "Synthetic Cokes", "qty": 5,     "source": "Zone 2 mobs" },
+              { "name": "Adena",           "qty": 25000, "source": "Common" }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "accessories",
+        "title": "Accessories",
+        "desc": "Hair accessories — same materials, different stat bonuses. Choose based on your class.",
+        "mobImages": [
+          { "src": "images/lionna/zona-2/z2-accessory-1.png", "alt": "Accessory mob — Demon King" },
+          { "src": "images/lionna/zona-2/z2-accessory-2.png", "alt": "Accessory mob — Combine Ball" },
+          { "src": "images/lionna/zona-2/z2-accessory-3.png", "alt": "Accessory mob — Angel Killer" },
+          { "src": "images/lionna/zona-2/z2-bonus-accessories.png", "alt": "Bonus accessory mob" }
+        ],
+        "items": [
+          {
+            "name": "Refined Angel Ring",
+            "slot": "Hair Accessory",
+            "stats": ["P.Atk +5%"],
+            "image": "images/lionna/zona-2/z2s-acc-w.png",
+            "materials": [
+              { "name": "Leonard",       "qty": 3000, "source": "Zone 2 mobs" },
+              { "name": "Adamantine",    "qty": 3000, "source": "Zone 2 mobs" },
+              { "name": "Orichalcum",    "qty": 3000, "source": "Zone 2 mobs" },
+              { "name": "Giant's Jewel", "qty": 5,    "source": "Zone 2 mobs" }
+            ]
+          },
+          {
+            "name": "Wizard Hat",
+            "slot": "Hair Accessory",
+            "stats": ["M.Atk +10%"],
+            "image": "images/lionna/zona-2/z2s-acc-m.png",
+            "materials": [
+              { "name": "Leonard",       "qty": 3000, "source": "Zone 2 mobs" },
+              { "name": "Adamantine",    "qty": 3000, "source": "Zone 2 mobs" },
+              { "name": "Orichalcum",    "qty": 3000, "source": "Zone 2 mobs" },
+              { "name": "Giant's Jewel", "qty": 5,    "source": "Zone 2 mobs" }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "jewels",
+        "title": "Jewels",
+        "desc": "Necklace crafted from materials dropped by Zone 2 mobs.",
+        "mobImages": [
+          { "src": "images/lionna/zona-2/z2-jewels.png", "alt": "Jewels mob drop" }
+        ],
+        "items": [
+          {
+            "name": "Necklace of Aid",
+            "slot": "Necklace",
+            "stats": ["M.Def: 68"],
+            "image": "images/lionna/zona-2/z2s-jewels.png",
+            "materials": [
+              { "name": "Hood of Aid Material", "qty": 2000,  "source": "Zone 2 mobs" },
+              { "name": "Adena",                "qty": 25000, "source": "Common" }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "custom-potion",
+        "title": "Custom Potion",
+        "desc": "Vesper Dual Sword — a consumable that temporarily boosts attack speed and casting speed.",
+        "mobImages": [
+          { "src": "images/lionna/zona-2/zona-2-boss.png", "alt": "Zone 2 area overview" }
+        ],
+        "items": [
+          {
+            "name": "Vesper Dual Sword",
+            "slot": "Consumable",
+            "stats": ["Atk Speed +8%", "Casting Speed +12%"],
+            "image": "images/lionna/zona-2/z2s-vesper-pot.png",
+            "materials": [
+              { "name": "Coke", "qty": 15, "source": "Zone 2 mobs" }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

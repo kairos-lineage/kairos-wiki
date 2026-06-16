@@ -3,7 +3,7 @@
     "id": "libro-oscuro",
     "name": "Libro Oscuro",
     "type": "Custom Quest",
-    "icon": "images/lionna/libro-oscuro-dummy/libro-oscuro.png",
+    "icon": "images/lionna/libro-oscuro-dummy/libro-oscuro-icon.png",
     "effect": ["—"],
     "obtain": "Collect 4 Secret Parts from 12 hidden locations across the world map",
     "path": "/lionna/libro-oscuro",
