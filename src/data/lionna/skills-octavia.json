@@ -9,5 +9,16 @@
     "materials": [
       { "name": "Blue Eva", "icon": "images/lionna/icons/blue-eva.png", "qty": 20 }
     ]
+  },
+  {
+    "id": "quen-ant-killer",
+    "name": "Quen Ant Killer",
+    "image": "images/lionna/skills/queen-ant-killer.png",
+    "level": 5,
+    "type": "Passive",
+    "effects": ["P.Atk +75%", "M.Atk +150%", "Heal Effects +15%", "Dark Resist +50", "Speed +5%"],
+    "materials": [
+      { "name": "Queen Ant", "icon": "images/lionna/icons/queen-ant.png", "qty": 10 }
+    ]
   }
 ]
