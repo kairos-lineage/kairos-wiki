@@ -8,11 +8,13 @@ import skills         from '../../../data/lionna/skills-octavia.json'
 function Lightbox({ src, alt, onClose }) {
   return (
     <div className="sk-lightbox" onClick={onClose}>
-      <img src={src} alt={alt} onClick={e => e.stopPropagation()} />
+      <img src={`${BASE}${src}`} alt={alt} onClick={e => e.stopPropagation()} />
       <button className="sk-lightbox-close" onClick={onClose}>✕</button>
     </div>
   )
 }
+
+const BASE = import.meta.env.BASE_URL
 
 export default function Octavia() {
   const [lightbox, setLightbox] = useState(null)
@@ -52,7 +54,7 @@ export default function Octavia() {
                     title="Click to view details"
                   >
                     <img
-                      src={skill.image}
+                      src={`${BASE}${skill.image}`}
                       alt={skill.name}
                       className="sk-thumb"
                     />
@@ -70,7 +72,7 @@ export default function Octavia() {
                 <td className="sk-col-mats">
                   {skill.materials.map((mat, i) => (
                     <div key={i} className="sk-mat">
-                      <img src={mat.icon} alt={mat.name} className="sk-mat-icon" />
+                      <img src={`${BASE}${mat.icon}`} alt={mat.name} className="sk-mat-icon" />
                       <div className="sk-mat-info">
                         <span className="sk-mat-name">{mat.name}</span>
                         <span className="sk-mat-qty">×{mat.qty.toLocaleString()}</span>
