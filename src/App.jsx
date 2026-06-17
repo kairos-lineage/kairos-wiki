@@ -30,6 +30,7 @@ import ElementalTattoo      from './pages/lionna/tattoos/ElementalTattoo'
 import LionnaFarmZones      from './pages/lionna/FarmZones'
 import Zone2                from './pages/lionna/farm-zones/Zone2'
 import Zone3                from './pages/lionna/farm-zones/Zone3'
+import Octavia              from './pages/lionna/skills/Octavia'
 import MaterialsFinder      from './pages/lionna/MaterialsFinder'
 
 export default function App() {
@@ -77,6 +78,7 @@ export default function App() {
           <Route path="farm-zones"                  element={<LionnaFarmZones />} />
           <Route path="farm-zones/zone-2"          element={<Zone2 />} />
           <Route path="farm-zones/zone-3"          element={<Zone3 />} />
+          <Route path="skills/octavia"             element={<Octavia />} />
           <Route path="farm-zones/materials"        element={<MaterialsFinder />} />
           <Route path="donations"         element={<StubPage title="Donations"       tagline="Support the server and see donation perks." />} />
           <Route path="faq"               element={<StubPage title="FAQ"             tagline="Common questions answered." />} />

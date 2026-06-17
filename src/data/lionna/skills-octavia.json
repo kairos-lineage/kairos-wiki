@@ -1,0 +1,13 @@
+[
+  {
+    "id": "rebirth-mimic-symbol",
+    "name": "Rebirth Mimic Symbol",
+    "image": "images/lionna/skills/rebirth-mimic-symbol.png",
+    "level": 10,
+    "type": "Passive",
+    "effects": ["High Stats add +120%"],
+    "materials": [
+      { "name": "Blue Eva", "icon": "images/lionna/icons/blue-eva.png", "qty": 20 }
+    ]
+  }
+]

@@ -1400,6 +1400,172 @@ code {
   .mf-col-slot { display: none; }
 }
 
+/* ===== SKILLS TABLE (Octavia etc.) ===== */
+.sk-table-wrap { overflow-x: auto; }
+
+.sk-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.82rem;
+}
+
+.sk-table th {
+  text-align: left;
+  padding: 0.4rem 0.75rem;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  border-bottom: 1px solid var(--border-accent);
+  white-space: nowrap;
+}
+
+.sk-table td {
+  padding: 0.65rem 0.75rem;
+  border-bottom: 1px solid var(--border);
+  vertical-align: top;
+}
+
+.sk-table tbody tr:last-child td { border-bottom: none; }
+.sk-table tbody tr:hover { background: var(--bg-panel-hover); }
+
+/* Thumbnail column */
+.sk-col-img { width: 72px; text-align: center; }
+
+.sk-thumb-btn {
+  background: none;
+  border: 1px solid var(--border-accent);
+  border-radius: 6px;
+  padding: 3px;
+  cursor: pointer;
+  transition: border-color 0.15s;
+  display: inline-block;
+}
+.sk-thumb-btn:hover { border-color: var(--gold); }
+
+.sk-thumb {
+  display: block;
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+/* Name column */
+.sk-col-name { width: 14rem; }
+
+.sk-name {
+  display: block;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 0.2rem;
+}
+
+.sk-meta {
+  font-size: 0.72rem;
+  color: var(--text-muted);
+}
+
+/* Effects column */
+.sk-col-effects { }
+
+.sk-effects {
+  list-style: none;
+  padding: 0; margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.sk-effects li {
+  color: var(--gold);
+  font-weight: 500;
+}
+
+/* Materials column */
+.sk-col-mats { width: 13rem; }
+
+.sk-mat {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6rem;
+}
+
+.sk-mat-icon {
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
+  border: 1px solid var(--border-accent);
+  border-radius: 4px;
+  flex-shrink: 0;
+}
+
+.sk-mat-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.sk-mat-name {
+  font-weight: 600;
+  color: var(--text-primary);
+  font-size: 0.8rem;
+}
+
+.sk-mat-qty {
+  font-size: 0.75rem;
+  color: var(--gold);
+  font-variant-numeric: tabular-nums;
+}
+
+.sk-mat-search {
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  text-decoration: none;
+}
+.sk-mat-search:hover { color: var(--gold); text-decoration: underline; }
+
+/* Lightbox */
+.sk-lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 500;
+  background: rgba(0, 0, 0, 0.82);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.sk-lightbox img {
+  max-width: min(520px, 90vw);
+  max-height: 90vh;
+  object-fit: contain;
+  border: 1px solid var(--border-accent);
+  border-radius: 8px;
+  cursor: default;
+}
+
+.sk-lightbox-close {
+  position: absolute;
+  top: 1.25rem;
+  right: 1.5rem;
+  background: none;
+  border: 1px solid var(--border-accent);
+  color: var(--text-muted);
+  font-size: 1rem;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: border-color 0.15s, color 0.15s;
+}
+.sk-lightbox-close:hover { border-color: var(--gold); color: var(--gold); }
+
 /* ===== SERVER SELECT ===== */
 .server-select {
   min-height: 100vh;

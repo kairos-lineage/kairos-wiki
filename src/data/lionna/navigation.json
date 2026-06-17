@@ -23,6 +23,12 @@
     ]
   },
   {
+    "label": "Custom Skills",
+    "items": [
+      { "icon": "🔮", "text": "Octavia", "to": "/lionna/skills/octavia" }
+    ]
+  },
+  {
     "label": "Tattoos",
     "items": [
       { "icon": "🔱", "text": "Custom Tattoos",   "to": "/lionna/tattoos" },

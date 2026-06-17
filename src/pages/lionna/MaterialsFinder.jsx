@@ -1,5 +1,5 @@
-import { useState, useMemo } from 'react'
-import { Link } from 'react-router-dom'
+import { useState, useMemo, useEffect } from 'react'
+import { Link, useSearchParams } from 'react-router-dom'
 import PageHero       from '../../components/ui/PageHero'
 import SectionHeading from '../../components/ui/SectionHeading'
 import zones          from '../../data/lionna/farm-zones.json'
@@ -28,7 +28,13 @@ function buildRows() {
 const ALL_ROWS = buildRows()
 
 export default function MaterialsFinder() {
-  const [query, setQuery] = useState('')
+  const [searchParams] = useSearchParams()
+  const [query, setQuery] = useState(() => searchParams.get('q') ?? '')
+
+  useEffect(() => {
+    const q = searchParams.get('q')
+    if (q) setQuery(q)
+  }, [searchParams])
 
   const rows = useMemo(() => {
     const q = query.trim().toLowerCase()
