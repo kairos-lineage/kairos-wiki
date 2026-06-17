@@ -20,5 +20,16 @@
     "materials": [
       { "name": "Queen Ant", "icon": "images/lionna/icons/queen-ant.png", "qty": 10 }
     ]
+  },
+  {
+    "id": "behemont-killer",
+    "name": "Behemont Killer",
+    "image": "images/lionna/skills/behemont-killer.png",
+    "level": 5,
+    "type": "Passive",
+    "effects": ["P.Def/M.Def +50%", "Max HP +15%", "Dark Power +50", "Evasion +7"],
+    "materials": [
+      { "name": "Behemont", "icon": "images/lionna/icons/behemont.png", "qty": 10 }
+    ]
   }
 ]
