@@ -27,6 +27,9 @@ export default function SidebarSection({ label, items }) {
             <Link to={item.to} className={isActive(item.to) ? 'active' : ''}>
               <span className="nav-icon">{item.icon}</span>
               {item.text}
+              {item.badge === 'quest' && (
+                <span className="nav-quest-star" aria-label="Quest available">★</span>
+              )}
             </Link>
           </li>
         ))}

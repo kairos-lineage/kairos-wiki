@@ -416,5 +416,272 @@
         ]
       }
     ]
+  },
+  {
+    "id": "zone-4",
+    "name": "Farm Zone 4",
+    "tagline": "Hunt Zone 4 monsters for S-grade gear upgrades, Apella armor sets and exclusive accessories.",
+    "path": "/lionna/farm-zones/zone-4",
+    "hasQuest": true,
+    "overviewImage": "images/lionna/zona-4/z4-boss.png",
+    "sections": [
+      {
+        "id": "shirt",
+        "title": "Shirt",
+        "desc": "S-grade shirts — requires your Zone 3 shirt as a trade-in.",
+        "mobImages": [
+          { "src": "images/lionna/zona-4/z4-shirt.png", "alt": "Shirt mob and drop info" }
+        ],
+        "items": [
+          {
+            "name": "Mithril Shirt",
+            "slot": "Underwear",
+            "stats": ["P.Def: 28", "P.Atk +15%", "P.Def +500f"],
+            "image": "images/lionna/zona-4/z4s-shirt-w.png",
+            "materials": [
+              { "name": "Event-Coin",          "qty": 3,      "source": "Events" },
+              { "name": "Animal Skin",          "qty": 4000,   "source": "Zone 4 mobs" },
+              { "name": "Scale Shirt [A]",      "qty": 1,      "source": "Zone 3 reward" },
+              { "name": "Adena",                "qty": 200000, "source": "Common" }
+            ]
+          },
+          {
+            "name": "Striped Mithril Shirt",
+            "slot": "Underwear",
+            "stats": ["P.Def: 30", "M.Atk +30%", "P.Def +500"],
+            "image": "images/lionna/zona-4/z4s-shirt-m.png",
+            "materials": [
+              { "name": "Event-Coin",                   "qty": 3,      "source": "Events" },
+              { "name": "Animal Skin",                  "qty": 4000,   "source": "Zone 4 mobs" },
+              { "name": "Striped Scale Shirt [A]",      "qty": 1,      "source": "Zone 3 reward" },
+              { "name": "Adena",                        "qty": 200000, "source": "Common" }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "cloak",
+        "title": "Cloak",
+        "desc": "Cloak of Freya — top-tier cloak with combined offensive and defensive bonuses. Requires Zone 3 Cloak of Zaken as trade-in.",
+        "mobImages": [
+          { "src": "images/lionna/zona-4/z4-cloack.png", "alt": "Cloak mob and drop info" }
+        ],
+        "items": [
+          {
+            "name": "Cloak of Freya",
+            "slot": "Cloak",
+            "stats": ["P.Def: 30", "P.Atk +10%", "M.Atk +20%", "P.Def +20%", "P.Def Base +200"],
+            "image": "images/lionna/zona-4/z4s-cloack.png",
+            "materials": [
+              { "name": "Event-Coin",        "qty": 3,      "source": "Events" },
+              { "name": "Iron Ore",          "qty": 4000,   "source": "Zone 4 mobs" },
+              { "name": "Cloak of Zaken [S]","qty": 1,      "source": "Zone 3 reward" },
+              { "name": "Adena",             "qty": 200000, "source": "Common" }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "belt",
+        "title": "Belt",
+        "desc": "Mithril Belt — highest tier belt with top P.Def and Max HP. Requires Zone 3 Iron Belt as trade-in.",
+        "mobImages": [
+          { "src": "images/lionna/zona-4/z4-belt.png", "alt": "Belt mob and drop info" }
+        ],
+        "items": [
+          {
+            "name": "Mithril Belt",
+            "slot": "Belt",
+            "stats": ["P.Def: 14", "P.Def +25%", "M.Def +15%", "Max HP +2500"],
+            "image": "images/lionna/zona-4/z4s-belt.png",
+            "materials": [
+              { "name": "Event-Coin",   "qty": 3,      "source": "Events" },
+              { "name": "Lump of Iron", "qty": 5000,   "source": "Zone 4 mobs" },
+              { "name": "Iron Belt [A]","qty": 1,      "source": "Zone 3 reward" },
+              { "name": "Adena",        "qty": 350000, "source": "Common" }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "bracelet",
+        "title": "Bracelet",
+        "desc": "Mithril Bracelet — uses 4 talisman slots for maximum P.Atk and M.Atk bonuses.",
+        "mobImages": [
+          { "src": "images/lionna/zona-4/z4-bracelet.png", "alt": "Bracelet mob and drop info" }
+        ],
+        "items": [
+          {
+            "name": "Mithril Bracelet",
+            "slot": "Right Bracelet",
+            "stats": ["Uses 4 talisman slots", "P.Atk +9%", "M.Atk +18%"],
+            "image": "images/lionna/zona-4/z4s-bracelet.png",
+            "materials": [
+              { "name": "Event-Coin",                  "qty": 3,    "source": "Events" },
+              { "name": "Extracted Red Star Stone",    "qty": 3000, "source": "Zone 4 mobs" },
+              { "name": "Extracted Blue Star Stone",   "qty": 3000, "source": "Zone 4 mobs" },
+              { "name": "Extracted Green Star Stone",  "qty": 3000, "source": "Zone 4 mobs" }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "agathion",
+        "title": "Agathion",
+        "desc": "One-Eyed Bat Drove Agathion — cannot be exchanged, dropped or sold. Requires Zone 3 Baium Agathion as trade-in.",
+        "mobImages": [
+          { "src": "images/lionna/zona-4/z4-agarhion.png", "alt": "Agathion mob and drop info" }
+        ],
+        "items": [
+          {
+            "name": "Agathion Seal Bracelet — One-Eyed Bat Drove",
+            "slot": "Left Bracelet",
+            "stats": ["Summons One-Eyed Bat Drove Agathion", "P.Atk +6%", "Cannot be exchanged or sold"],
+            "image": "images/lionna/zona-4/z4s-agathion.png",
+            "materials": [
+              { "name": "Event-Coin",                       "qty": 3,      "source": "Events" },
+              { "name": "Valentine Dark Chocolate",          "qty": 20,     "source": "Zone 4 mobs" },
+              { "name": "Agathion Seal Bracelet — Baium",   "qty": 1,      "source": "Zone 3 reward" },
+              { "name": "Adena",                            "qty": 300000, "source": "Common" }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "accessories",
+        "title": "Accessories",
+        "desc": "Exclusive hair accessories — cannot be exchanged or dropped. Requires Zone 3 accessory as trade-in.",
+        "mobImages": [
+          { "src": "images/lionna/zona-4/z4-accesory.png", "alt": "Accessory mob and drop info" }
+        ],
+        "items": [
+          {
+            "name": "Red Flame of Valakas",
+            "slot": "Hair Accessory",
+            "stats": ["P.Atk +15%", "Cannot be exchanged, dropped or sold"],
+            "image": "images/lionna/zona-4/z4s-accessory-w.png",
+            "materials": [
+              { "name": "Event-Coin",    "qty": 3,      "source": "Events" },
+              { "name": "Refined Bronze","qty": 40,     "source": "Zone 4 mobs" },
+              { "name": "Jester Hat",    "qty": 1,      "source": "Zone 3 reward" },
+              { "name": "Adena",         "qty": 500000, "source": "Common" }
+            ]
+          },
+          {
+            "name": "Assassin's Bamboo Hat",
+            "slot": "Hair Accessory",
+            "stats": ["M.Atk +45%", "Uses 2 hair accessory slots"],
+            "image": "images/lionna/zona-4/z4s-accessory-m.png",
+            "materials": [
+              { "name": "Event-Coin",       "qty": 3,      "source": "Events" },
+              { "name": "Refined Bronze",   "qty": 40,     "source": "Zone 4 mobs" },
+              { "name": "Refined Wizard Hat","qty": 1,     "source": "Zone 3 reward" },
+              { "name": "Adena",            "qty": 500000, "source": "Common" }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "armor-draconic",
+        "title": "Armor — Draconic / Major Arcana",
+        "desc": "S-grade armor sets — exchange Dark Crystal pieces from Zone 3 for the full S-grade set.",
+        "mobImages": [
+          { "src": "images/lionna/zona-4/z4-boss.png", "alt": "Zone 4 boss — drops Sealed armor pieces" }
+        ],
+        "items": [
+          {
+            "name": "Draconic Leather Set",
+            "slot": "Armor Set (Warrior)",
+            "stats": ["Draconic Leather Armor [S]", "Draconic Leather Gloves [S]", "Draconic Leather Boots [S]", "Draconic Leather Helmet [S]"],
+            "image": "images/lionna/zona-4/z4s-armor-w.png",
+            "materials": [
+              { "name": "Event-Coin",                         "qty": 10, "source": "Events" },
+              { "name": "Sealed Draconic Leather Armor Pattern","qty": 20, "source": "Zone 4 boss" },
+              { "name": "Dark Crystal Leather Armor [A]",     "qty": 1,  "source": "Zone 3 reward" },
+              { "name": "Dark Crystal Leggings [A]",          "qty": 1,  "source": "Zone 3 reward" }
+            ]
+          },
+          {
+            "name": "Major Arcana Set",
+            "slot": "Armor Set (Mage)",
+            "stats": ["Major Arcana Robe [S]", "Major Arcana Gloves [S]", "Major Arcana Boots [S]", "Major Arcana Circlet [S]"],
+            "image": "images/lionna/zona-4/z4s-armor-m.png",
+            "materials": [
+              { "name": "Event-Coin",                   "qty": 10, "source": "Events" },
+              { "name": "Sealed Major Arcana Robe Fabric","qty": 20, "source": "Zone 4 boss" },
+              { "name": "Dark Crystal Robe [A]",        "qty": 1,  "source": "Zone 3 reward" },
+              { "name": "Dark Crystal Gloves Robe [A]", "qty": 1,  "source": "Zone 3 reward" }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "armor-apella",
+        "title": "Armor — Apella",
+        "desc": "Further upgrade from the Draconic / Major Arcana sets — the highest tier armor in Zone 4.",
+        "mobImages": [
+          { "src": "images/lionna/zona-4/z4-boss.png", "alt": "Zone 4 boss area" }
+        ],
+        "items": [
+          {
+            "name": "Apella Demonic Light Set",
+            "slot": "Armor Set (Warrior)",
+            "stats": ["Apella Demonic Light [A]", "Apella Leather Light Armor [A]", "Apella Boots Light Armor [A]", "Apella Helm [A]"],
+            "image": "images/lionna/zona-4/z4s-armor-apella-w.png",
+            "materials": [
+              { "name": "Event-Coin",                 "qty": 15, "source": "Events" },
+              { "name": "Sealed Apella Brigandine [A]","qty": 2,  "source": "Zone 4 boss" },
+              { "name": "Draconic Leather Armor [S]", "qty": 1,  "source": "Zone 4 reward" },
+              { "name": "Draconic Leather Gloves [S]","qty": 1,  "source": "Zone 4 reward" }
+            ]
+          },
+          {
+            "name": "Apella Demonic Robe Set",
+            "slot": "Armor Set (Mage)",
+            "stats": ["Apella Demonic Robe [A]", "Apella Silk Gloves Robe [A]", "Apella Sandals Robe [A]", "Apella Helm [A]"],
+            "image": "images/lionna/zona-4/z4s-armor-apella-m.png",
+            "materials": [
+              { "name": "Event-Coin",              "qty": 15, "source": "Events" },
+              { "name": "Sealed Apella Doublet [A]","qty": 2,  "source": "Zone 4 boss" },
+              { "name": "Major Arcana Robe [S]",   "qty": 1,  "source": "Zone 4 reward" },
+              { "name": "Major Arcana Gloves [S]", "qty": 1,  "source": "Zone 4 reward" }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "jewels",
+        "title": "Jewels",
+        "desc": "Jewels obtained from the Zone 4 Jewel Boss.",
+        "mobImages": [
+          { "src": "images/lionna/zona-4/z4-jewels-boss.png", "alt": "Zone 4 Jewel Boss" }
+        ],
+        "items": []
+      },
+      {
+        "id": "s-grade-weapons",
+        "title": "S-Grade Weapons",
+        "desc": "S-grade weapons are obtained through a multi-step process — quest, Torch NPC crafting, and trading. Follow all three steps.",
+        "carouselOnly": true,
+        "mobImages": [
+          { "src": "images/lionna/zona-4/z4-s-grade-wep-quest.png",  "alt": "S-Grade Weapon — Quest step" },
+          { "src": "images/lionna/zona-4/z4-s-grade-wep-torch.png",  "alt": "S-Grade Weapon — Torch NPC crafting" },
+          { "src": "images/lionna/zona-4/z4-s-grade-wep-trade.png",  "alt": "S-Grade Weapon — Trade step" }
+        ],
+        "items": []
+      },
+      {
+        "id": "s-grade-armor",
+        "title": "S-Grade Armor Materials",
+        "desc": "S-grade armor material acquisition — BRP rewards, quest, and trading.",
+        "carouselOnly": true,
+        "mobImages": [
+          { "src": "images/lionna/zona-4/z4-s-grade-armor-brp.png",   "alt": "S-Grade Armor — BRP rewards" },
+          { "src": "images/lionna/zona-4/z4-s-grade-armor-quest.png", "alt": "S-Grade Armor — Quest step" },
+          { "src": "images/lionna/zona-4/z4-s-grade-armor-trade.png", "alt": "S-Grade Armor — Trade step" }
+        ],
+        "items": []
+      }
+    ]
   }
 ]

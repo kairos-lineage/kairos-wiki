@@ -19,7 +19,8 @@
       { "icon": "🗺️", "text": "Farm Zones",        "to": "/lionna/farm-zones" },
       { "icon": "🔍", "text": "Materials Finder",   "to": "/lionna/farm-zones/materials" },
       { "icon": "2️⃣", "text": "Zone 2",            "to": "/lionna/farm-zones/zone-2" },
-      { "icon": "3️⃣", "text": "Zone 3",            "to": "/lionna/farm-zones/zone-3" }
+      { "icon": "3️⃣", "text": "Zone 3",            "to": "/lionna/farm-zones/zone-3" },
+      { "icon": "4️⃣", "text": "Zone 4",            "to": "/lionna/farm-zones/zone-4", "badge": "quest" }
     ]
   },
   {
@@ -33,7 +34,9 @@
     "items": [
       { "icon": "🔱", "text": "Custom Tattoos",   "to": "/lionna/tattoos" },
       { "icon": "📖", "text": "Libro Oscuro",    "to": "/lionna/libro-oscuro" },
-      { "icon": "⚡", "text": "Elemental Tattoo","to": "/lionna/tattoos/elemental" }
+      { "icon": "⚡", "text": "Elemental Tattoo","to": "/lionna/tattoos/elemental" },
+      { "icon": "🌿", "text": "Ekimus",          "to": "/lionna/tattoos/ekimus" },
+      { "icon": "📜", "text": "Asta Normal",    "to": "/lionna/tattoos/asta" }
     ]
   },
   {

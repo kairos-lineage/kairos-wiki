@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { createPortal } from 'react-dom'
 import { Link } from 'react-router-dom'
 import PageHero       from '../../../components/ui/PageHero'
 import SectionHeading from '../../../components/ui/SectionHeading'
@@ -6,11 +7,12 @@ import InfoBox        from '../../../components/ui/InfoBox'
 import skills         from '../../../data/lionna/skills-octavia.json'
 
 function Lightbox({ src, alt, onClose }) {
-  return (
+  return createPortal(
     <div className="sk-lightbox" onClick={onClose}>
       <img src={`${BASE}${src}`} alt={alt} onClick={e => e.stopPropagation()} />
       <button className="sk-lightbox-close" onClick={onClose}>✕</button>
-    </div>
+    </div>,
+    document.body
   )
 }
 
@@ -30,7 +32,7 @@ export default function Octavia() {
       <InfoBox variant="tip" label="How it works">
         <p>
           Visit the <strong>Octavia NPC</strong> in-game to learn custom skills.
-          Each skill requires specific materials. Click the skill image to see full details.
+          Each skill requires specific materials. Click the detail image on the right to open it full size.
         </p>
       </InfoBox>
 
@@ -42,6 +44,7 @@ export default function Octavia() {
               <th className="sk-col-name">Name</th>
               <th className="sk-col-effects">Effects</th>
               <th className="sk-col-mats">Required Materials</th>
+              <th className="sk-col-detail">Details</th>
             </tr>
           </thead>
           <tbody>
@@ -51,7 +54,6 @@ export default function Octavia() {
                   <button
                     className="sk-thumb-btn"
                     onClick={() => setLightbox(skill)}
-                    title="Click to view details"
                   >
                     <img
                       src={`${BASE}${skill.image}`}
@@ -85,6 +87,14 @@ export default function Octavia() {
                       </div>
                     </div>
                   ))}
+                </td>
+                <td className="sk-col-detail">
+                  <img
+                    src={`${BASE}${skill.image}`}
+                    alt={skill.name}
+                    className="sk-detail-img"
+                    onClick={() => setLightbox(skill)}
+                  />
                 </td>
               </tr>
             ))}

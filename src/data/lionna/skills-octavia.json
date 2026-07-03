@@ -31,5 +31,49 @@
     "materials": [
       { "name": "Behemont", "icon": "images/lionna/icons/behemont.png", "qty": 10 }
     ]
+  },
+  {
+    "id": "zaken-killer",
+    "name": "Zaken Killer",
+    "image": "images/lionna/skills/zaken-killer.png",
+    "level": 6,
+    "type": "Passive",
+    "effects": ["P.Atk +35%", "M.Atk +70%", "Dark Resist +60"],
+    "materials": [
+      { "name": "Zaken", "icon": "images/lionna/icons/zaken.png", "qty": 6 }
+    ]
+  },
+  {
+    "id": "fafurion-spirit",
+    "name": "Fafurion Spirit",
+    "image": "images/lionna/skills/fafurion-spirit.png",
+    "level": 6,
+    "type": "Active",
+    "effects": ["P.Atk +80%", "M.Atk +160%", "Crit Dmg +20%", "Magic Crit Rate +30%", "P.Def/M.Def +20%", "Max HP/CP +60%", "PvP Damage +10%", "Reuse Magic -30%", "Resist Elemental +200"],
+    "materials": [
+      { "name": "Blue Eva", "icon": "images/lionna/icons/blue-eva.png", "qty": 1 }
+    ]
+  },
+  {
+    "id": "guts-over",
+    "name": "Guts Over",
+    "image": "images/lionna/skills/guts-over.png",
+    "level": 3,
+    "type": "Active",
+    "effects": ["P.Def +55% for 60 min 30 sec"],
+    "materials": [
+      { "name": "Nia's Gold Wyvern", "icon": "images/lionna/icons/nias-gold-wyvern.png", "qty": 1 }
+    ]
+  },
+  {
+    "id": "frenzy-over",
+    "name": "Frenzy Over",
+    "image": "images/lionna/skills/frenzy-over.png",
+    "level": 3,
+    "type": "Active",
+    "effects": ["P.Atk +25% for 60 min 30 sec", "P.Atk +10% with sword/blunt weapon", "Accuracy +6 and P.Atk +10% with two-handed sword/blunt weapon"],
+    "materials": [
+      { "name": "Nia's Gold Wyvern", "icon": "images/lionna/icons/nias-gold-wyvern.png", "qty": 1 }
+    ]
   }
 ]

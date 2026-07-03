@@ -1286,6 +1286,45 @@ code {
   color: var(--gold);
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.fz-quest-star {
+  position: relative;
+  font-size: 1rem;
+  color: #f5c842;
+  line-height: 1;
+  cursor: default;
+  filter: drop-shadow(0 0 4px rgba(245, 200, 66, 0.6));
+}
+
+.fz-quest-star::after {
+  content: 'Quest available';
+  position: absolute;
+  bottom: calc(100% + 6px);
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--bg-panel);
+  border: 1px solid var(--gold-dim);
+  color: var(--text);
+  font-family: var(--font-body);
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  text-transform: none;
+  white-space: nowrap;
+  padding: 0.25rem 0.55rem;
+  border-radius: 0.3rem;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.15s;
+  z-index: 10;
+}
+
+.fz-quest-star:hover::after {
+  opacity: 1;
 }
 
 .fz-zone-card-tagline {
@@ -1375,12 +1414,27 @@ code {
 .mf-table tbody tr:last-child td { border-bottom: none; }
 .mf-table tbody tr:hover { background: var(--bg-panel-hover); }
 
-.mf-cell-material { font-weight: 600; color: var(--gold); }
-.mf-cell-item     { color: var(--text-primary); }
-
-.mf-col-slot { width: 8rem; color: var(--text-muted); }
-.mf-col-zone { width: 8rem; color: var(--text-muted); }
-.mf-col-link { width: 7rem; text-align: right; }
+.mf-col-icon {
+  width: 50px;
+  text-align: center;
+  padding-right: 0;
+}
+.mf-mat-icon {
+  width: 42px;
+  height: 42px;
+  object-fit: contain;
+  border-radius: 3px;
+  display: block;
+  margin: 0 auto;
+}
+.mf-cell-material {
+  font-weight: 600;
+  color: var(--gold);
+}
+.mf-cell-item  { color: var(--text-primary); }
+.mf-col-mob  { width: 10rem; color: var(--text-muted); }
+.mf-col-zone { width: 8rem;  color: var(--text-muted); }
+.mf-col-link { width: 7rem;  text-align: right; }
 
 .mf-details-link {
   color: var(--gold);
@@ -1451,6 +1505,21 @@ code {
   object-fit: cover;
   border-radius: 4px;
 }
+
+/* Always-visible detail column */
+.sk-col-detail { width: 200px; text-align: center; }
+
+.sk-detail-img {
+  width: 180px;
+  height: auto;
+  border: 1px solid var(--border-accent);
+  border-radius: 6px;
+  cursor: pointer;
+  transition: border-color 0.15s;
+  display: block;
+  margin: 0 auto;
+}
+.sk-detail-img:hover { border-color: var(--gold); }
 
 /* Name column */
 .sk-col-name { width: 14rem; }
@@ -1565,6 +1634,157 @@ code {
   transition: border-color 0.15s, color 0.15s;
 }
 .sk-lightbox-close:hover { border-color: var(--gold); color: var(--gold); }
+
+/* ===== EKIMUS TATTOO PAGE ===== */
+.ek-tattoo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  margin: 1.25rem 0 2rem;
+}
+
+.ek-tattoo-card {
+  background: var(--bg-panel);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 1rem 1.25rem;
+}
+
+.ek-tattoo-header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.ek-tattoo-name {
+  font-family: var(--font-heading);
+  font-size: 0.95rem;
+  color: var(--text);
+}
+
+.ek-tattoo-level {
+  font-size: 0.72rem;
+  color: var(--gold);
+  background: rgba(212, 168, 67, 0.12);
+  padding: 0.15rem 0.45rem;
+  border-radius: 4px;
+  white-space: nowrap;
+}
+
+.ek-stat-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.ek-stat-chip {
+  font-size: 0.72rem;
+  background: var(--bg-input);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 0.2rem 0.55rem;
+  color: var(--text-dim);
+}
+
+.ek-mat-table-wrap {
+  overflow-x: auto;
+  margin: 1.25rem 0 2rem;
+}
+
+.ek-mat-table {
+  width: 100%;
+  min-width: 900px;
+  border-collapse: collapse;
+  font-size: 0.78rem;
+}
+
+.ek-mat-table th {
+  background: var(--bg-panel);
+  border-bottom: 1px solid var(--border);
+  padding: 0.55rem 0.75rem;
+  text-align: right;
+  color: var(--text-dim);
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.ek-mat-table th:first-child { text-align: left; }
+
+.ek-mat-table td {
+  border-bottom: 1px solid var(--border-subtle);
+  padding: 0.5rem 0.75rem;
+  text-align: right;
+  color: var(--text-dim);
+}
+
+.ek-mat-table tbody tr:last-child td { border-bottom: none; }
+.ek-mat-table tbody tr:hover { background: var(--bg-panel-hover); }
+
+.ek-mat-name { text-align: left !important; color: var(--text) !important; }
+.ek-mat-total { color: var(--gold) !important; font-weight: 600; }
+
+.ek-sacred-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin: 1.25rem 0 2rem;
+  align-items: start;
+}
+
+@media (max-width: 768px) {
+  .ek-sacred-layout { grid-template-columns: 1fr; }
+}
+
+.ek-sacred-stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin: 0.75rem 0;
+}
+
+.ek-sacred-stat {
+  font-size: 0.72rem;
+  background: rgba(212, 168, 67, 0.08);
+  border: 1px solid rgba(212, 168, 67, 0.25);
+  border-radius: 4px;
+  padding: 0.2rem 0.55rem;
+  color: var(--gold-dim);
+}
+
+.ek-sacred-note {
+  font-size: 0.78rem;
+  color: var(--text-dim);
+  font-style: italic;
+  margin: 0.5rem 0 0;
+}
+
+.ek-craft-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.82rem;
+  margin-top: 1rem;
+}
+
+.ek-craft-table th {
+  background: var(--bg-panel);
+  border-bottom: 1px solid var(--border);
+  padding: 0.5rem 0.75rem;
+  text-align: left;
+  color: var(--text-dim);
+  font-weight: 500;
+}
+
+.ek-craft-table td {
+  border-bottom: 1px solid var(--border-subtle);
+  padding: 0.45rem 0.75rem;
+  color: var(--text-dim);
+}
+
+.ek-craft-table td:last-child { text-align: right; color: var(--gold); }
+.ek-craft-table tbody tr:last-child td { border-bottom: none; }
+.ek-craft-table tbody tr:hover { background: var(--bg-panel-hover); }
 
 /* ===== SERVER SELECT ===== */
 .server-select {

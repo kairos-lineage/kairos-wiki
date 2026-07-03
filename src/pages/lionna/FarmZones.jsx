@@ -25,7 +25,12 @@ export default function FarmZones() {
       <div className="fz-zone-cards">
         {zones.map(zone => (
           <Link key={zone.id} to={zone.path} className="fz-zone-card">
-            <div className="fz-zone-card-name">{zone.name}</div>
+            <div className="fz-zone-card-name">
+              {zone.name}
+              {zone.hasQuest && (
+                <span className="fz-quest-star" aria-label="Quest available">★</span>
+              )}
+            </div>
             <div className="fz-zone-card-tagline">{zone.tagline}</div>
             <div className="fz-zone-card-items">
               {zone.sections.map(s => s.title).join(' · ')}

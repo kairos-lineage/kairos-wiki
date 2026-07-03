@@ -27,9 +27,12 @@ import LionnaAutoFarm       from './pages/lionna/AutoFarm'
 import LionnaLibroOscuro    from './pages/lionna/LibroOscuro'
 import LionnaTattoos        from './pages/lionna/Tattoos'
 import ElementalTattoo      from './pages/lionna/tattoos/ElementalTattoo'
+import Ekimus              from './pages/lionna/Ekimus'
+import AstaNormal          from './pages/lionna/AstaNormal'
 import LionnaFarmZones      from './pages/lionna/FarmZones'
 import Zone2                from './pages/lionna/farm-zones/Zone2'
 import Zone3                from './pages/lionna/farm-zones/Zone3'
+import Zone4                from './pages/lionna/farm-zones/Zone4'
 import Octavia              from './pages/lionna/skills/Octavia'
 import MaterialsFinder      from './pages/lionna/MaterialsFinder'
 
@@ -75,9 +78,12 @@ export default function App() {
           <Route path="libro-oscuro"      element={<LionnaLibroOscuro />} />
           <Route path="tattoos"             element={<LionnaTattoos />} />
           <Route path="tattoos/elemental" element={<ElementalTattoo />} />
+          <Route path="tattoos/ekimus"   element={<Ekimus />} />
+          <Route path="tattoos/asta"     element={<AstaNormal />} />
           <Route path="farm-zones"                  element={<LionnaFarmZones />} />
           <Route path="farm-zones/zone-2"          element={<Zone2 />} />
           <Route path="farm-zones/zone-3"          element={<Zone3 />} />
+          <Route path="farm-zones/zone-4"          element={<Zone4 />} />
           <Route path="skills/octavia"             element={<Octavia />} />
           <Route path="farm-zones/materials"        element={<MaterialsFinder />} />
           <Route path="donations"         element={<StubPage title="Donations"       tagline="Support the server and see donation perks." />} />
