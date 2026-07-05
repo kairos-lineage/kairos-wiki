@@ -1,0 +1,53 @@
+{
+  "tattoos": [
+    {
+      "name": "Garden Essense",
+      "level": 12,
+      "stats": ["P.Atk +30%", "M.Atk +60%"]
+    },
+    {
+      "name": "Garden Heart",
+      "level": 12,
+      "stats": ["Critical Dmg +30%", "Magic Critical Power +30%"]
+    },
+    {
+      "name": "Garden Batur",
+      "level": 12,
+      "stats": ["P.Def +30%", "M.Def +30%"]
+    }
+  ],
+  "levelingMaterials": {
+    "levels": 12,
+    "items": [
+      { "name": "Tully's Platinum Medal", "perLevel": 100000 },
+      { "name": "Tully's Tin Medal",      "perLevel": 50000 },
+      { "name": "Tully's Lead Medal",     "perLevel": 12000 },
+      { "name": "Tully's Zinc Medal",     "perLevel": 6000 },
+      { "name": "Tully's Copper Medal",   "perLevel": 3000 },
+      { "name": "Gold Bar",               "perLevel": 1000 }
+    ]
+  },
+  "sacredPart": {
+    "name": "Garden Armor Sacred Part",
+    "stats": [
+      "P.Atk +50%",
+      "M.Atk +100%",
+      "Critical Dmg +45%",
+      "Magic Critical Power +45%",
+      "P.Def +45%",
+      "M.Def +45%",
+      "PvE Dmg +15%"
+    ],
+    "note": "Set Effect — No Stack Others Parts Garden",
+    "materials": [
+      { "name": "Garden Essense Lv12",      "qty": 1 },
+      { "name": "Garden Heart Lv12",        "qty": 1 },
+      { "name": "Jonas's 1st Steak Dish",   "qty": 2000000 },
+      { "name": "Jonas's 2nd Steak Dish",   "qty": 1000000 },
+      { "name": "Jonas's 3rd Steak Dish",   "qty": 500000 },
+      { "name": "Jonas's 4th Steak Dish",   "qty": 50000 },
+      { "name": "Jonas's 5th Steak Dish",   "qty": 25000 },
+      { "name": "Gold Bar",                 "qty": 25000 }
+    ]
+  }
+}
