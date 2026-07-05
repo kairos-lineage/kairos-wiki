@@ -34,6 +34,7 @@ import Zone2                from './pages/lionna/farm-zones/Zone2'
 import Zone3                from './pages/lionna/farm-zones/Zone3'
 import Zone4                from './pages/lionna/farm-zones/Zone4'
 import Octavia              from './pages/lionna/skills/Octavia'
+import EventTimes           from './pages/lionna/EventTimes'
 import MaterialsFinder      from './pages/lionna/MaterialsFinder'
 
 export default function App() {
@@ -86,6 +87,7 @@ export default function App() {
           <Route path="farm-zones/zone-4"          element={<Zone4 />} />
           <Route path="skills/octavia"             element={<Octavia />} />
           <Route path="farm-zones/materials"        element={<MaterialsFinder />} />
+          <Route path="events"                     element={<EventTimes />} />
           <Route path="donations"         element={<StubPage title="Donations"       tagline="Support the server and see donation perks." />} />
           <Route path="faq"               element={<StubPage title="FAQ"             tagline="Common questions answered." />} />
         </Route>
