@@ -3,36 +3,40 @@
     "id": "server-restart",
     "name": "Server Restart",
     "color": "#5588bb",
-    "dot": "#5588bb",
     "hours": [5, 17],
     "freq": "Every 12h — the anchor",
     "note": "All daily buffs, zones and cooldowns reset at these times."
   },
   {
-    "id": "wb-bunny",
-    "name": "WB Run + Bunny",
+    "id": "wb",
+    "name": "World Boss Run",
     "color": "#4caf70",
-    "dot": "#4caf70",
     "hours": [1, 3, 7, 11, 13, 19, 23],
-    "freq": "Every 2h after reset",
-    "note": "World Boss run with Bunny event. 09:00 / 21:00 also spawns Tiat."
+    "freq": "Multiple times daily",
+    "note": "World Boss run."
   },
   {
-    "id": "captain-morgull",
-    "name": "Captain Morgull",
-    "color": "#d45c5c",
-    "dot": "#d45c5c",
-    "hours": [0.5, 3, 7.5, 10, 12.5, 15, 19.5, 22],
-    "freq": "Every 2½h after reset",
-    "note": "00:30 · 03:00 · 07:30 · 10:00 · 12:30 · 15:00 · 19:30 · 22:00"
-  },
-  {
-    "id": "aden-tiat",
-    "name": "Aden · WB + Tiat",
+    "id": "aden",
+    "name": "Aden",
     "color": "#c87dd4",
-    "dot": "#c87dd4",
-    "hours": [9, 21],
-    "freq": "Twice daily",
-    "note": "The +Tiat boss run — Aden event active. 09:00 and 21:00."
+    "hours": [23],
+    "freq": "Daily",
+    "note": "Aden event at 23:00."
+  },
+  {
+    "id": "zaken",
+    "name": "Zaken",
+    "color": "#d4a843",
+    "hours": [23],
+    "freq": "Daily",
+    "note": "Zaken at 23:00."
+  },
+  {
+    "id": "gorsha",
+    "name": "Gorsha",
+    "color": "#d45c5c",
+    "hours": [23],
+    "freq": "Daily",
+    "note": "Gorsha at 23:00."
   }
 ]

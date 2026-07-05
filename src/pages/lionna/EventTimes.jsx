@@ -59,30 +59,39 @@ function ClockFace() {
 }
 
 function EventMarkers() {
-  const placed = []
-
+  // Group markers by hour slot so we can fan them when stacked
+  const byHour = {}
   events.forEach(ev => {
     ev.hours.forEach(h => {
-      const angle = hourToAngle(h)
-      placed.push({ angle, color: ev.color, id: ev.id, hour: h })
+      const key = (h % 12).toFixed(2)
+      byHour[key] = byHour[key] || []
+      byHour[key].push({ color: ev.color, id: ev.id, name: ev.name, h })
     })
   })
 
-  const buckets = {}
-  placed.forEach(p => {
-    const key = Math.round(p.angle * 100)
-    buckets[key] = buckets[key] || []
-    buckets[key].push(p)
+  const markers = []
+  Object.values(byHour).forEach(group => {
+    const baseAngle = hourToAngle(group[0].h)
+    const count = group.length
+    // Fan spread: spread markers radially ±offset around the base angle
+    const spread = 0.06 // radians between markers when stacked
+    group.forEach((m, i) => {
+      const offset = (i - (count - 1) / 2) * spread
+      const angle = baseAngle + offset
+      // Slightly vary the radius so stacked ones don't overlap
+      const r = MARK_R - (count > 1 ? i * 4 : 0)
+      markers.push({ ...m, angle, r })
+    })
   })
 
   return (
     <g>
-      {placed.map((p, i) => {
-        const pos = polar(CX, CY, MARK_R, p.angle)
+      {markers.map((m, i) => {
+        const pos = polar(CX, CY, m.r, m.angle)
         return (
-          <g key={i}>
-            <circle cx={pos.x} cy={pos.y} r={10} fill={p.color} opacity="0.18" />
-            <circle cx={pos.x} cy={pos.y} r={7}  fill={p.color} />
+          <g key={`${m.id}-${i}`}>
+            <circle cx={pos.x} cy={pos.y} r={11} fill={m.color} opacity="0.15" />
+            <circle cx={pos.x} cy={pos.y} r={7}  fill={m.color} />
           </g>
         )
       })}
