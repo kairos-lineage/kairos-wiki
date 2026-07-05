@@ -71,7 +71,7 @@ export default function App() {
           <Route path="classes"           element={<StubPage title="Classes"         tagline="Class guides, builds, and progression paths." />} />
           <Route path="zones"             element={<StubPage title="Zones"           tagline="Hunting grounds, level ranges, and drop tables." />} />
           <Route path="bosses"            element={<StubPage title="Bosses"          tagline="Raid bosses, world bosses, and epic loot." />} />
-          <Route path="events"            element={<StubPage title="Events"          tagline="Scheduled events, PvP tournaments, and seasonal content." />} />
+
           <Route path="community-board"   element={<StubPage title="Community Board" tagline="Alt+B features — Buffer, Rebirth, MultiSkill, and more." />} />
           <Route path="community-board/:sectionId" element={<StubPage title="Community Board" tagline="Coming soon." />} />
           <Route path="commands"          element={<LionnaCommands />} />
