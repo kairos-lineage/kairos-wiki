@@ -36,6 +36,12 @@ import Zone4                from './pages/lionna/farm-zones/Zone4'
 import Octavia              from './pages/lionna/skills/Octavia'
 import EventTimes           from './pages/lionna/EventTimes'
 import MaterialsFinder      from './pages/lionna/MaterialsFinder'
+import MidGradeHolyEnergy  from './pages/lionna/MidGradeHolyEnergy'
+import AltB                from './pages/lionna/AltB'
+import Dolls               from './pages/lionna/alt-b/Dolls'
+import RelicWeapon         from './pages/lionna/alt-b/RelicWeapon'
+import Collection          from './pages/lionna/alt-b/Collection'
+import Gem                 from './pages/lionna/alt-b/Gem'
 
 export default function App() {
   return (
@@ -88,6 +94,30 @@ export default function App() {
           <Route path="skills/octavia"             element={<Octavia />} />
           <Route path="farm-zones/materials"        element={<MaterialsFinder />} />
           <Route path="events"                     element={<EventTimes />} />
+          <Route path="mid-grade-holy-energy"     element={<MidGradeHolyEnergy />} />
+          <Route path="alt-b"                      element={<AltB />} />
+          <Route path="alt-b/relic-weapon"       element={<RelicWeapon />} />
+          <Route path="alt-b/dolls"              element={<Dolls />} />
+          <Route path="alt-b/collection"         element={<Collection />} />
+          <Route path="alt-b/gem"                element={<Gem />} />
+          <Route path="alt-b/talent-tree"        element={<StubPage title="Talent Tree"       tagline="Unlock and level up Talents to strengthen your character." />} />
+          <Route path="alt-b/luck"               element={<StubPage title="Luck"              tagline="Luck-based system with random rewards and bonuses." />} />
+          <Route path="alt-b/cards"              element={<StubPage title="Cards"             tagline="Collect and play Cards for stat boosts and effects." />} />
+          <Route path="alt-b/ancestral-set"      element={<StubPage title="Ancestral Set"     tagline="Craft and upgrade the powerful Ancestral equipment set." />} />
+          <Route path="alt-b/battle-pass"        element={<StubPage title="Battle Pass"       tagline="Seasonal progression system with exclusive milestone rewards." />} />
+          <Route path="alt-b/soul-hunt"          element={<StubPage title="Soul Hunt"         tagline="Hunt souls and claim rewards from the Soul Hunt system." />} />
+          <Route path="alt-b/support-box"        element={<StubPage title="Support Box"       tagline="Claim Support Boxes earned through gameplay activities." />} />
+          <Route path="alt-b/shuffle-skill"      element={<StubPage title="Shuffle Skill"     tagline="Randomize and discover new skill combinations." />} />
+          <Route path="alt-b/ventus"             element={<StubPage title="Ventus"            tagline="Ventus system — wind-based progression and rewards." />} />
+          <Route path="alt-b/rank"               element={<StubPage title="Rank"              tagline="Your server rank, ranking progression, and rewards." />} />
+          <Route path="alt-b/kairos-sword"       element={<StubPage title="Kairos Sword"      tagline="The Kairos Sword — a unique server weapon and upgrade path." />} />
+          <Route path="alt-b/lucky-roulette"     element={<StubPage title="Lucky Roulette"    tagline="Spin the roulette for a chance at rare items and prizes." />} />
+          <Route path="alt-b/top-players"        element={<StubPage title="Top-Players"       tagline="Server-wide player rankings and leaderboard standings." />} />
+          <Route path="alt-b/alchemist"          element={<StubPage title="Alchemist"         tagline="Craft and transmute materials through the Alchemist." />} />
+          <Route path="alt-b/excellent-enchant"  element={<StubPage title="Excellent Enchant" tagline="Enchant gear to Excellent grade for bonus effects." />} />
+          <Route path="alt-b/factory"            element={<StubPage title="Factory"           tagline="Production factory for crafting materials and equipment." />} />
+          <Route path="alt-b/tattoo-inventory"   element={<StubPage title="Tattoo Inventory"  tagline="View and manage all Tattoos in your inventory." />} />
+          <Route path="alt-b/tales-of-hero"      element={<StubPage title="Tales of Hero"     tagline="Hero story quests and narrative-driven reward chains." />} />
           <Route path="donations"         element={<StubPage title="Donations"       tagline="Support the server and see donation perks." />} />
           <Route path="faq"               element={<StubPage title="FAQ"             tagline="Common questions answered." />} />
         </Route>

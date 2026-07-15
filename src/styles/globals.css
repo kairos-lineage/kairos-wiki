@@ -31,7 +31,7 @@
   --border: #252530;
   --border-accent: rgba(212, 168, 67, 0.2);
 
-  --sidebar-w: 256px;
+  --sidebar-w: 290px;
   --header-h: 56px;
 
   --font-display: 'Cinzel Decorative', serif;
@@ -1464,7 +1464,7 @@ code {
 }
 
 .et-clock-svg {
-  width: 340px;
+  width: 600px;
   max-width: 100%;
   flex-shrink: 0;
   filter: drop-shadow(0 0 24px rgba(212,168,67,0.08));

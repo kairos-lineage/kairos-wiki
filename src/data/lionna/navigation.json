@@ -2,9 +2,38 @@
   {
     "label": "General",
     "items": [
-      { "icon": "🏠", "text": "Home",            "to": "/lionna" },
-      { "icon": "📖", "text": "Getting Started",  "to": "/lionna/getting-started" },
-      { "icon": "🖥️", "text": "Server Info",     "to": "/lionna/server-info" }
+      { "icon": "🏠", "text": "Home",                     "to": "/lionna" },
+      { "icon": "📖", "text": "Getting Started",           "to": "/lionna/getting-started" },
+      { "icon": "🖥️", "text": "Server Info",              "to": "/lionna/server-info" },
+      { "icon": "💎", "text": "Mid Grade Holy Energy",    "to": "/lionna/mid-grade-holy-energy" }
+    ]
+  },
+  {
+    "label": "ALT+B Community",
+    "items": [
+      { "icon": "📋", "text": "Overview",          "to": "/lionna/alt-b" },
+      { "icon": "⚔️", "text": "Relic Weapon",      "to": "/lionna/alt-b/relic-weapon" },
+      { "icon": "🪆", "text": "Dolls",             "to": "/lionna/alt-b/dolls" },
+      { "icon": "📚", "text": "Collection",        "to": "/lionna/alt-b/collection" },
+      { "icon": "💎", "text": "Gem",               "to": "/lionna/alt-b/gem" },
+      { "icon": "🌳", "text": "Talent Tree",       "to": "/lionna/alt-b/talent-tree" },
+      { "icon": "🍀", "text": "Luck",              "to": "/lionna/alt-b/luck" },
+      { "icon": "🃏", "text": "Cards",             "to": "/lionna/alt-b/cards" },
+      { "icon": "👑", "text": "Ancestral Set",     "to": "/lionna/alt-b/ancestral-set" },
+      { "icon": "🎫", "text": "Battle Pass",       "to": "/lionna/alt-b/battle-pass" },
+      { "icon": "👻", "text": "Soul Hunt",         "to": "/lionna/alt-b/soul-hunt" },
+      { "icon": "📦", "text": "Support Box",       "to": "/lionna/alt-b/support-box" },
+      { "icon": "🔀", "text": "Shuffle Skill",     "to": "/lionna/alt-b/shuffle-skill" },
+      { "icon": "💨", "text": "Ventus",            "to": "/lionna/alt-b/ventus" },
+      { "icon": "🏅", "text": "Rank",              "to": "/lionna/alt-b/rank" },
+      { "icon": "🗡️", "text": "Kairos Sword",      "to": "/lionna/alt-b/kairos-sword" },
+      { "icon": "🎰", "text": "Lucky Roulette",    "to": "/lionna/alt-b/lucky-roulette" },
+      { "icon": "🥇", "text": "Top-Players",       "to": "/lionna/alt-b/top-players" },
+      { "icon": "⚗️", "text": "Alchemist",         "to": "/lionna/alt-b/alchemist" },
+      { "icon": "✨", "text": "Excellent Enchant", "to": "/lionna/alt-b/excellent-enchant" },
+      { "icon": "🏭", "text": "Factory",           "to": "/lionna/alt-b/factory" },
+      { "icon": "🎭", "text": "Tattoo Inventory",  "to": "/lionna/alt-b/tattoo-inventory" },
+      { "icon": "📖", "text": "Tales of Hero",     "to": "/lionna/alt-b/tales-of-hero" }
     ]
   },
   {

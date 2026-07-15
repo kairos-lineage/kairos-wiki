@@ -24,7 +24,7 @@
     "note": "Aden event at 23:00."
   },
   {
-    "id": "zaken",
+    "id": "zaken & gorsha",
     "name": "Zaken",
     "color": "#d4a843",
     "hours": [23],
@@ -32,11 +32,19 @@
     "note": "Zaken at 23:00."
   },
   {
-    "id": "gorsha",
-    "name": "Gorsha",
+    "id": "BOOMB",
+    "name": "Bomb",
     "color": "#d45c5c",
-    "hours": [23],
+    "hours": [7, 19],
     "freq": "Daily",
-    "note": "Gorsha at 23:00."
+    "note": "Bomb at 23:00."
+  },
+  {
+    "id": "Bunny",
+    "name": "Bunny",
+    "color": "#d45c5c",
+    "hours": ["7:30", "19:00"],
+    "freq": "Daily",
+    "note": "Bunny at 23:00."
   }
 ]
