@@ -30,6 +30,15 @@ export default function Gem() {
         size="lg"
       />
 
+      <InfoBox variant="tip" label="Unlocking Gem Slots — Gracian Anniversary Coins">
+        <p>
+          Gem slots are not all available from the start — each slot must be{' '}
+          <strong>unlocked</strong> using <strong>Gracian Anniversary Coins</strong>.
+          Open new slots progressively as your coin supply grows and fill each slot
+          immediately after unlocking it so your passive bonuses stay active at all times.
+        </p>
+      </InfoBox>
+
       {/* ===== GEM TYPES ===== */}
       <SectionHeading id="types">Gem Grades — Full Progression</SectionHeading>
       <p>
@@ -137,7 +146,17 @@ export default function Gem() {
         size="lg"
       />
 
-   
+      {/* ===== GEM FARMING LOCATION ===== */}
+      <InfoBox variant="gold" label="Gem Farming Location — Hardcore Zone 7">
+        <p>
+          The most efficient source of high-grade gems is <strong>Hardcore Zone 7</strong>.
+          Farming there consistently is the reliable long-term path to filling and upgrading
+          all your gem slots. To farm HC7 at a worthwhile pace you will want your gear,
+          souls, and other passive systems reasonably developed first — the stronger your
+          character, the faster the gem income. Socket whatever you have now and upgrade
+          slots as better grades drop; do not wait for the perfect gem before using a slot.
+        </p>
+      </InfoBox>
     </>
   )
 }

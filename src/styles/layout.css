@@ -219,6 +219,40 @@
   opacity: 1;
 }
 
+.nav-event-tag {
+  font-size: 0.72rem;
+  color: var(--gold-dim);
+  position: relative;
+  cursor: default;
+  letter-spacing: 0.01em;
+}
+
+.nav-event-tag::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  left: 50%;
+  bottom: calc(100% + 6px);
+  transform: translateX(-50%);
+  background: var(--bg-panel);
+  border: 1px solid var(--gold-dim);
+  color: var(--gold);
+  font-family: var(--font-body);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  white-space: nowrap;
+  padding: 0.2rem 0.55rem;
+  border-radius: 0.3rem;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.15s;
+  z-index: 20;
+}
+
+.nav-event-tag:hover::after {
+  opacity: 1;
+}
+
 /* ===== MAIN CONTENT ===== */
 .main-content {
   margin-left: var(--sidebar-w);

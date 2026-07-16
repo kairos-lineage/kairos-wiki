@@ -11,7 +11,7 @@ const SECTIONS = [
   { icon: '💎', title: 'Gem',               to: '/lionna/alt-b/gem',               desc: '14 gem grades from Chipped (mob drops) to Radiant Star (Captain Morgull event) — socket for permanent passive bonuses.' },
   { icon: '🌳', title: 'Talent Tree',       to: '/lionna/alt-b/talent-tree',       desc: 'Unlock and level up Talents to strengthen your character.' },
   { icon: '🍀', title: 'Luck',              to: '/lionna/alt-b/luck',              desc: 'Luck-based system with random rewards and bonuses.' },
-  { icon: '🃏', title: 'Cards',             to: '/lionna/alt-b/cards',             desc: 'Collect and play Cards for stat boosts and effects.' },
+  { icon: '🃏', title: 'Cards (Instance Keeper)', to: '/lionna/alt-b/cards',        desc: 'Collect and play Cards for stat boosts and effects.' },
   { icon: '👑', title: 'Ancestral Set',     to: '/lionna/alt-b/ancestral-set',     desc: 'Craft and upgrade the powerful Ancestral equipment set.' },
   { icon: '🎫', title: 'Battle Pass',       to: '/lionna/alt-b/battle-pass',       desc: 'Seasonal progression system with exclusive milestone rewards.' },
   { icon: '👻', title: 'Soul Hunt',         to: '/lionna/alt-b/soul-hunt',         desc: 'Hunt souls and claim rewards from the Soul Hunt system.' },
