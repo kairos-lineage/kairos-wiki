@@ -57,8 +57,8 @@ export default function TalentTree() {
       <InfoBox variant="tip" label="Plan Before You Spend">
         <p>
           Each standard tree (Attack, Defence, Utility) costs <strong>174 potions</strong> to fully
-          unlock. The Greed tree costs <strong>1,950 potions</strong>. Completing all four trees
-          requires <strong>2,472 potions</strong> in total — stockpile before committing so you can
+          unlock. The Greed tree costs <strong>2,770 potions</strong>. Completing all four trees
+          requires <strong>3,292 potions</strong> in total — stockpile before committing so you can
           plan your unlock path efficiently.
         </p>
       </InfoBox>
@@ -93,30 +93,30 @@ export default function TalentTree() {
       <SectionHeading id="greed-costs">Greed Tree — Node Cost Breakdown</SectionHeading>
       <p>
         The <strong>Greed</strong> tree shares the same column and node layout as the standard trees
-        (30 nodes across 10 columns), but every node costs vastly more potions. The first five
-        columns each cost <strong>50 potions per node</strong>; from column 6 onward the cost rises
-        by 10 per column:
+        (30 nodes across 10 columns), but every node costs vastly more potions. Columns 1–2 cost
+        <strong> 50 potions per node</strong>; from column 3 onward the cost steps up with each
+        column:
       </p>
       <WikiTable
         columns={['Column', 'Nodes in Column', 'Cost per Node', 'Column Total', 'Running Total']}
         rows={[
           ['1',  '1', '50',  '50',   '50'],
           ['2',  '4', '50',  '200',  '250'],
-          ['3',  '1', '50',  '50',   '300'],
-          ['4',  '3', '50',  '150',  '450'],
-          ['5',  '6', '50',  '300',  '750'],
-          ['6',  '3', '60',  '180',  '930'],
-          ['7',  '3', '70',  '210',  '1,140'],
-          ['8',  '3', '80',  '240',  '1,380'],
-          ['9',  '3', '90',  '270',  '1,650'],
-          ['10', '3', '100', '300',  '1,950'],
-          ['Total', '30 nodes', '—', '—', '1,950 potions'],
+          ['3',  '1', '60',  '60',   '310'],
+          ['4',  '3', '70',  '210',  '520'],
+          ['5',  '6', '80',  '480',  '1,000'],
+          ['6',  '3', '90',  '270',  '1,270'],
+          ['7',  '3', '100', '300',  '1,570'],
+          ['8',  '3', '120', '360',  '1,930'],
+          ['9',  '3', '130', '390',  '2,320'],
+          ['10', '3', '150', '450',  '2,770'],
+          ['Total', '30 nodes', '—', '—', '2,770 potions'],
         ]}
       />
       <p>
-        Fully unlocking the Greed tree costs <strong>1,950 Talent Tree Potions</strong> — more than
-        eleven times the cost of a single standard tree. The complete four-tree unlock requires{' '}
-        <strong>2,472 potions</strong> in total (522 for Attack + Defence + Utility, plus 1,950 for
+        Fully unlocking the Greed tree costs <strong>2,770 Talent Tree Potions</strong> — more than
+        fifteen times the cost of a single standard tree. The complete four-tree unlock requires{' '}
+        <strong>3,292 potions</strong> in total (522 for Attack + Defence + Utility, plus 2,770 for
         Greed).
       </p>
 
@@ -176,13 +176,13 @@ export default function TalentTree() {
         item acquisition bonuses, and other nodes that accelerate the rewards you get from hunting.
         It has the same 30-node layout as the other trees but every node costs far more: the
         cheapest nodes cost <strong>50 potions each</strong> and the deepest nodes cost{' '}
-        <strong>100 each</strong>, for a total of <strong>1,950 potions</strong> to fully unlock.
+        <strong>150 each</strong>, for a total of <strong>2,770 potions</strong> to fully unlock.
         This makes it a long-term investment — see the breakdown table above.
       </p>
       <WikiFigure
         src={`${BASE}talent-greed.png`}
         alt="Talent Tree — Greed"
-        caption="The Greed talent tree — 30 nodes, 1,950 potions to fully unlock."
+        caption="The Greed talent tree — 30 nodes, 2,770 potions to fully unlock."
         size="lg"
       />
 

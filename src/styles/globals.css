@@ -2084,3 +2084,51 @@ code {
   text-align: center;
 }
 .urn-total strong { color: var(--gold-bright); }
+
+/* ===== TATTOO INVENTORY ===== */
+.tattoo-filter-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 1rem 0 0.5rem;
+}
+
+.tattoo-filter-input,
+.tattoo-filter-select {
+  padding: 0.42rem 0.75rem;
+  background: var(--bg-surface);
+  border: 1px solid var(--border);
+  border-radius: 0.4rem;
+  color: var(--text);
+  font-size: 0.9rem;
+  outline: none;
+  transition: border-color 0.2s;
+}
+.tattoo-filter-input { width: 160px; }
+.tattoo-filter-input--wide { width: 220px; }
+.tattoo-filter-input:focus,
+.tattoo-filter-select:focus { border-color: var(--gold); }
+.tattoo-filter-input::placeholder { color: var(--text-dim); }
+
+.tattoo-filter-clear {
+  padding: 0.42rem 0.9rem;
+  background: none;
+  border: 1px solid var(--border);
+  border-radius: 0.4rem;
+  color: var(--text-dim);
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: border-color 0.15s, color 0.15s;
+}
+.tattoo-filter-clear:hover { border-color: var(--text-dim); color: var(--text); }
+
+.tattoo-filter-count {
+  font-size: 0.82rem;
+  color: var(--text-dim);
+  margin: 0.25rem 0 0.6rem;
+}
+
+.tattoo-no-results { text-align: center; color: var(--text-dim); padding: 1.5rem; }
+.tattoo-empty     { color: var(--text-dim); }
+.tattoo-yes       { color: var(--emerald); }
+.tattoo-no        { color: var(--blood); opacity: 0.7; }

@@ -32,6 +32,33 @@ export default function Ventus() {
         size="lg"
       />
 
+      {/* ===== WHERE TO NAVIGATE ===== */}
+      <SectionHeading id="where-to-find">Accessing Ventus</SectionHeading>
+
+      <SectionHeading id="custom-shop" level={3}>Custom Shop</SectionHeading>
+      <p>
+        Open the <strong>Custom Shop</strong> NPC. The shop is split across multiple pages —
+        Ventus and its related items are not on the first page.
+      </p>
+      <WikiFigure
+        src={`${BASE}custom-shop.png`}
+        alt="Custom Shop — first page of the NPC shop"
+        caption="Custom Shop — open the NPC shop and navigate to the next page to find Ventus."
+        size="md"
+      />
+
+      <SectionHeading id="custom-shop-ventus" level={3}>Custom Shop — Page 2 → Ventus</SectionHeading>
+      <p>
+        On the second page of the Custom Shop you will find the <strong>Ventus</strong> section
+        with the items and materials relevant to the system.
+      </p>
+      <WikiFigure
+        src={`${BASE}custom-shop-2.png`}
+        alt="Custom Shop page 2 — Ventus section"
+        caption="Custom Shop page 2 — Ventus items and materials available here."
+        size="md"
+      />
+
       {/* ===== UNLOCKING SLOTS ===== */}
       <SectionHeading id="slots">Unlocking Slots — HarGunn's Oscular Gem</SectionHeading>
       <p>
@@ -66,6 +93,12 @@ export default function Ventus() {
 
       {/* ===== GLYPH TIERS ===== */}
       <SectionHeading id="tiers">Glyph Tiers</SectionHeading>
+      <WikiFigure
+        src={`${BASE}ventis-glyphs.png`}
+        alt="Ventus glyphs overview — all available glyphs displayed"
+        caption="All available Ventus Glyphs — Mythical and Top tiers."
+        size="lg"
+      />
       <p>
         Ventus Glyphs come in two distinct power groups — <strong>Mythical</strong> and{' '}
         <strong>Top</strong>. Each glyph socketed into an unlocked slot provides a permanent

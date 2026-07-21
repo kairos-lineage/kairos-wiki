@@ -37,6 +37,7 @@ import Octavia              from './pages/lionna/skills/Octavia'
 import EventTimes           from './pages/lionna/EventTimes'
 import MaterialsFinder      from './pages/lionna/MaterialsFinder'
 import MidGradeHolyEnergy  from './pages/lionna/MidGradeHolyEnergy'
+import RebirthSystem       from './pages/lionna/RebirthSystem'
 import AltB                from './pages/lionna/AltB'
 import Dolls               from './pages/lionna/alt-b/Dolls'
 import RelicWeapon         from './pages/lionna/alt-b/RelicWeapon'
@@ -52,6 +53,9 @@ import Ventus            from './pages/lionna/alt-b/Ventus'
 import Rank              from './pages/lionna/alt-b/Rank'
 import KairosSword       from './pages/lionna/alt-b/KairosSword'
 import LuckyRoulette     from './pages/lionna/alt-b/LuckyRoulette'
+import Factory          from './pages/lionna/alt-b/Factory'
+import TalesOfHero      from './pages/lionna/alt-b/TalesOfHero'
+import TattooInventory  from './pages/lionna/alt-b/TattooInventory'
 import TopPlayers        from './pages/lionna/alt-b/TopPlayers'
 
 export default function App() {
@@ -105,6 +109,7 @@ export default function App() {
           <Route path="skills/octavia"             element={<Octavia />} />
           <Route path="farm-zones/materials"        element={<MaterialsFinder />} />
           <Route path="events"                     element={<EventTimes />} />
+          <Route path="rebirth-system"            element={<RebirthSystem />} />
           <Route path="mid-grade-holy-energy"     element={<MidGradeHolyEnergy />} />
           <Route path="alt-b"                      element={<AltB />} />
           <Route path="alt-b/relic-weapon"       element={<RelicWeapon />} />
@@ -126,9 +131,9 @@ export default function App() {
           <Route path="alt-b/top-players"        element={<TopPlayers />} />
           <Route path="alt-b/alchemist"          element={<StubPage title="Alchemist"         tagline="Craft and transmute materials through the Alchemist." />} />
           <Route path="alt-b/excellent-enchant"  element={<StubPage title="Excellent Enchant" tagline="Enchant gear to Excellent grade for bonus effects." />} />
-          <Route path="alt-b/factory"            element={<StubPage title="Factory"           tagline="Production factory for crafting materials and equipment." />} />
-          <Route path="alt-b/tattoo-inventory"   element={<StubPage title="Tattoo Inventory"  tagline="View and manage all Tattoos in your inventory." />} />
-          <Route path="alt-b/tales-of-hero"      element={<StubPage title="Tales of Hero"     tagline="Hero story quests and narrative-driven reward chains." />} />
+          <Route path="alt-b/factory"            element={<Factory />} />
+          <Route path="alt-b/tattoo-inventory"   element={<TattooInventory />} />
+          <Route path="alt-b/tales-of-hero"      element={<TalesOfHero />} />
           <Route path="donations"         element={<StubPage title="Donations"       tagline="Support the server and see donation perks." />} />
           <Route path="faq"               element={<StubPage title="FAQ"             tagline="Common questions answered." />} />
         </Route>

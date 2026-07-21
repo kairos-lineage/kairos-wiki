@@ -4,6 +4,7 @@
     "items": [
       { "icon": "🏠", "text": "Home",                     "to": "/lionna" },
       { "icon": "📖", "text": "Getting Started",           "to": "/lionna/getting-started" },
+      { "icon": "🔄", "text": "Rebirth System",             "to": "/lionna/rebirth-system" },
       { "icon": "🖥️", "text": "Server Info",              "to": "/lionna/server-info" },
       { "icon": "💎", "text": "Mid Grade Holy Energy",    "to": "/lionna/mid-grade-holy-energy" }
     ]
@@ -31,7 +32,7 @@
       { "icon": "🥇", "text": "Top-Players",       "to": "/lionna/alt-b/top-players" },
       { "icon": "⚗️", "text": "Alchemist",         "to": "/lionna/alt-b/alchemist" },
       { "icon": "✨", "text": "Excellent Enchant", "to": "/lionna/alt-b/excellent-enchant" },
-      { "icon": "🏭", "text": "Factory",           "to": "/lionna/alt-b/factory" },
+      { "icon": "🏭", "text": "Factory",           "to": "/lionna/alt-b/factory", "eventTag": "Event", "tooltip": "Eggward the Brave" },
       { "icon": "🎭", "text": "Tattoo Inventory",  "to": "/lionna/alt-b/tattoo-inventory" },
       { "icon": "📖", "text": "Tales of Hero",     "to": "/lionna/alt-b/tales-of-hero" }
     ]
