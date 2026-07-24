@@ -45,6 +45,15 @@
     ]
   },
   {
+    "label": "Instances",
+    "items": [
+      { "icon": "🗡️", "text": "Solo Instances",  "to": "/lionna/instances/solo" },
+      { "icon": "👥", "text": "Party Instances", "to": "/lionna/instances/party" },
+      { "icon": "🐉", "text": "Tiat Instance",   "to": "/lionna/instances/tiat" },
+      { "icon": "🗼", "text": "Tower Instance",  "to": "/lionna/instances/tower" }
+    ]
+  },
+  {
     "label": "Farm Zones",
     "items": [
       { "icon": "🗺️", "text": "Farm Zones",        "to": "/lionna/farm-zones" },
