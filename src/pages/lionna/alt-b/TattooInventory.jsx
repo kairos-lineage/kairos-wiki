@@ -219,6 +219,42 @@ export default function TattooInventory() {
         </p>
       </InfoBox>
 
+      {/* PARTY ARMOR 3 */}
+      <div className="tattoo-note">
+        <img
+          src={`${TATTOO_ICONS}3-party-armor.png`}
+          alt="Party Armor 3"
+          className="tattoo-note__icon"
+        />
+        <div className="tattoo-note__body">
+          <p className="tattoo-note__name">Party Armor 3 (Page 3)</p>
+          <p>
+            Obtained through the quest <strong>"Ghost of Batur"</strong>, accepted from the{' '}
+            <strong>Karuda</strong> NPC in <strong>Giran</strong>. Once the quest is active, head
+            to any <strong>Party Zone</strong> and start killing — every mob killed drops{' '}
+            <strong>1 Cursed Burial Item</strong>, and the quest requires collecting up to a
+            maximum of <strong>50,000</strong> of them.
+          </p>
+          <p>
+            Reaching 50,000 Cursed Burial Items marks the quest as <strong>completed</strong>.
+            The tattoo reward is granted at that point. If you want to farm it again — for a
+            second character, an alt, or to exchange — you must first{' '}
+            <strong>cancel the completed quest</strong> and then <strong>re-take it</strong> from
+            Karuda. Simply having an active quest is not enough; the counter only resets on a
+            fresh quest acceptance.
+          </p>
+        </div>
+      </div>
+      <InfoBox variant="warning" label="Cancel and Re-Take to Farm Again">
+        <p>
+          Once the quest reaches <strong>50,000 Cursed Burial Items</strong> it is flagged as
+          done and the counter will not increase further. To start a new farming cycle you{' '}
+          <strong>must cancel the current quest</strong> through your quest log and{' '}
+          <strong>re-accept it from Karuda</strong>. Skipping this step means any kills after
+          completion are wasted — the counter stays locked at 50,000.
+        </p>
+      </InfoBox>
+
       {/* CHAMPION LV.20 IMPROVED TATTOOS */}
       <div className="tattoo-note">
         <div className="tattoo-note__icons">

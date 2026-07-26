@@ -58,7 +58,6 @@ import TalesOfHero      from './pages/lionna/alt-b/TalesOfHero'
 import TattooInventory  from './pages/lionna/alt-b/TattooInventory'
 import TopPlayers        from './pages/lionna/alt-b/TopPlayers'
 import SoloInstances    from './pages/lionna/instances/SoloInstances'
-import PartyInstances   from './pages/lionna/instances/PartyInstances'
 import TiatInstance     from './pages/lionna/instances/TiatInstance'
 import TowerInstance    from './pages/lionna/instances/TowerInstance'
 
@@ -139,7 +138,6 @@ export default function App() {
           <Route path="alt-b/tattoo-inventory"   element={<TattooInventory />} />
           <Route path="alt-b/tales-of-hero"      element={<TalesOfHero />} />
           <Route path="instances/solo"            element={<SoloInstances />} />
-          <Route path="instances/party"           element={<PartyInstances />} />
           <Route path="instances/tiat"            element={<TiatInstance />} />
           <Route path="instances/tower"           element={<TowerInstance />} />
           <Route path="donations"         element={<StubPage title="Donations"       tagline="Support the server and see donation perks." />} />
